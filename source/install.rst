@@ -11,7 +11,7 @@ For single-player use, you'll need to download and install `Minecraft Forge <htt
 
 If you plan on running WorldEdit on a "vanilla" server, we recommend using a Bukkit implementation such as `Paper <https://papermc.io/>`_ or optionally `Spigot <https://www.spigotmc.org/>`_. (Paper is a fork of the Spigot project which adds many improvements that WorldEdit can take advantage of.)
 
-If you plan on running WorldEdit on a modded server, you can once again use Forge, or use `Sponge <https://www.spongepowered.org/>_`, which is generally compatible with Forge mods, and also supports a wide variety of other plugins.
+If you plan on running WorldEdit on a modded server, you can once again use Forge, or use `Sponge <https://www.spongepowered.org/>`_, which is generally compatible with Forge mods, and also supports a wide variety of other plugins.
 
 Note that there are unofficial implementations of WorldEdit for other platforms. 
 
@@ -43,7 +43,7 @@ If you encounter any errors, see the :doc:`FAQ <faq>` page.
 Forge Server / Sponge
 ~~~~~~~~~~~~~~~
 
-First, you'll have to install your server software of choice. For Forge, you can download the installer and run `java -jar forge-installer.jar --installServer` from a terminal or command prompt (search online for more comprehensive instructions). Sponge has `documentation on setting up a server <https://docs.spongepowered.org/stable/en/server/quickstart.html>`_. After installing your server software, download WorldEdit from `Curseforge, if using Forge <https://minecraft.curseforge.com/projects/worldedit>`_ or `Ore, if using Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_. If you are using SpongeForge, either version of WorldEdit will work (but don't use both) - the Forge version may perform better in some cases.
+First, you'll have to install your server software of choice. For Forge, you can download the installer and run ``java -jar forge-installer.jar --installServer`` from a terminal or command prompt (search online for more comprehensive instructions). Sponge has `documentation on setting up a server <https://docs.spongepowered.org/stable/en/server/quickstart.html>`_. After installing your server software, download WorldEdit from `Curseforge, if using Forge <https://minecraft.curseforge.com/projects/worldedit>`_ or `Ore, if using Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_. If you are using SpongeForge, either version of WorldEdit will work (but don't use both) - the Forge version may perform better in some cases.
 
 1. Create a "mods" folder if it doesn't exist (it will be created automatically after running the server once).
 2. Add the WorldEdit .jar file to the mods folder.

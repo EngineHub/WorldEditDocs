@@ -12,9 +12,6 @@ Commands
 
 General Commands
 ~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -199,9 +196,6 @@ General Commands
 
 Navigation Commands
 ~~~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -277,9 +271,6 @@ Navigation Commands
 
 Selection Commands
 ~~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -458,9 +449,6 @@ Selection Commands
 
 Region Commands
 ~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -655,9 +643,6 @@ Region Commands
 
 Generation Commands
 ~~~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -787,9 +772,6 @@ Generation Commands
 
 Schematic and Clipboard Commands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -930,9 +912,6 @@ Schematic and Clipboard Commands
 
 Tool Commands
 ~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1083,9 +1062,6 @@ Tool Commands
 
 Super Pickaxe Commands
 ~~~~~~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1125,9 +1101,6 @@ Super Pickaxe Commands
 
 Brush Commands
 ~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1318,9 +1291,6 @@ Brush Commands
 
 Biome Commands
 ~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1356,9 +1326,6 @@ Biome Commands
 
 Chunk Commands
 ~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1387,9 +1354,6 @@ Chunk Commands
 
 Snapshot Commands
 ~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1460,9 +1424,6 @@ Snapshot Commands
 
 Scripting Commands
 ~~~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 
@@ -1484,9 +1445,6 @@ Scripting Commands
 
 Utility Commands
 ~~~~~~~~~~~~~~~~
-
-------------
-
 .. csv-table::
     :widths: 8, 15
 

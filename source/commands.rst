@@ -15,8 +15,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit,"WorldEdit commands"
-    Aliases,"/we"
+    /worldedit,"(or /we)"
+    Description,"WorldEdit commands"
     Usage,"/worldedit <version|reload|report|cui|tz|help>"
 
 ------------
@@ -24,8 +24,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit version,"Get WorldEdit version"
-    Aliases,"/worldedit ver"
+    /worldedit version,"(or /worldedit ver)"
+    Description,"Get WorldEdit version"
     Usage,"/worldedit version"
 
 ------------
@@ -33,7 +33,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit reload,"Reload configuration"
+    /worldedit reload,
+    Description,"Reload configuration"
     Permissions,"worldedit.reload"
     Usage,"/worldedit reload"
 
@@ -42,7 +43,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit report,"Writes a report on WorldEdit"
+    /worldedit report,
+    Description,"Writes a report on WorldEdit"
     Permissions,"worldedit.report"
     Usage,"/worldedit report [-p]"
        [-p],"Pastebins the report"
@@ -52,7 +54,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit cui,"Complete CUI handshake (internal usage)"
+    /worldedit cui,
+    Description,"Complete CUI handshake (internal usage)"
     Usage,"/worldedit cui"
 
 ------------
@@ -60,7 +63,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit tz,"Set your timezone for snapshots"
+    /worldedit tz,
+    Description,"Set your timezone for snapshots"
     Usage,"/worldedit tz <timezone>"
        <timezone>,"The timezone to set"
 
@@ -69,7 +73,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /worldedit help,"Displays help for WorldEdit commands"
+    /worldedit help,
+    Description,"Displays help for WorldEdit commands"
     Permissions,"worldedit.help"
     Usage,"/worldedit help [-s] [-p <page>] [command...]"
        [-s],"List sub-commands of the given command, if applicable"
@@ -81,8 +86,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /undo,"Undoes the last action (from history)"
-    Aliases,"//undo"
+    /undo,"(or //undo)"
+    Description,"Undoes the last action (from history)"
     Permissions,"worldedit.history.undo"
     Usage,"/undo [times] [player]"
        [times],"Number of undoes to perform"
@@ -93,8 +98,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /redo,"Redoes the last action (from history)"
-    Aliases,"//redo"
+    /redo,"(or //redo)"
+    Description,"Redoes the last action (from history)"
     Permissions,"worldedit.history.redo"
     Usage,"/redo [times] [player]"
        [times],"Number of redoes to perform"
@@ -105,8 +110,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /clearhistory,"Clear your history"
-    Aliases,"//clearhistory"
+    /clearhistory,"(or //clearhistory)"
+    Description,"Clear your history"
     Permissions,"worldedit.history.clear"
     Usage,"/clearhistory"
 
@@ -115,7 +120,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    //limit,"Modify block change limit"
+    //limit,
+    Description,"Modify block change limit"
     Permissions,"worldedit.limit"
     Usage,"//limit [limit]"
        [limit],"The limit to set"
@@ -125,7 +131,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    //timeout,"Modify evaluation timeout time."
+    //timeout,
+    Description,"Modify evaluation timeout time."
     Permissions,"worldedit.timeout"
     Usage,"//timeout [limit]"
        [limit],"The timeout time to set"
@@ -135,7 +142,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    //fast,"Toggle fast mode"
+    //fast,
+    Description,"Toggle fast mode"
     Permissions,"worldedit.fast"
     Usage,"//fast [fastMode]"
        [fastMode],"The new fast mode state"
@@ -145,7 +153,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    //reorder,"Sets the reorder mode of WorldEdit"
+    //reorder,
+    Description,"Sets the reorder mode of WorldEdit"
     Permissions,"worldedit.reorder"
     Usage,"//reorder [reorderMode]"
        [reorderMode],"The reorder mode"
@@ -155,7 +164,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    //drawsel,"Toggle drawing the current selection"
+    //drawsel,
+    Description,"Toggle drawing the current selection"
     Permissions,"worldedit.drawsel"
     Usage,"//drawsel [drawSelection]"
        [drawSelection],"The new draw selection state"
@@ -165,8 +175,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /gmask,"Set the global mask"
-    Aliases,"//gmask"
+    /gmask,"(or //gmask)"
+    Description,"Set the global mask"
     Permissions,"worldedit.global-mask"
     Usage,"/gmask [mask]"
        [mask],"The mask to set"
@@ -176,8 +186,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /toggleplace,"Switch between your position and pos1 for placement"
-    Aliases,"//toggleplace"
+    /toggleplace,"(or //toggleplace)"
+    Description,"Switch between your position and pos1 for placement"
     Usage,"/toggleplace"
 
 ------------
@@ -185,8 +195,8 @@ General Commands
 .. csv-table::
     :widths: 8, 15
 
-    /searchitem,"Search for an item"
-    Aliases,"//searchitem, //l, //search"
+    /searchitem,"(or //searchitem, //l, //search)"
+    Description,"Search for an item"
     Permissions,"worldedit.searchitem"
     Usage,"/searchitem [-bi] [-p <page>] <query...>"
        [-b],"Only search for blocks"
@@ -199,8 +209,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /unstuck,"Escape from being stuck inside a block"
-    Aliases,"/!"
+    /unstuck,"(or /!)"
+    Description,"Escape from being stuck inside a block"
     Permissions,"worldedit.navigation.unstuck"
     Usage,"/unstuck"
 
@@ -209,8 +219,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /ascend,"Go up a floor"
-    Aliases,"/asc"
+    /ascend,"(or /asc)"
+    Description,"Go up a floor"
     Permissions,"worldedit.navigation.ascend"
     Usage,"/ascend [levels]"
        [levels],"# of levels to ascend"
@@ -220,8 +230,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /descend,"Go down a floor"
-    Aliases,"/desc"
+    /descend,"(or /desc)"
+    Description,"Go down a floor"
     Permissions,"worldedit.navigation.descend"
     Usage,"/descend [levels]"
        [levels],"# of levels to descend"
@@ -231,7 +241,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /ceil,"Go to the ceiling"
+    /ceil,
+    Description,"Go to the ceiling"
     Permissions,"worldedit.navigation.ceiling"
     Usage,"/ceil [-fg] [clearance]"
        [clearance],"# of blocks to leave above you"
@@ -243,7 +254,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /thru,"Pass through walls"
+    /thru,
+    Description,"Pass through walls"
     Permissions,"worldedit.navigation.thru.command"
     Usage,"/thru"
 
@@ -252,8 +264,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /jumpto,"Teleport to a location"
-    Aliases,"/j"
+    /jumpto,"(or /j)"
+    Description,"Teleport to a location"
     Permissions,"worldedit.navigation.jumpto.command"
     Usage,"/jumpto"
 
@@ -262,7 +274,8 @@ Navigation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /up,"Go upwards some distance"
+    /up,
+    Description,"Go upwards some distance"
     Permissions,"worldedit.navigation.up"
     Usage,"/up [-fg] <distance>"
        <distance>,"Distance to go upwards"
@@ -274,7 +287,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //pos1,"Set position 1"
+    //pos1,
+    Description,"Set position 1"
     Permissions,"worldedit.selection.pos"
     Usage,"//pos1 [coordinates]"
        [coordinates],"Coordinates to set position 1 to"
@@ -284,7 +298,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //pos2,"Set position 2"
+    //pos2,
+    Description,"Set position 2"
     Permissions,"worldedit.selection.pos"
     Usage,"//pos2 [coordinates]"
        [coordinates],"Coordinates to set position 2 to"
@@ -294,7 +309,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //hpos1,"Set position 1 to targeted block"
+    //hpos1,
+    Description,"Set position 1 to targeted block"
     Permissions,"worldedit.selection.hpos"
     Usage,"//hpos1"
 
@@ -303,7 +319,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //hpos2,"Set position 2 to targeted block"
+    //hpos2,
+    Description,"Set position 2 to targeted block"
     Permissions,"worldedit.selection.hpos"
     Usage,"//hpos2"
 
@@ -312,7 +329,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //chunk,"Set the selection to your current chunk."
+    //chunk,
+    Description,"Set the selection to your current chunk."
     Permissions,"worldedit.selection.chunk"
     Usage,"//chunk [-cs] [coordinates]"
        [coordinates],"The chunk to select"
@@ -324,7 +342,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //wand,"Get the wand object"
+    //wand,
+    Description,"Get the wand object"
     Permissions,"worldedit.wand"
     Usage,"//wand"
 
@@ -333,7 +352,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    /toggleeditwand,"Toggle functionality of the edit wand"
+    /toggleeditwand,
+    Description,"Toggle functionality of the edit wand"
     Permissions,"worldedit.wand.toggle"
     Usage,"/toggleeditwand"
 
@@ -342,7 +362,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //contract,"Contract the selection area"
+    //contract,
+    Description,"Contract the selection area"
     Permissions,"worldedit.selection.contract"
     Usage,"//contract <amount> [reverseAmount] [direction]"
        <amount>,"Amount to contract the selection by"
@@ -354,7 +375,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //shift,"Shift the selection area"
+    //shift,
+    Description,"Shift the selection area"
     Permissions,"worldedit.selection.shift"
     Usage,"//shift <amount> [direction]"
        <amount>,"Amount to shift the selection by"
@@ -365,7 +387,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //outset,"Outset the selection area"
+    //outset,
+    Description,"Outset the selection area"
     Permissions,"worldedit.selection.outset"
     Usage,"//outset [-hv] <amount>"
        <amount>,"Amount to expand the selection by in all directions"
@@ -377,7 +400,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //inset,"Inset the selection area"
+    //inset,
+    Description,"Inset the selection area"
     Permissions,"worldedit.selection.inset"
     Usage,"//inset [-hv] <amount>"
        <amount>,"Amount to contract the selection by in all directions"
@@ -389,7 +413,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //size,"Get information about the selection"
+    //size,
+    Description,"Get information about the selection"
     Permissions,"worldedit.selection.size"
     Usage,"//size [-c]"
        [-c],"Get clipboard info instead"
@@ -399,7 +424,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //count,"Counts the number of a certain type of block"
+    //count,
+    Description,"Counts the number of a certain type of block"
     Permissions,"worldedit.analysis.count"
     Usage,"//count [-f] <blocks>"
        <blocks>,"The block type(s) to count"
@@ -410,7 +436,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //distr,"Get the distribution of blocks in the selection"
+    //distr,
+    Description,"Get the distribution of blocks in the selection"
     Permissions,"worldedit.analysis.distr"
     Usage,"//distr [-cd]"
        [-c],"Get the distribution of the clipboard instead"
@@ -421,8 +448,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //sel,"Choose a region selector"
-    Aliases,"//desel, //deselect, /;"
+    //sel,"(or //desel, //deselect, /;)"
+    Description,"Choose a region selector"
     Usage,"//sel [-d] [selector]"
        [selector],"Selector to switch to"
        [-d],"Set default selector"
@@ -432,7 +459,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //expand,"Expand the selection area"
+    //expand,
+    Description,"Expand the selection area"
     Permissions,"worldedit.selection.expand"
     Usage,"//expand <vert|<amount> [reverseAmount] [direction]>"
        <amount>,"Amount to expand the selection by, can be `vert` to expand to the whole vertical column"
@@ -444,7 +472,8 @@ Selection Commands
 .. csv-table::
     :widths: 8, 15
 
-    //expand vert,"Vertically expand the selection to world limits."
+    //expand vert,
+    Description,"Vertically expand the selection to world limits."
     Usage,"//expand vert"
 
 Region Commands
@@ -452,7 +481,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //set,"Sets all the blocks in the region"
+    //set,
+    Description,"Sets all the blocks in the region"
     Permissions,"worldedit.region.set"
     Usage,"//set <pattern>"
        <pattern>,"The pattern of blocks to set"
@@ -462,7 +492,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //line,"Draws a line segment between cuboid selection corners"
+    //line,
+    Description,"Draws a line segment between cuboid selection corners"
     Permissions,"worldedit.region.line"
     Usage,"//line [-h] <pattern> [thickness]"
        <pattern>,"The pattern of blocks to place"
@@ -475,7 +506,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //curve,"Draws a spline through selected points"
+    //curve,
+    Description,"Draws a spline through selected points"
     Permissions,"worldedit.region.curve"
     Usage,"//curve [-h] <pattern> [thickness]"
        <pattern>,"The pattern of blocks to place"
@@ -488,8 +520,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //replace,"Replace all blocks in the selection with another"
-    Aliases,"//rep, //re"
+    //replace,"(or //rep, //re)"
+    Description,"Replace all blocks in the selection with another"
     Permissions,"worldedit.region.replace"
     Usage,"//replace [from] <to>"
        [from],"The mask representing blocks to replace"
@@ -500,7 +532,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //overlay,"Set a block on top of blocks in the region"
+    //overlay,
+    Description,"Set a block on top of blocks in the region"
     Permissions,"worldedit.region.overlay"
     Usage,"//overlay <pattern>"
        <pattern>,"The pattern of blocks to overlay"
@@ -510,8 +543,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //center,"Set the center block(s)"
-    Aliases,"//middle"
+    //center,"(or //middle)"
+    Description,"Set the center block(s)"
     Permissions,"worldedit.region.center"
     Usage,"//center <pattern>"
        <pattern>,"The pattern of blocks to set"
@@ -521,7 +554,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //naturalize,"3 layers of dirt on top then rock below"
+    //naturalize,
+    Description,"3 layers of dirt on top then rock below"
     Permissions,"worldedit.region.naturalize"
     Usage,"//naturalize"
 
@@ -530,7 +564,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //walls,"Build the four sides of the selection"
+    //walls,
+    Description,"Build the four sides of the selection"
     Permissions,"worldedit.region.walls"
     Usage,"//walls <pattern>"
        <pattern>,"The pattern of blocks to set"
@@ -540,8 +575,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //faces,"Build the walls, ceiling, and floor of a selection"
-    Aliases,"//outline"
+    //faces,"(or //outline)"
+    Description,"Build the walls, ceiling, and floor of a selection"
     Permissions,"worldedit.region.faces"
     Usage,"//faces <pattern>"
        <pattern>,"The pattern of blocks to set"
@@ -551,7 +586,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //smooth,"Smooth the elevation in the selection"
+    //smooth,
+    Description,"Smooth the elevation in the selection"
     Permissions,"worldedit.region.smooth"
     Usage,"//smooth [iterations] [mask]"
        [iterations],"# of iterations to perform"
@@ -563,7 +599,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //move,"Move the contents of the selection"
+    //move,
+    Description,"Move the contents of the selection"
     Permissions,"worldedit.region.move"
     Usage,"//move [-as] [count] [direction] [replace]"
        [count],"# of blocks to move"
@@ -577,7 +614,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //stack,"Repeat the contents of the selection"
+    //stack,
+    Description,"Repeat the contents of the selection"
     Permissions,"worldedit.region.stack"
     Usage,"//stack [-as] [count] [direction]"
        [count],"# of copies to stack"
@@ -590,7 +628,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //regen,"Regenerates the contents of the selection"
+    //regen,
+    Description,"Regenerates the contents of the selection"
     Permissions,"worldedit.regen"
     Usage,"//regen"
     ,"This command might affect things outside the selection, if they are within the same chunk."
@@ -600,7 +639,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //deform,"Deforms a selected region with an expression"
+    //deform,
+    Description,"Deforms a selected region with an expression"
     Permissions,"worldedit.region.deform"
     Usage,"//deform [-or] <expression...>"
        <expression...>,"The expression to use"
@@ -613,7 +653,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //hollow,"Hollows out the object contained in this selection"
+    //hollow,
+    Description,"Hollows out the object contained in this selection"
     Permissions,"worldedit.region.hollow"
     Usage,"//hollow [thickness] [pattern]"
        [thickness],"Thickness of the shell to leave"
@@ -625,7 +666,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //forest,"Make a forest within the region"
+    //forest,
+    Description,"Make a forest within the region"
     Permissions,"worldedit.region.forest"
     Usage,"//forest [type] [density]"
        [type],"The type of tree to place"
@@ -636,7 +678,8 @@ Region Commands
 .. csv-table::
     :widths: 8, 15
 
-    //flora,"Make flora within the region"
+    //flora,
+    Description,"Make flora within the region"
     Permissions,"worldedit.region.flora"
     Usage,"//flora [density]"
        [density],"The density of the forest"
@@ -646,7 +689,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //hcyl,"Generates a hollow cylinder."
+    //hcyl,
+    Description,"Generates a hollow cylinder."
     Permissions,"worldedit.generation.cylinder"
     Usage,"//hcyl <pattern> <radii> [height]"
        <pattern>,"The pattern of blocks to generate"
@@ -658,7 +702,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //cyl,"Generates a cylinder."
+    //cyl,
+    Description,"Generates a cylinder."
     Permissions,"worldedit.generation.cylinder"
     Usage,"//cyl [-h] <pattern> <radii> [height]"
        <pattern>,"The pattern of blocks to generate"
@@ -671,7 +716,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //hsphere,"Generates a hollow sphere."
+    //hsphere,
+    Description,"Generates a hollow sphere."
     Permissions,"worldedit.generation.sphere"
     Usage,"//hsphere [-r] <pattern> <radii>"
        <pattern>,"The pattern of blocks to generate"
@@ -683,7 +729,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //sphere,"Generates a filled sphere."
+    //sphere,
+    Description,"Generates a filled sphere."
     Permissions,"worldedit.generation.sphere"
     Usage,"//sphere [-hr] <pattern> <radii>"
        <pattern>,"The pattern of blocks to generate"
@@ -696,7 +743,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /forestgen,"Generate a forest"
+    /forestgen,
+    Description,"Generate a forest"
     Permissions,"worldedit.generation.forest"
     Usage,"/forestgen [size] [type] [density]"
        [size],"The size of the forest, in blocks"
@@ -708,7 +756,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    /pumpkins,"Generate pumpkin patches"
+    /pumpkins,
+    Description,"Generate pumpkin patches"
     Permissions,"worldedit.generation.pumpkins"
     Usage,"/pumpkins [size]"
        [size],"The size of the patch"
@@ -718,7 +767,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //hpyramid,"Generate a hollow pyramid"
+    //hpyramid,
+    Description,"Generate a hollow pyramid"
     Permissions,"worldedit.generation.pyramid"
     Usage,"//hpyramid <pattern> <size>"
        <pattern>,"The pattern of blocks to set"
@@ -729,7 +779,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //pyramid,"Generate a filled pyramid"
+    //pyramid,
+    Description,"Generate a filled pyramid"
     Permissions,"worldedit.generation.pyramid"
     Usage,"//pyramid [-h] <pattern> <size>"
        <pattern>,"The pattern of blocks to set"
@@ -741,8 +792,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //generate,"Generates a shape according to a formula."
-    Aliases,"//g, //gen"
+    //generate,"(or //g, //gen)"
+    Description,"Generates a shape according to a formula."
     Permissions,"worldedit.generation.shape"
     Usage,"//generate [-chor] <pattern> <expression...>"
        <pattern>,"The pattern of blocks to set"
@@ -758,8 +809,8 @@ Generation Commands
 .. csv-table::
     :widths: 8, 15
 
-    //generatebiome,"Sets biome according to a formula."
-    Aliases,"//genbiome, //gb"
+    //generatebiome,"(or //genbiome, //gb)"
+    Description,"Sets biome according to a formula."
     Permissions,"worldedit.generation.shape.biome"
     Usage,"//generatebiome [-chor] <target> <expression...>"
        <target>,"The biome type to set"
@@ -775,8 +826,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /schematic,"Schematic commands for saving/loading areas"
-    Aliases,"/schem, //schematic, //schem"
+    /schematic,"(or /schem, //schematic, //schem)"
+    Description,"Schematic commands for saving/loading areas"
     Usage,"/schematic <load|save|delete|formats|list>"
 
 ------------
@@ -784,7 +835,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /schematic load,"Load a schematic into your clipboard"
+    /schematic load,
+    Description,"Load a schematic into your clipboard"
     Permissions,"worldedit.clipboard.load, worldedit.schematic.load"
     Usage,"/schematic load <filename> [formatName]"
        <filename>,"File name."
@@ -795,7 +847,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /schematic save,"Save a schematic into your clipboard"
+    /schematic save,
+    Description,"Save a schematic into your clipboard"
     Permissions,"worldedit.clipboard.save, worldedit.schematic.save"
     Usage,"/schematic save [-f] <filename> [formatName]"
        <filename>,"File name."
@@ -807,8 +860,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /schematic delete,"Delete a saved schematic"
-    Aliases,"/schematic d"
+    /schematic delete,"(or /schematic d)"
+    Description,"Delete a saved schematic"
     Permissions,"worldedit.schematic.delete"
     Usage,"/schematic delete <filename>"
        <filename>,"File name."
@@ -818,8 +871,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /schematic formats,"List available formats"
-    Aliases,"/schematic listformats, /schematic f"
+    /schematic formats,"(or /schematic listformats, /schematic f)"
+    Description,"List available formats"
     Permissions,"worldedit.schematic.formats"
     Usage,"/schematic formats"
 
@@ -828,8 +881,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /schematic list,"List saved schematics"
-    Aliases,"/schematic all, /schematic ls"
+    /schematic list,"(or /schematic all, /schematic ls)"
+    Description,"List saved schematics"
     Permissions,"worldedit.schematic.list"
     Usage,"/schematic list [-dn] [-p <page>]"
        [-p <page>],"Page to view."
@@ -842,7 +895,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    //copy,"Copy the selection to the clipboard"
+    //copy,
+    Description,"Copy the selection to the clipboard"
     Permissions,"worldedit.clipboard.copy"
     Usage,"//copy [-be] [-m <mask>]"
        [-e],"Also copy entities"
@@ -854,7 +908,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    //cut,"Cut the selection to the clipboard"
+    //cut,
+    Description,"Cut the selection to the clipboard"
     Permissions,"worldedit.clipboard.cut"
     Usage,"//cut [-be] [leavePattern] [-m <mask>]"
        [leavePattern],"Pattern to leave in place of the selection"
@@ -868,7 +923,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    //paste,"Paste the clipboard's contents"
+    //paste,
+    Description,"Paste the clipboard's contents"
     Permissions,"worldedit.clipboard.paste"
     Usage,"//paste [-abeos] [-m <sourceMask>]"
        [-a],"Skip air blocks"
@@ -883,7 +939,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    //rotate,"Rotate the contents of the clipboard"
+    //rotate,
+    Description,"Rotate the contents of the clipboard"
     Permissions,"worldedit.clipboard.rotate"
     Usage,"//rotate <yRotate> [xRotate] [zRotate]"
        <yRotate>,"Amount to rotate on the y-axis"
@@ -896,7 +953,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    //flip,"Flip the contents of the clipboard across the origin"
+    //flip,
+    Description,"Flip the contents of the clipboard across the origin"
     Permissions,"worldedit.clipboard.flip"
     Usage,"//flip [direction]"
        [direction],"The direction to flip, defaults to look direction."
@@ -906,7 +964,8 @@ Schematic and Clipboard Commands
 .. csv-table::
     :widths: 8, 15
 
-    /clearclipboard,"Clear your clipboard"
+    /clearclipboard,
+    Description,"Clear your clipboard"
     Permissions,"worldedit.clipboard.clear"
     Usage,"/clearclipboard"
 
@@ -915,7 +974,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /none,"Unbind a bound tool from your current item"
+    /none,
+    Description,"Unbind a bound tool from your current item"
     Usage,"/none"
 
 ------------
@@ -923,7 +983,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /info,"Block information tool"
+    /info,
+    Description,"Block information tool"
     Permissions,"worldedit.tool.info"
     Usage,"/info"
 
@@ -932,7 +993,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /tree,"Tree generator tool"
+    /tree,
+    Description,"Tree generator tool"
     Permissions,"worldedit.tool.tree"
     Usage,"/tree [type]"
        [type],"Type of tree to generate"
@@ -942,7 +1004,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /repl,"Block replacer tool"
+    /repl,
+    Description,"Block replacer tool"
     Permissions,"worldedit.tool.replacer"
     Usage,"/repl <pattern>"
        <pattern>,"The pattern of blocks to place"
@@ -952,7 +1015,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /cycler,"Block data cycler tool"
+    /cycler,
+    Description,"Block data cycler tool"
     Permissions,"worldedit.tool.data-cycler"
     Usage,"/cycler"
 
@@ -961,8 +1025,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /floodfill,"Flood fill tool"
-    Aliases,"/flood"
+    /floodfill,"(or /flood)"
+    Description,"Flood fill tool"
     Permissions,"worldedit.tool.flood-fill"
     Usage,"/floodfill <pattern> <range>"
        <pattern>,"The pattern to flood fill"
@@ -973,7 +1037,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /deltree,"Floating tree remover tool"
+    /deltree,
+    Description,"Floating tree remover tool"
     Permissions,"worldedit.tool.deltree"
     Usage,"/deltree"
 
@@ -982,7 +1047,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /farwand,"Wand at a distance tool"
+    /farwand,
+    Description,"Wand at a distance tool"
     Permissions,"worldedit.tool.farwand"
     Usage,"/farwand"
 
@@ -991,8 +1057,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /lrbuild,"Long-range building tool"
-    Aliases,"//lrbuild"
+    /lrbuild,"(or //lrbuild)"
+    Description,"Long-range building tool"
     Permissions,"worldedit.tool.lrbuild"
     Usage,"/lrbuild <primary> <secondary>"
        <primary>,"Block to set on left-click"
@@ -1003,8 +1069,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    //,"Toggle the super pickaxe function"
-    Aliases,"/,"
+    //,"(or /,)"
+    Description,"Toggle the super pickaxe function"
     Permissions,"worldedit.superpickaxe"
     Usage,"// [superPickaxe]"
        [superPickaxe],"The new super pickaxe state"
@@ -1014,7 +1080,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /mask,"Set the brush mask"
+    /mask,
+    Description,"Set the brush mask"
     Permissions,"worldedit.brush.options.mask"
     Usage,"/mask [mask]"
        [mask],"The mask to set"
@@ -1024,8 +1091,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /material,"Set the brush material"
-    Aliases,"//material"
+    /material,"(or //material)"
+    Description,"Set the brush material"
     Permissions,"worldedit.brush.options.material"
     Usage,"/material <pattern>"
        <pattern>,"The pattern of blocks to use"
@@ -1035,7 +1102,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /range,"Set the brush range"
+    /range,
+    Description,"Set the brush range"
     Permissions,"worldedit.brush.options.range"
     Usage,"/range <range>"
        <range>,"The range of the brush"
@@ -1045,7 +1113,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /size,"Set the brush size"
+    /size,
+    Description,"Set the brush size"
     Permissions,"worldedit.brush.options.size"
     Usage,"/size <size>"
        <size>,"The size of the brush"
@@ -1055,7 +1124,8 @@ Tool Commands
 .. csv-table::
     :widths: 8, 15
 
-    /tracemask,"Set the mask used to stop tool traces"
+    /tracemask,
+    Description,"Set the mask used to stop tool traces"
     Permissions,"worldedit.brush.options.tracemask"
     Usage,"/tracemask [mask]"
        [mask],"The trace mask to set"
@@ -1065,8 +1135,8 @@ Super Pickaxe Commands
 .. csv-table::
     :widths: 8, 15
 
-    /superpickaxe,"Super-pickaxe commands"
-    Aliases,"/sp, /pickaxe"
+    /superpickaxe,"(or /sp, /pickaxe)"
+    Description,"Super-pickaxe commands"
     Usage,"/superpickaxe <single|area|recursive>"
 
 ------------
@@ -1074,7 +1144,8 @@ Super Pickaxe Commands
 .. csv-table::
     :widths: 8, 15
 
-    /superpickaxe single,"Enable the single block super pickaxe mode"
+    /superpickaxe single,
+    Description,"Enable the single block super pickaxe mode"
     Permissions,"worldedit.superpickaxe"
     Usage,"/superpickaxe single"
 
@@ -1083,7 +1154,8 @@ Super Pickaxe Commands
 .. csv-table::
     :widths: 8, 15
 
-    /superpickaxe area,"Enable the area super pickaxe pickaxe mode"
+    /superpickaxe area,
+    Description,"Enable the area super pickaxe pickaxe mode"
     Permissions,"worldedit.superpickaxe.area"
     Usage,"/superpickaxe area <range>"
        <range>,"The range of the area pickaxe"
@@ -1093,8 +1165,8 @@ Super Pickaxe Commands
 .. csv-table::
     :widths: 8, 15
 
-    /superpickaxe recursive,"Enable the recursive super pickaxe pickaxe mode"
-    Aliases,"/superpickaxe recur"
+    /superpickaxe recursive,"(or /superpickaxe recur)"
+    Description,"Enable the recursive super pickaxe pickaxe mode"
     Permissions,"worldedit.superpickaxe.recursive"
     Usage,"/superpickaxe recursive <range>"
        <range>,"The range of the recursive pickaxe"
@@ -1104,8 +1176,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush,"Brushing commands"
-    Aliases,"//br, //brush, /br"
+    /brush,"(or //br, //brush, /br)"
+    Description,"Brushing commands"
     Usage,"/brush <sphere|cylinder|clipboard|smooth|extinguish|gravity|butcher|deform|set|forest|raise|lower|paint|apply>"
 
 ------------
@@ -1113,8 +1185,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush sphere,"Choose the sphere brush"
-    Aliases,"/brush s"
+    /brush sphere,"(or /brush s)"
+    Description,"Choose the sphere brush"
     Permissions,"worldedit.brush.sphere"
     Usage,"/brush sphere [-h] <pattern> [radius]"
        <pattern>,"The pattern of blocks to set"
@@ -1126,8 +1198,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush cylinder,"Choose the cylinder brush"
-    Aliases,"/brush cyl, /brush c"
+    /brush cylinder,"(or /brush cyl, /brush c)"
+    Description,"Choose the cylinder brush"
     Permissions,"worldedit.brush.cylinder"
     Usage,"/brush cylinder [-h] <pattern> [radius] [height]"
        <pattern>,"The pattern of blocks to set"
@@ -1140,8 +1212,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush clipboard,"Choose the clipboard brush"
-    Aliases,"/brush copy"
+    /brush clipboard,"(or /brush copy)"
+    Description,"Choose the clipboard brush"
     Permissions,"worldedit.brush.clipboard"
     Usage,"/brush clipboard [-abeo] [-m <sourceMask>]"
        [-a],"Don't paste air from the clipboard"
@@ -1155,7 +1227,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush smooth,"Choose the terrain softener brush"
+    /brush smooth,
+    Description,"Choose the terrain softener brush"
     Permissions,"worldedit.brush.smooth"
     Usage,"/brush smooth [radius] [iterations] [mask]"
        [radius],"The radius to sample for softening"
@@ -1168,8 +1241,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush extinguish,"Shortcut fire extinguisher brush"
-    Aliases,"/brush ex"
+    /brush extinguish,"(or /brush ex)"
+    Description,"Shortcut fire extinguisher brush"
     Permissions,"worldedit.brush.ex"
     Usage,"/brush extinguish [radius]"
        [radius],"The radius to extinguish"
@@ -1179,8 +1252,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush gravity,"Gravity brush, simulates the effect of gravity"
-    Aliases,"/brush grav"
+    /brush gravity,"(or /brush grav)"
+    Description,"Gravity brush, simulates the effect of gravity"
     Permissions,"worldedit.brush.gravity"
     Usage,"/brush gravity [-h] [radius]"
        [radius],"The radius to apply gravity in"
@@ -1191,8 +1264,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush butcher,"Butcher brush, kills mobs within a radius"
-    Aliases,"/brush kill"
+    /brush butcher,"(or /brush kill)"
+    Description,"Butcher brush, kills mobs within a radius"
     Permissions,"worldedit.brush.butcher"
     Usage,"/brush butcher [-abfgnprt] [radius]"
        [radius],"Radius to kill mobs in"
@@ -1210,7 +1283,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush deform,"Deform brush, applies an expression to an area"
+    /brush deform,
+    Description,"Deform brush, applies an expression to an area"
     Permissions,"worldedit.brush.deform"
     Usage,"/brush deform [-or] <shape> [radius] [expression]"
        <shape>,"The shape of the region"
@@ -1224,7 +1298,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush set,"Set brush, sets all blocks in the area"
+    /brush set,
+    Description,"Set brush, sets all blocks in the area"
     Permissions,"worldedit.brush.set"
     Usage,"/brush set <shape> [radius] <pattern>"
        <shape>,"The shape of the region"
@@ -1236,7 +1311,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush forest,"Forest brush, creates a forest in the area"
+    /brush forest,
+    Description,"Forest brush, creates a forest in the area"
     Permissions,"worldedit.brush.forest"
     Usage,"/brush forest <shape> [radius] [density] <type>"
        <shape>,"The shape of the region"
@@ -1249,7 +1325,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush raise,"Raise brush, raise all blocks by one"
+    /brush raise,
+    Description,"Raise brush, raise all blocks by one"
     Permissions,"worldedit.brush.raise"
     Usage,"/brush raise <shape> [radius]"
        <shape>,"The shape of the region"
@@ -1260,7 +1337,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush lower,"Lower brush, lower all blocks by one"
+    /brush lower,
+    Description,"Lower brush, lower all blocks by one"
     Permissions,"worldedit.brush.lower"
     Usage,"/brush lower <shape> [radius]"
        <shape>,"The shape of the region"
@@ -1271,7 +1349,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush paint,"Paint brush, apply a function to a surface"
+    /brush paint,
+    Description,"Paint brush, apply a function to a surface"
     Permissions,"worldedit.brush.paint"
     Usage,"/brush paint <shape> [radius] [density] <forest|item|set>"
        <shape>,"The shape of the region"
@@ -1283,7 +1362,8 @@ Brush Commands
 .. csv-table::
     :widths: 8, 15
 
-    /brush apply,"Apply brush, apply a function to every block"
+    /brush apply,
+    Description,"Apply brush, apply a function to every block"
     Permissions,"worldedit.brush.apply"
     Usage,"/brush apply <shape> [radius] <forest|item|set>"
        <shape>,"The shape of the region"
@@ -1294,8 +1374,8 @@ Biome Commands
 .. csv-table::
     :widths: 8, 15
 
-    /biomelist,"Gets all biomes available."
-    Aliases,"/biomels"
+    /biomelist,"(or /biomels)"
+    Description,"Gets all biomes available."
     Permissions,"worldedit.biome.list"
     Usage,"/biomelist [-p <page>]"
        [-p <page>],"Page number."
@@ -1305,7 +1385,8 @@ Biome Commands
 .. csv-table::
     :widths: 8, 15
 
-    /biomeinfo,"Get the biome of the targeted block."
+    /biomeinfo,
+    Description,"Get the biome of the targeted block."
     Permissions,"worldedit.biome.info"
     Usage,"/biomeinfo [-pt]"
        [-t],"Use the block you are looking at."
@@ -1317,7 +1398,8 @@ Biome Commands
 .. csv-table::
     :widths: 8, 15
 
-    //setbiome,"Sets the biome of your current block or region."
+    //setbiome,
+    Description,"Sets the biome of your current block or region."
     Permissions,"worldedit.biome.set"
     Usage,"//setbiome [-p] <target>"
        <target>,"Biome type."
@@ -1329,7 +1411,8 @@ Chunk Commands
 .. csv-table::
     :widths: 8, 15
 
-    /chunkinfo,"Get information about the chunk you're inside"
+    /chunkinfo,
+    Description,"Get information about the chunk you're inside"
     Permissions,"worldedit.chunkinfo"
     Usage,"/chunkinfo"
 
@@ -1338,7 +1421,8 @@ Chunk Commands
 .. csv-table::
     :widths: 8, 15
 
-    /listchunks,"List chunks that your selection includes"
+    /listchunks,
+    Description,"List chunks that your selection includes"
     Permissions,"worldedit.listchunks"
     Usage,"/listchunks [-p <page>]"
        [-p <page>],"Page number."
@@ -1348,7 +1432,8 @@ Chunk Commands
 .. csv-table::
     :widths: 8, 15
 
-    /delchunks,"Delete chunks that your selection includes"
+    /delchunks,
+    Description,"Delete chunks that your selection includes"
     Permissions,"worldedit.delchunks"
     Usage,"/delchunks"
 
@@ -1357,8 +1442,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /restore,"Restore the selection from a snapshot"
-    Aliases,"//restore"
+    /restore,"(or //restore)"
+    Description,"Restore the selection from a snapshot"
     Permissions,"worldedit.snapshots.restore"
     Usage,"/restore [snapshot]"
        [snapshot],"The snapshot to restore"
@@ -1368,8 +1453,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snapshot,"Snapshot commands for restoring backups"
-    Aliases,"/snap"
+    /snapshot,"(or /snap)"
+    Description,"Snapshot commands for restoring backups"
     Usage,"/snapshot <list|use|sel|before|after>"
 
 ------------
@@ -1377,7 +1462,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snapshot list,"List snapshots"
+    /snapshot list,
+    Description,"List snapshots"
     Permissions,"worldedit.snapshots.list"
     Usage,"/snapshot list [num]"
        [num],"# of snapshots to list"
@@ -1387,7 +1473,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snapshot use,"Choose a snapshot to use"
+    /snapshot use,
+    Description,"Choose a snapshot to use"
     Permissions,"worldedit.snapshots.restore"
     Usage,"/snapshot use <name>"
        <name>,"Snapeshot to use"
@@ -1397,7 +1484,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snapshot sel,"Choose the snapshot based on the list id"
+    /snapshot sel,
+    Description,"Choose the snapshot based on the list id"
     Permissions,"worldedit.snapshots.restore"
     Usage,"/snapshot sel <index>"
        <index>,"The list ID to select"
@@ -1407,7 +1495,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snapshot before,"Choose the nearest snapshot before a date"
+    /snapshot before,
+    Description,"Choose the nearest snapshot before a date"
     Permissions,"worldedit.snapshots.restore"
     Usage,"/snapshot before <date>"
        <date>,"The soonest date that may be used"
@@ -1417,7 +1506,8 @@ Snapshot Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snapshot after,"Choose the nearest snapshot after a date"
+    /snapshot after,
+    Description,"Choose the nearest snapshot after a date"
     Permissions,"worldedit.snapshots.restore"
     Usage,"/snapshot after <date>"
        <date>,"The soonest date that may be used"
@@ -1427,7 +1517,8 @@ Scripting Commands
 .. csv-table::
     :widths: 8, 15
 
-    /cs,"Execute a CraftScript"
+    /cs,
+    Description,"Execute a CraftScript"
     Permissions,"worldedit.scripting.execute"
     Usage,"/cs <filename> [args...]"
        <filename>,"Filename of the CraftScript to load"
@@ -1438,7 +1529,8 @@ Scripting Commands
 .. csv-table::
     :widths: 8, 15
 
-    /.s,"Execute last CraftScript"
+    /.s,
+    Description,"Execute last CraftScript"
     Permissions,"worldedit.scripting.execute"
     Usage,"/.s [args...]"
        [args...],"Arguments to the CraftScript"
@@ -1448,7 +1540,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    //fill,"Fill a hole"
+    //fill,
+    Description,"Fill a hole"
     Permissions,"worldedit.fill"
     Usage,"//fill <pattern> <radius> [depth]"
        <pattern>,"The blocks to fill with"
@@ -1460,7 +1553,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    //fillr,"Fill a hole recursively"
+    //fillr,
+    Description,"Fill a hole recursively"
     Permissions,"worldedit.fill.recursive"
     Usage,"//fillr <pattern> <radius> [depth]"
        <pattern>,"The blocks to fill with"
@@ -1472,7 +1566,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    //drain,"Drain a pool"
+    //drain,
+    Description,"Drain a pool"
     Permissions,"worldedit.drain"
     Usage,"//drain [-w] <radius>"
        <radius>,"The radius to drain"
@@ -1483,8 +1578,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /fixlava,"Fix lava to be stationary"
-    Aliases,"//fixlava"
+    /fixlava,"(or //fixlava)"
+    Description,"Fix lava to be stationary"
     Permissions,"worldedit.fixlava"
     Usage,"/fixlava <radius>"
        <radius>,"The radius to fix in"
@@ -1494,8 +1589,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /fixwater,"Fix water to be stationary"
-    Aliases,"//fixwater"
+    /fixwater,"(or //fixwater)"
+    Description,"Fix water to be stationary"
     Permissions,"worldedit.fixwater"
     Usage,"/fixwater <radius>"
        <radius>,"The radius to fix in"
@@ -1505,8 +1600,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /removeabove,"Remove blocks above your head."
-    Aliases,"//removeabove"
+    /removeabove,"(or //removeabove)"
+    Description,"Remove blocks above your head."
     Permissions,"worldedit.removeabove"
     Usage,"/removeabove [size] [height]"
        [size],"The apothem of the square to remove from"
@@ -1517,8 +1612,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /removebelow,"Remove blocks below you."
-    Aliases,"//removebelow"
+    /removebelow,"(or //removebelow)"
+    Description,"Remove blocks below you."
     Permissions,"worldedit.removebelow"
     Usage,"/removebelow [size] [height]"
        [size],"The apothem of the square to remove from"
@@ -1529,8 +1624,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /removenear,"Remove blocks near you."
-    Aliases,"//removenear"
+    /removenear,"(or //removenear)"
+    Description,"Remove blocks near you."
     Permissions,"worldedit.removenear"
     Usage,"/removenear <mask> [radius]"
        <mask>,"The mask of blocks to remove"
@@ -1541,8 +1636,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /replacenear,"Replace nearby blocks"
-    Aliases,"//replacenear"
+    /replacenear,"(or //replacenear)"
+    Description,"Replace nearby blocks"
     Permissions,"worldedit.replacenear"
     Usage,"/replacenear <radius> [from] <to>"
        <radius>,"The radius of the square to remove in"
@@ -1554,8 +1649,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /snow,"Simulates snow"
-    Aliases,"//snow"
+    /snow,"(or //snow)"
+    Description,"Simulates snow"
     Permissions,"worldedit.snow"
     Usage,"/snow [size]"
        [size],"The radius of the circle to snow in"
@@ -1565,8 +1660,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /thaw,"Thaws the area"
-    Aliases,"//thaw"
+    /thaw,"(or //thaw)"
+    Description,"Thaws the area"
     Permissions,"worldedit.thaw"
     Usage,"/thaw [size]"
        [size],"The radius of the circle to thaw in"
@@ -1576,8 +1671,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /green,"Converts dirt to grass blocks in the area"
-    Aliases,"//green"
+    /green,"(or //green)"
+    Description,"Converts dirt to grass blocks in the area"
     Permissions,"worldedit.green"
     Usage,"/green [-f] [size]"
        [size],"The radius of the circle to convert in"
@@ -1588,8 +1683,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /extinguish,"Extinguish nearby fire"
-    Aliases,"/ex, /ext, //ex, //ext, //extinguish"
+    /extinguish,"(or /ex, /ext, //ex, //ext, //extinguish)"
+    Description,"Extinguish nearby fire"
     Permissions,"worldedit.extinguish"
     Usage,"/extinguish [radius]"
        [radius],"The radius of the square to remove in"
@@ -1599,7 +1694,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /butcher,"Kill all or nearby mobs"
+    /butcher,
+    Description,"Kill all or nearby mobs"
     Permissions,"worldedit.butcher"
     Usage,"/butcher [-abfgnprt] [radius]"
        [radius],"Radius to kill mobs in"
@@ -1617,8 +1713,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    /remove,"Remove all entities of a type"
-    Aliases,"/rem, /rement"
+    /remove,"(or /rem, /rement)"
+    Description,"Remove all entities of a type"
     Permissions,"worldedit.remove"
     Usage,"/remove <remover> <radius>"
        <remover>,"The type of entity to remove"
@@ -1629,8 +1725,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    //calculate,"Evaluate a mathematical expression"
-    Aliases,"//eval, //evaluate, //calc, //solve"
+    //calculate,"(or //eval, //evaluate, //calc, //solve)"
+    Description,"Evaluate a mathematical expression"
     Permissions,"worldedit.calc"
     Usage,"//calculate <input...>"
        <input...>,"Expression to evaluate"
@@ -1640,7 +1736,8 @@ Utility Commands
 .. csv-table::
     :widths: 8, 15
 
-    //help,"Displays help for WorldEdit commands"
+    //help,
+    Description,"Displays help for WorldEdit commands"
     Permissions,"worldedit.help"
     Usage,"//help [-s] [-p <page>] [command...]"
        [-s],"List sub-commands of the given command, if applicable"

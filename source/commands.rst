@@ -9,9 +9,9 @@ Commands
 
     Arguments enclosed in ``[ ]`` are optional, those enclosed in ``< >`` are required.
 
+
 General Commands
 ~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -196,9 +196,9 @@ General Commands
        [-i],"Only search for items"
        [-p <page>],"Page of results to return"
        <query...>,"Search query"
+
 Navigation Commands
 ~~~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -274,9 +274,9 @@ Navigation Commands
        <distance>,"Distance to go upwards"
        [-f],"Force using flight to keep you still"
        [-g],"Force using glass to keep you still"
+
 Selection Commands
 ~~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -455,9 +455,9 @@ Selection Commands
 
     //expand vert,"Vertically expand the selection to world limits."
     Usage,"//expand vert"
+
 Region Commands
 ~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -652,9 +652,9 @@ Region Commands
     Permissions,"worldedit.region.flora"
     Usage,"//flora [density]"
        [density],"The density of the forest"
+
 Generation Commands
 ~~~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -784,9 +784,9 @@ Generation Commands
        [-o],"Use the placement's coordinate origin"
        [-c],"Use the selection's center as origin"
     ,"See also https://tinyurl.com/wesyntax."
+
 Schematic and Clipboard Commands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -927,9 +927,9 @@ Schematic and Clipboard Commands
     /clearclipboard,"Clear your clipboard"
     Permissions,"worldedit.clipboard.clear"
     Usage,"/clearclipboard"
+
 Tool Commands
 ~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1080,9 +1080,9 @@ Tool Commands
     Permissions,"worldedit.brush.options.tracemask"
     Usage,"/tracemask [mask]"
        [mask],"The trace mask to set"
+
 Super Pickaxe Commands
 ~~~~~~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1122,9 +1122,9 @@ Super Pickaxe Commands
     Permissions,"worldedit.superpickaxe.recursive"
     Usage,"/superpickaxe recursive <range>"
        <range>,"The range of the recursive pickaxe"
+
 Brush Commands
 ~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1315,9 +1315,9 @@ Brush Commands
     Usage,"/brush apply <shape> [radius] <forest|item|set>"
        <shape>,"The shape of the region"
        [radius],"The size of the brush"
+
 Biome Commands
 ~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1353,9 +1353,9 @@ Biome Commands
        <target>,"Biome type."
        [-p],"Use your current position"
     ,"By default, uses all the blocks in your selection"
+
 Chunk Commands
 ~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1384,9 +1384,9 @@ Chunk Commands
     /delchunks,"Delete chunks that your selection includes"
     Permissions,"worldedit.delchunks"
     Usage,"/delchunks"
+
 Snapshot Commands
 ~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1457,9 +1457,9 @@ Snapshot Commands
     Permissions,"worldedit.snapshots.restore"
     Usage,"/snapshot after <date>"
        <date>,"The soonest date that may be used"
+
 Scripting Commands
 ~~~~~~~~~~~~~~~~~~
-
 
 ------------
 
@@ -1481,9 +1481,9 @@ Scripting Commands
     Permissions,"worldedit.scripting.execute"
     Usage,"/.s [args...]"
        [args...],"Arguments to the CraftScript"
+
 Utility Commands
 ~~~~~~~~~~~~~~~~
-
 
 ------------
 

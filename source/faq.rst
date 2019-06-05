@@ -38,7 +38,7 @@ Who works on WorldEdit?
 WorldEdit has been developed by many people, and large portions of WorldEdit include contributed code. The list of top contributors can be `found on GitHub <https://github.com/EngineHub/WorldEdit/graphs/contributors>`_.
 
 World-Editing
-===========
+=============
 
 Commands all return "0 blocks changed" even though they should be changing.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

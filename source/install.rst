@@ -19,7 +19,7 @@ Installation
 =============
 
 Bukkit
-~~~~~~~~~~
+~~~~~~
 
 Once you've set up your Bukkit server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/>`_. Make sure you get the right WorldEdit download for your Minecraft version. 
 
@@ -30,7 +30,7 @@ Once you've set up your Bukkit server (instructions can be found on the respecti
 Check your server log for errors. If you encounter errors, see the :doc:`FAQ <faq>` page.
 
 Forge Single-Player
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 First, you'll have to install Minecraft Forge. There are many third-party launchers designed to easily install modpacks. If you're using one of those, you can add WorldEdit as a mod through the launcher interface. Otherwise, Forge will install a profile available through the official Minecraft Launcher. After installing Forge one way or the other, `download Worldedit from the CurseForge site <https://minecraft.curseforge.com/projects/worldedit>`_. Make sure you get the right WorldEdit download for your Minecraft version.
 
@@ -41,7 +41,7 @@ First, you'll have to install Minecraft Forge. There are many third-party launch
 If you encounter any errors, see the :doc:`FAQ <faq>` page.
 
 Forge Server / Sponge
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 First, you'll have to install your server software of choice. For Forge, you can download the installer and run ``java -jar forge-installer.jar --installServer`` from a terminal or command prompt (search online for more comprehensive instructions). Sponge has `documentation on setting up a server <https://docs.spongepowered.org/stable/en/server/quickstart.html>`_. After installing your server software, download WorldEdit from `Curseforge, if using Forge <https://minecraft.curseforge.com/projects/worldedit>`_ or `Ore, if using Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_. If you are using SpongeForge, either version of WorldEdit will work (but don't use both) - the Forge version may perform better in some cases.
 

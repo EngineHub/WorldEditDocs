@@ -25,7 +25,6 @@ Documentation
     config
     permissions
     commands
-    developer/index
     faq
     support
     source-code

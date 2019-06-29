@@ -18,13 +18,15 @@ Documentation
 =============
  
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :titlesonly:
 
     install
+    quickstart
     config
     permissions
     commands
+    usage/index
     faq
     support
     source-code
@@ -33,8 +35,8 @@ Links
 =====
 
 -  `WorldEdit Homepage <http://www.enginehub.org/worldedit>`_
--  `Downloads for Bukkit <https://dev.bukkit.org/bukkit-plugins/worldedit/files/>`_
--  `Downloads for Forge <https://minecraft.curseforge.com/projects/worldedit/files/>`_
+-  `Downloads for Bukkit <https://dev.bukkit.org/projects/worldedit/files/>`_
+-  `Downloads for Forge <https://www.curseforge.com/minecraft/mc-mods/worldedit>`_
 -  `Downloads for Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_
 -  `Experimental Builds <http://builds.enginehub.org/job/worldedit?branch=master>`_
 -  `Discord Server <https://discord.gg/enginehub/>`_

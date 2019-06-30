@@ -16,10 +16,10 @@ Configuration options for the Bukkit version of WorldEdit are found in ``plugins
 
 Note that the YAML format which Bukkit uses is very sensitive to errors. You must use 4 spaces for indentation (tabs will break the file!), and adhere to YAML's syntax. If you are unfamiliar with editing YAML files, you can run your config through an online validator (like `this one <http://yaml-online-parser.appspot.com/>`_) and ensure that it does not return an error.
 
-Forge
-~~~~~
+Forge/Fabric
+~~~~~~~~~~~~
 
-Configuration options in Forge can be found in the ``config/worldedit/worldedit.properties`` file. On a Forge server, this is relative to the server root (where the forge-universal .jar is). On a single-player installation, this is in your ".minecraft" folder.
+Configuration options in Forge/Fabric can be found in the ``config/worldedit/worldedit.properties`` file. On a server, this is relative to the server root (where the main server .jar is). On a single-player installation, this is in your ".minecraft" folder.
 
 Sponge Server
 ~~~~~~~~~~~~~

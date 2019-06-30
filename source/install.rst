@@ -43,9 +43,9 @@ If you encounter any errors, see the :doc:`FAQ <faq>` page.
 Fabric Single-Player or Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, you'll have to install Fabric. They have instructions on `their website <https://fabricmc.net/wiki/install>`_ depending on how you'd like to install. The MultiMC instructions are recommended.
+First, you'll have to install Fabric. They have instructions on `their website <https://fabricmc.net/wiki/install>`_ depending on how you'd like to install. The MultiMC instructions are recommended for single-player.
 
-Once you've installed fabric, make sure you also grab the `Fabric API mod <https://www.curseforge.com/minecraft/mc-mods/fabric-api>`_ and add that and the WorldEdit .jar (make sure you grab the right versions) to the "loader mods" section of your MultiMC instance and check to enable them, or add the jars to your mods folder (see Forge instructions above) if you're installing in the official Mojang launcher.
+You'll also need the `Fabric API mod <https://www.curseforge.com/minecraft/mc-mods/fabric-api>`_ and add that and the WorldEdit .jar (make sure you grab the right versions) to the "loader mods" section of your MultiMC instance and check to enable them, or add the jars to your mods folder (see Forge instructions above) if you're installing in the official Mojang launcher.
 
 
 Forge Server / Sponge

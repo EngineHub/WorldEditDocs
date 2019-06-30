@@ -10,6 +10,7 @@ WorldEdit has many commands, tools, and features. For a listing of commands, see
     regions/index
     clipboard
     generation
+    tools
     utilities
     snapshots
     other/index

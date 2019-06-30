@@ -2,7 +2,7 @@ General
 =======
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     history
     patterns

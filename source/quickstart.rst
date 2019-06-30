@@ -5,22 +5,16 @@ Quick Start
 First things first
 ==================
 
-* If you are using Bukkit, then you need to have permissions to use WorldEdit. You can give yourself op (``/op yourname``) to give yourself permissions.
+* If you are using Bukkit, then you need to have permissions to use WorldEdit. You can give yourself op (``/op yourname``) to give yourself permissions. Sponge servers will also need to use permissions, though Sponge does not use op to grant all permissions.
 * If you are using Forge/Fabric and playing single player, then WorldEdit is only enabled if your world has cheats enabled.
 * If you are using Forge/Fabric server, then only ops can use WorldEdit.
 
-.. tip:: For Forge, you can:
+.. tip:: For Forge/Fabric, you can:
 
     * Turn on "cheat-mode" in WorldEdit's settings (see :doc:`config`) file to let you use WorldEdit even in survival (and on a server, everyone is allowed)
     * Or instead, turn on "use-in-creative" to let yourself use WorldEdit when you have creative mode (and on a server, when someone has creative)
 
-Want to see selection lines?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To see lines that show what you have selected, then you need to install `WorldEditCUI <https://github.com/mikroskeem/WorldEditCUI/releases>`_, a client-side mod. Note that the mod requires `Fabric <https://fabricmc.net/wiki/install>`_, so you will need to install that first.
-
-.. note::
-    If you would like to use an older version of Minecraft (1.12 or before), in addition to downloading an older WorldEdit (version 6), you will also need the older `WorldEditCUI mod <https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1292886-worldeditcui>`_ by Mumfrey. Note that this version requires LiteLoader (installation instructions on that page) instead of Fabric.
+.. include:: cuitip.rst
 
 The selection lines mod works regardless of how you may have installed WorldEdit (on a Bukkit server, on singleplayer, etc).
 
@@ -60,7 +54,7 @@ Doing things with the selection
     3. Set the selection to 50% sandstone, 50% glass: ``//set sandstone,glass``
     4. Replace the sandstone with dirt: ``//replace sandstone dirt``
     5. Clear the area: ``//set air``
-    6. Generate an interesting shape: ``//g wool data=(32+15/2/pi*atan2(x,y))%16; (0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2``
+    6. Generate an interesting shape: ``//g 35 data=(32+15/2/pi*atan2(x,y))%16; (0.75-sqrt(x^2+y^2))^2+z^2<0.25^2``
     7. Look in a cardinal direction (not diagonal) and repeat your selection: ``//stack 4``
 
 Let's undo your changes!

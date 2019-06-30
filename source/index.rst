@@ -27,6 +27,7 @@ Documentation
     permissions
     commands
     usage/index
+    api/index
     faq
     support
     source-code

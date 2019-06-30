@@ -55,7 +55,7 @@ Random State Pattern
 
 Prefixing any block type with an asterisk (``*``) will randomly choose between all states for that block for each position.
 
-.. topic:: Example:: Random State Pattern
+.. topic:: Example: Random State Pattern
 
     Setting oak logs facing in random directions::
 
@@ -69,7 +69,7 @@ The ``#clipboard`` pattern will take blocks from your :doc:`clipboard <../clipbo
 .. topic:: Example: Using the clipboard pattern
 
     Replacing :doc:`all existing blocks <masks>` to your clipboard::
-    
+
         //replace #existing #clipboard
 
     .. centered::
@@ -150,7 +150,7 @@ You can set the skin of a player head by specifying a username after the pipe sy
 
 .. topic:: Example: Setting a skin on a head
 
-    ::
+    .. code::
 
         //set player_head|dinnerbone
 
@@ -161,6 +161,6 @@ You can set the type of mob to be spawned (again via the pipe symbol). Note that
 
 .. topic:: Example: Creating a squid spawner
 
-    ::
+    .. code::
 
         //set spawner|squid

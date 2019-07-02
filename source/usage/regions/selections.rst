@@ -9,8 +9,6 @@ A fundamental part of WorldEdit is working with a selection or region. For examp
     :depth: 1
 
 
-.. _wecui
-
 .. include:: ../../cuitip.rst
 
 Selecting Cuboids

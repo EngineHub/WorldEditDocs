@@ -27,3 +27,5 @@ If you ever want to undo an action, you can use the ``//undo`` command. This wil
 As shown in the :doc:`quick start <../../quickstart>`, history commands can operate on multiple actions at once. You can use ``//undo 5``, for example, to undo your last 5 actions.
 
 History commands also let players will permission undo or redo the actions of other players when on multiplayer. Note that thanks to the sessions described above, you can undo another player's actions for up to 10 minutes after they've logged out (and for as long as they are logged in). To do this, use ``//undo <number> <player name>``.
+
+Your stored history can be cleared with the `/clearhistory` command.

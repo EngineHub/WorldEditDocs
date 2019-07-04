@@ -5,3 +5,4 @@ Other
     :maxdepth: 2
 
     expressions
+    craftscripts

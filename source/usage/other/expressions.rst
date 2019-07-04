@@ -1,15 +1,14 @@
-=================
 Expression Syntax
 =================
 
 The WorldEdit expression parser is supposed to work like Java and related languages, with a few subtle differences:
 
-    * Final semicolons can be omitted in most cases.
-    * The last value in a sequence is always returned, even without a return statement.
-    * The binary infix ^ operator is a power operator instead of an xor operator and has an according priority as well.
-    * There is a postfix factorial operator (!).
-    * There is a binary infix near operator (~=).
-    * No objects :)
+* Final semicolons can be omitted in most cases.
+* The last value in a sequence is always returned, even without a return statement.
+* The binary infix ``^`` operator is a power operator instead of an xor operator and has an according priority as well.
+* There is a postfix factorial operator (``!``).
+* There is a binary infix near operator (``~=``).
+* No objects :)
 
 .. contents::
     :local:
@@ -18,11 +17,11 @@ The WorldEdit expression parser is supposed to work like Java and related langua
 Operators
 ~~~~~~~~~
 
-The expression parser uses Java's precedence rules, with the following exceptions and additions:
+The expression parser uses `Java's precedence rules <https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html>`_, with the following exceptions and additions:
 
-    * The binary power operator (^) is between priority 2 and 3
-    * The postfix factorial operator (!) has a priority of 2
-    * The near operator (~=) has a priority of 7
+    * The binary power operator (``^``) is between priority 2 and 3
+    * The postfix factorial operator (``!``) has a priority of 2
+    * The near operator (``~=``) has a priority of 7
 
 Binary infix
 ------------

@@ -16,20 +16,20 @@ Once set, just toss either copies of your world folder or zipped copies of your 
 
 .. topic:: Example: Possible structures of backup storage
 
-  * |f| ``backups/`` (this is the folder name in the config)
-   * |f| ``world/`` (this is the name of a world)
-    * |z| ``2019-06-15-03-00-00.zip`` (a backup for just this world)
-     * |f| ``world/`` (must match the world name above)
-      * |f| ``region/`` (contains .mca files for this world)
-    * |f| ``2019-05-15-03-00-00`` (backups don't have to be zipped)
-     * |f| ``world/``
-   * |f| ``world_nether/`` (another world name)
-    * |z| ``2019-06-15-03-00-00.zip``
-   * |z| ``2019-06-01-03-00-00.zip`` (this is one backup holding multiple worlds)
-    * |f| ``world/``
-     * |f| ``region/`` (all the ``.mca`` files are in here)
-    * |f| ``world_nether/``
-   * |z| ``2019-05-01-03-00-00.zip`` (another backup from a month before)
+   |f| ``backups/`` (this is the folder name in the config)
+    |f| ``world/`` (this is the name of a world)
+     |z| ``2019-06-15-03-00-00.zip`` (a backup for just this world)
+      |f| ``world/`` (must match the world name above)
+       |f| ``region/`` (contains ``.mca`` files for this world)
+     |f| ``2019-05-15-03-00-00`` (backups don't have to be zipped)
+      |f| ``world/``
+    |f| ``world_nether/`` (another world name)
+     |z| ``2019-06-15-03-00-00.zip``
+    |z| ``2019-06-01-03-00-00.zip`` (this is one backup holding multiple worlds)
+     |f| ``world/``
+      |f| ``region/`` (all the ``.mca`` files are in here)
+     |f| ``world_nether/``
+    |z| ``2019-05-01-03-00-00.zip`` (another backup from a month before)
 
 .. |f| image:: /images/folder.png
 

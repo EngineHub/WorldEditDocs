@@ -5,7 +5,7 @@ Sometimes you may want to generate forests or create spheres automatically, as d
 
 As most commands in WorldEdit, these commands all accept :doc:`patterns <general/patterns>` as arguments.
 
-.. tip:: These commands actually use your "placement position", which defaults to your current location. You can use the ``//togglepos`` command to instead use your first selection point (the one selected via wand left-click, or ``//pos``).
+.. tip:: These commands actually use your "placement position", which defaults to your current location. You can use the ``//togglepos`` command to instead use your first selection point (the one selected via wand left-click, or ``//pos1``).
 
 .. contents::
     :local:
@@ -110,10 +110,10 @@ This uses the :doc:`expression parser <other/expressions>`.
 Flags
 ------
 
-* ``-r`` Use raw coordinates, as they appear on the debug screen (F3)
-* ``-o`` Use raw coordinate offsets with (0,0,0) at your placement position
+* ``-r`` - Use raw coordinates, as they appear on the debug screen (F3)
+* ``-o`` - Use raw coordinate offsets with (0,0,0) at your placement position
 * with neither of these flags, coordinates will be normalized to -1..1
-* ``-h`` Generate a hollow shape. Blocks will only be set if they neighbour any blocks that are not part of the shape.
+* ``-h`` - Generate a hollow shape. Blocks will only be set if they neighbour any blocks that are not part of the shape.
 
 Variables
 ----------

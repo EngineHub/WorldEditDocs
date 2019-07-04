@@ -7,10 +7,12 @@ WorldEdit has many commands, tools, and features. For a listing of commands, see
     :maxdepth: 2
 
     general/index
+    navigation
     regions/index
     clipboard
     generation
-    tools
+    tools/tools
+    tools/brushes
     utilities
     snapshots
     other/index

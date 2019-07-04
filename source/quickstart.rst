@@ -60,7 +60,7 @@ Doing things with the selection
 Let's undo your changes!
 
     * Undo 7 times: ``//undo 7``
-    
+
 Adjusting the selection
 =======================
 

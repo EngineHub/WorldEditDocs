@@ -2,7 +2,7 @@
 
     .. csv-table::
         :widths: 3, 15
-        
+
         **Flag**,**Description**
         ``-p``,Kills tamed pets
         ``-n``,Kills NPCs

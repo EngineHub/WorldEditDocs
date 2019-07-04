@@ -141,7 +141,7 @@ Functions
 
     .. csv-table::
         :widths: 3, 15
-        
+
         ``abs``,"Returns the absolute value of a number."
         ``acos``,"Returns the arc cosine of a value; the returned angle is in the range 0.0 through pi."
         ``asin``,"Returns the arc sine of a value; the returned angle is in the range -pi/2 through pi/2."
@@ -172,7 +172,7 @@ Functions
 
     .. csv-table::
         :widths: 6, 15
-    
+
         "``rotate(x, y, angle)``","Rotates the given coordinate pair by the given angle."
         "``swap(x, y)``","Swaps the contents of the 2 given variables."
         "``random()``","Returns a random positive number less than 1.0."
@@ -226,7 +226,7 @@ Control Structures
     * ``<condition>`` is evaluated to decide which branch to execute.
     * Everything greater than zero is interpreted as true and everything else as false.
     * ``<true-code>`` and ``<false-code>`` can either be single statements delimited with a semicolon or block statements.
-    
+
     **Note:** An else keyword is always associated with the last if.
     This allows elseif constructs like these::
 
@@ -268,7 +268,7 @@ Loops can at most loop 256 times.
 .. topic:: Simple for
 
     .. code::
-    
+
         for (<counter> = <first>, <last>) <body>
 
     * ``<counter>`` is a variable used to count the iterations.

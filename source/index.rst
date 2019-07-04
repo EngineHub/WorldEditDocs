@@ -2,7 +2,7 @@
 WorldEdit Documentation
 ========================
 
-WorldEdit is an easy-to-use in-game Minecraft map editor. Through a combination of commands and "brushes," you can sculpt your world or simply perform numerous terraforming tasks. 
+WorldEdit is an easy-to-use in-game Minecraft map editor. Through a combination of commands and "brushes," you can sculpt your world or simply perform numerous terraforming tasks.
 
 *  Quickly create, replace or delete thousands of blocks in seconds
 *  No longer waste time doing mundane activities like fix badly flowing water!
@@ -16,7 +16,7 @@ WorldEdit is an easy-to-use in-game Minecraft map editor. Through a combination 
 
 Documentation
 =============
- 
+
 .. toctree::
     :maxdepth: 2
     :titlesonly:

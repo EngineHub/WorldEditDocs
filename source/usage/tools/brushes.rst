@@ -48,7 +48,7 @@ Clipboard brush
 ::
 
     /brush clipboard [-aoeb] [-m <mask>]
-    
+
 The clipboard brush uses your clipboard as a shape and places it at the target location each brush activation. The ``aebm`` flags all work just like the :doc:`paste command <../clipboard>`. The ``-o`` flag is a bit different - it makes the clipboard paste at the brush's location as the origin. Otherwise, the clipboard is centered to that location. Choose your relative position carefully when copying a clipboard for use with this brush.
 
 
@@ -67,7 +67,7 @@ Gravity brush
 ::
 
     /brush gravity [radius] [-h]
-    
+
 The gravity brush will move blocks downwards within the affected brush area. Using the ``-h`` flag will start from the max y, instead of from the top of the brush area.
 
 Forest brush
@@ -86,7 +86,7 @@ Extinguish brush
 
     /brush extinguish [radius]
     /br ex [radius]
-    
+
 A handy shortcut for a sphere brush of air masked to fire blocks, in case something is burning and you don't have time to type in 3 commands to put it out.
 
 Butcher brush
@@ -151,7 +151,7 @@ Size
 ::
 
     /size [size]
-    
+
 Sets the size of the brush. Generally, this means the radius or affected area. Note that the maximum size is :doc:`configurable <../../config>`.
 
 Material

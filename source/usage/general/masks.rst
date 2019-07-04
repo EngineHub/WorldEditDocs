@@ -3,7 +3,7 @@ Masks
 
 Masks, alongside :doc:`patterns <patterns>`, are commonly used in WorldEdit commands. Unlike patterns, masks determine *which* blocks will be affected by commands, brushes, and so on.
 
-Aside from commands that take a mask as a parameter (such as ``//replace [mask] <pattern>``), you can also apply masks to individual :doc:`brushes <../brushes>` by using the ``/mask`` command while holding the brush, or you can apply a mask to all your WorldEdit actions globally with ``//gmask``.
+Aside from commands that take a mask as a parameter (such as ``//replace [mask] <pattern>``), you can also apply masks to individual :doc:`brushes <../tools/brushes>` by using the ``/mask`` command while holding the brush, or you can apply a mask to all your WorldEdit actions globally with ``//gmask``.
 
 .. note:: Masks applied through different means will stack with each other. If you set your global mask with ``//gmask dirt``, and then set a brush mask with ``/mask stone``, that brush will not be able to modify any blocks at all! This is because the combined mask will only match blocks which are both stone *and* dirt!
 
@@ -126,11 +126,11 @@ This mask can evaluate a mathematical expression upon each block. The mask start
 .. topic:: Example: Expression masks
 
     Only edit blocks below a certain y-level::
-    
+
         //gmask =y<64
 
     Only edit blocks two blocks below air::
-    
+
         //gmask =queryRel(0,-2,0,0,0)
 
 Biome Mask

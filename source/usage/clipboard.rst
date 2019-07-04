@@ -7,7 +7,7 @@ WorldEdit has a powerful clipboard function that allows you to copy an area, pas
     :local:
     :backlinks: none
 
-Note that like :doc:`history <../general/history>`, your current clipboard is stored in your session and thus will be kept for 10 minutes after logging off (of a server).
+Note that like :doc:`history <general/history>`, your current clipboard is stored in your session and thus will be kept for 10 minutes after logging off (of a server).
 
 Also like history, your current clipboard can be cleared with the `/clearclipboard` command.
 
@@ -24,7 +24,7 @@ Both commands have three additional flags:
 
 * ``-e`` can be specified to also copy/cut entities from the selection
 * ``-b`` can be specified to also copy biomes from the selection ("cutting" selections doesn't make sense - some biome needs to be left there)
-* ``-m <mask>`` can be used to specify a :doc:`mask <../general/masks>` of blocks to copy/cut. Any blocks that do not match will be replaced with air in your clipboard.
+* ``-m <mask>`` can be used to specify a :doc:`mask <general/masks>` of blocks to copy/cut. Any blocks that do not match will be replaced with air in your clipboard.
 
 Pasting
 ~~~~~~~
@@ -39,7 +39,7 @@ Like the copy/cut commands, the paste command also allows the same three flags:
 
 * ``-e`` can be specified to also paste entities, if your clipboard contains any
 * ``-b`` can be specified to also paste biomes, if your clipboard contains any
-* ``-m <mask>`` can be used to specify a :doc:`mask <../general/masks>` of blocks to paste. Blocks that do not match the mask will not be pasted.
+* ``-m <mask>`` can be used to specify a :doc:`mask <general/masks>` of blocks to paste. Blocks that do not match the mask will not be pasted.
 
 In addition, there are some additional flags:
 
@@ -85,7 +85,7 @@ To load a saved schematic, use ``//schem load <filename>``.
 .. topic:: Relative positions and schematics
 
     Both the origin of the copy and your offset to the copy are saved with the file so that you can load it back later on and paste the copy at its original location or relative to you as if you had copied it. You should be familiar with how ``//copy`` and ``//paste`` store your relative position.
-    
+
     Note that third party software which uses the format may not necessarily use relative positions as WorldEdit does, so they may not have that information.
 
 Schematic Management

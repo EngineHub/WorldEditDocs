@@ -37,7 +37,7 @@ Note that you can omit the mask argument in the command - it will default to the
         //replace grass_block
 
     Replacing all stone with green_wool::
-    
+
         //replace stone green_wool
 
     Replacing surface sand with metal blocks::
@@ -78,9 +78,9 @@ Some potential uses for this include:
         Bridge extended with ``//stack``
 
     .. figure:: /images/selections/stack_tunnel.jpg
-    
+
         Digging a tunnel through a mountain effortlessly. Be sure to select the ceiling and floor blocks.
-        
+
 Moving
 ------
 
@@ -101,9 +101,9 @@ You can also use the ``-s`` flag to move your selection along with the blocks, s
     Moving the selection 2 blocks forward, leaving stone::
 
         //move 2 me stone
-        
+
     Moving the selection 5 blocks down, leaving air behind::
-    
+
         //move 5 down
 
 Smoothing
@@ -169,9 +169,9 @@ By default, coordinates are normalized from -1 to 1 on each axis, from the min t
 .. topic:: Example: Deforming regions
 
     Making bumpy terrain::
-    
+
         //deform y+=0.2*sin(x*10)
 
     Flipping your selection on its side::
-    
+
         //deform swap(x,y)

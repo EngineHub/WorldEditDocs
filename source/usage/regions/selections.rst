@@ -162,20 +162,20 @@ The ``-d`` flag separates by block states instead of just types.
 .. topic:: Example: Block distribution output
 
     Only by block type::
-    
+
         75      (52.083%) Air (minecraft:air)
         41      (28.472%) Grass Block (minecraft:grass_block)
         18      (12.500%) Rose Bush (minecraft:rose_bush)
         5       (3.472%) Grass (minecraft:grass)
-        
+
     Separating by states::
-    
+
         75      (52.083%) Air (minecraft:air)
         41      (28.472%) Grass Block (minecraft:grass_block[snowy=false])
         9       (6.250%) Rose Bush (minecraft:rose_bush[half=upper])
         9       (6.250%) Rose Bush (minecraft:rose_bush[half=lower])
         5       (3.472%) Grass (minecraft:grass)
-    
+
 Selection Modes
 ~~~~~~~~~~~~~~~
 

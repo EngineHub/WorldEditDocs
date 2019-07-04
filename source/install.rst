@@ -13,7 +13,7 @@ If you plan on running WorldEdit on a "vanilla" server, we recommend using a Buk
 
 If you plan on running WorldEdit on a modded server, you can once again use Forge, or use `Sponge <https://www.spongepowered.org/>`_, which is generally compatible with Forge mods, and also supports a wide variety of other plugins.
 
-Note that there are unofficial implementations of WorldEdit for other platforms. 
+Note that there are unofficial implementations of WorldEdit for other platforms.
 
 Installation
 =============
@@ -21,7 +21,7 @@ Installation
 Bukkit
 ~~~~~~
 
-Once you've set up your Bukkit server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/>`_. Make sure you get the right WorldEdit download for your Minecraft version. 
+Once you've set up your Bukkit server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/>`_. Make sure you get the right WorldEdit download for your Minecraft version.
 
 1. In your server folder, create a "plugins" folder if one does not yet exist. (It should be created when you first run the server).
 2. Copy the WorldEdit .jar file into the plugins folder.

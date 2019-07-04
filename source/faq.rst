@@ -52,7 +52,7 @@ Use the ``/none`` command while holding the item.
 
 
 Why isn't sign text/chest contents/entities/etc working?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _bukkit-adapters:
 
 On Bukkit servers, WorldEdit has to use some version-specific adapters to get full access to many functions due to how Bukkit works. It uses these adapters for block entities (blocks that use additional data including signs, containers, etc.), entities, and some other functionality. What this generally means is that every new release of Minecraft will require you to update WorldEdit. Usually, WorldEdit will be updated quickly, and you can find new releases or experimental builds via the links on the :doc:`main page <index>`.

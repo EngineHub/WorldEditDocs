@@ -5,9 +5,9 @@ Sometimes, running commands over and over is too tedious for some tasks. WorldEd
 
 To use a tool, hold an item in your hand, then type that tool's command. You will get a message that the tool was bound to that item. Now, every time you activate the tool (by clicking with the item in your hand), that tool will perform its action. **To unbind a tool, hold the item and use the** ``/none`` **command.**
 
-.. tip:: 
+.. tip::
 
-    The selection wand (default: wooden axe) and navigation wand (default: compass) are technically tools. They are described on the :doc:`selections <regions/selections>` and :doc:`navigation <navigation>` pages respectively. You can bind and unbind them just as any other tool.
+    The selection wand (default: wooden axe) and navigation wand (default: compass) are technically tools. They are described on the :doc:`selections <../regions/selections>` and :doc:`navigation <../navigation>` pages respectively. You can bind and unbind them just as any other tool.
 
 .. contents::
     :local:
@@ -59,7 +59,7 @@ Long range wand
 ::
 
     /farwand
-    
+
 This tool works just like the normal selection wand - but at any distance. Instead of being ``//pos1`` and ``//pos2``, it's ``//hpos1`` and ``//hpos2``.
 
 Cycler Tool
@@ -119,7 +119,7 @@ Recursive Superpick
 ::
 
     /sp recur <radius>
-    
+
 This super-pickaxe also breaks all blocks matching the same type as the initially clicked block within the radius, but only those that are connected (via matching blocks) to the original. Think of this as a "vein miner" mode.
 
 Brushes

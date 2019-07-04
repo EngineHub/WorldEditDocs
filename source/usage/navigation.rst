@@ -31,7 +31,7 @@ Jumping to the block in sight
 
     /jumpto
 
-This command sends you to the top of the block that you are looking at. If that block is a vertical wall, you will be placed on top of the cliff at the very edge. 
+This command sends you to the top of the block that you are looking at. If that block is a vertical wall, you will be placed on top of the cliff at the very edge.
 
 Passing through walls
 ~~~~~~~~~~~~~~~~~~~~~
@@ -40,7 +40,7 @@ Passing through walls
 
     /thru
 
-This command sends you through a wall in the direction you are looking. Just look into a wall and use the command. Make sure that you do not look downwards into a wall because it will attempt to go through the ground. This command limits the thickness of the wall to a reasonable amount. 
+This command sends you through a wall in the direction you are looking. Just look into a wall and use the command. Make sure that you do not look downwards into a wall because it will attempt to go through the ground. This command limits the thickness of the wall to a reasonable amount.
 
 Ascending and descending
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,4 +68,4 @@ Ascending up an arbitrary distance
 
     /up <distance>
 
-This will move you up a certain number of blocks. You cannot pass through walls with this command and a glass block will be placed at your feet to support you. The glass block has to be removed manually after you are done. 
+This will move you up a certain number of blocks. You cannot pass through walls with this command and a glass block will be placed at your feet to support you. The glass block has to be removed manually after you are done.

@@ -690,7 +690,7 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Regenerates the contents of the selection
-        
+
         This command might affect things outside the selection,
         if they are within the same chunk."
         **Permissions**,"``worldedit.regen``"
@@ -706,7 +706,7 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Draws a line segment between cuboid selection corners
-        
+
         Can only be used with a cuboid selection"
         **Permissions**,"``worldedit.region.line``"
         **Usage**,"``//line [-h] <pattern> [thickness]``"
@@ -765,7 +765,7 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Draws a spline through selected points
-        
+
         Can only be used with a convex polyhedral selection"
         **Permissions**,"``worldedit.region.curve``"
         **Usage**,"``//curve [-h] <pattern> [thickness]``"
@@ -811,7 +811,7 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Hollows out the object contained in this selection
-        
+
         Thickness is measured in manhattan distance."
         **Permissions**,"``worldedit.region.hollow``"
         **Usage**,"``//hollow [thickness] [pattern]``"
@@ -857,7 +857,7 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Smooth the elevation in the selection
-        
+
         Example: '//smooth 1 grass_block,dirt,stone' would only smooth natural surface terrain."
         **Permissions**,"``worldedit.region.smooth``"
         **Usage**,"``//smooth [iterations] [mask]``"
@@ -874,7 +874,7 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Deforms a selected region with an expression
-        
+
         The expression is executed for each block and is expected
         to modify the variables x, y and z to point to a new block
         to fetch. See also https://tinyurl.com/weexpr"
@@ -897,7 +897,7 @@ Generation Commands
         :widths: 8, 15
 
         **Description**,"Generates a shape according to a formula.
-        
+
         See also https://tinyurl.com/weexpr."
         **Permissions**,"``worldedit.generation.shape``"
         **Usage**,"``//generate [-chor] <pattern> <expression...>``"
@@ -968,7 +968,7 @@ Generation Commands
         :widths: 8, 15
 
         **Description**,"Sets biome according to a formula.
-        
+
         See also https://tinyurl.com/weexpr."
         **Permissions**,"``worldedit.generation.shape.biome``"
         **Usage**,"``//generatebiome [-chor] <target> <expression...>``"
@@ -1082,7 +1082,7 @@ Schematic and Clipboard Commands
         :widths: 8, 15
 
         **Description**,"List saved schematics
-        
+
         Note: Format is not fully verified until loading."
         **Permissions**,"``worldedit.schematic.list``"
         **Usage**,"``/schematic list [-dn] [-p <page>]``"
@@ -1188,7 +1188,7 @@ Schematic and Clipboard Commands
         :widths: 8, 15
 
         **Description**,"Rotate the contents of the clipboard
-        
+
         Non-destructively rotate the contents of the clipboard.
         Angles are provided in degrees and a positive angle will result in a clockwise rotation. Multiple rotations can be stacked. Interpolation is not performed so angles should be a multiple of 90 degrees.
         "
@@ -1240,7 +1240,7 @@ Schematic and Clipboard Commands
         :widths: 8, 15
 
         **Description**,"Cut the selection to the clipboard
-        
+
         WARNING: Cutting and pasting entities cannot be undone!"
         **Permissions**,"``worldedit.clipboard.cut``"
         **Usage**,"``//cut [-be] [leavePattern] [-m <mask>]``"
@@ -1781,7 +1781,7 @@ Brush Commands
         :widths: 8, 15
 
         **Description**,"Choose the terrain softener brush
-        
+
         Example: '/brush smooth 2 4 grass_block,dirt,stone'"
         **Permissions**,"``worldedit.brush.smooth``"
         **Usage**,"``/brush smooth [radius] [iterations] [mask]``"
@@ -1802,7 +1802,7 @@ Biome Commands
         :widths: 8, 15
 
         **Description**,"Sets the biome of your current block or region.
-        
+
         By default, uses all the blocks in your selection"
         **Permissions**,"``worldedit.biome.set``"
         **Usage**,"``//setbiome [-p] <target>``"
@@ -1819,7 +1819,7 @@ Biome Commands
         :widths: 8, 15
 
         **Description**,"Get the biome of the targeted block.
-        
+
         By default, uses all blocks in your selection."
         **Permissions**,"``worldedit.biome.info``"
         **Usage**,"``/biomeinfo [-pt]``"

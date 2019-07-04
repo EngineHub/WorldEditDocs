@@ -73,7 +73,7 @@ The ``#clipboard`` pattern will take blocks from your :doc:`clipboard <../clipbo
         //replace #existing #clipboard
 
     .. centered::
-        Using the clipboard in the first image to replace a hill. Note the repeating layers.    
+        Using the clipboard in the first image to replace a hill. Note the repeating layers.
 
     |clipboard_pattern|  |clipboard_replace|
 

@@ -33,11 +33,11 @@ For elliptical cylinders, you can instead specify two radii: one for the east-we
 .. topic:: Example: Creating cylinders and circles
 
     Creating a filled glass cylinder of radius 5 and height 10::
-    
+
         //cyl glass 5 10
 
     Creating an elliptical hollow cylinder out of stone with radii of 5.5 and 15 and height of 1::
-    
+
         //hcyl stone 5.5,15 1
 
 Sphere
@@ -55,7 +55,7 @@ Like cylinders, you can create ellipsoids by specifying multiple radii (which ca
 ::
 
     //sphere <pattern> <radius>,<radius>,<radius> [raised]
-    //hsphere <pattern> <radius>,<radius>,<radius> [raised] 
+    //hsphere <pattern> <radius>,<radius>,<radius> [raised]
 
 Pyramids
 ~~~~~~~~
@@ -64,7 +64,7 @@ Pyramids
 
     //pyramid <pattern> <size>
     //hpyramid <pattern> <size>
-    
+
 This command creates a pyramid out of the given pattern with the specified *height*. That is, if you specify a height of say, 5, there will be 5 layers, each one block shorter than the last (in each direction, from bottom to top). The side-length of the lowest layer will be twice the height.
 
 Forests
@@ -106,7 +106,7 @@ Generates any shape that can be described with a mathematical formula:
     * Any shape you can imagine and boil down into a formula
 
 This uses the :doc:`expression parser <other/expressions>`.
-    
+
 Flags
 ------
 
@@ -120,7 +120,7 @@ Variables
 
 * ``x``, ``y``, ``z`` (input) - Coordinates
 * ``type``, ``data`` (input/output) - Material to use, defaults to the block/pattern entered
-    
+
 .. note:: Since the expression parser only takes numbers as variables, it only works with blocks that have legacy type/data values. If you need to use it with newer blocks (> MC 1.13), use a placeholder and ``//replace`` that placeholder after generating your shape.
 
 The expression should return true (``> 0``) for blocks that are part of the shape and false (``<= 0``) for blocks not part of the shape. The expression is tested for each block in your selection.
@@ -131,15 +131,15 @@ Shape Examples
 .. topic:: Example: Generating various shapes
 
     Torus of major radius 0.75 and minor radius 0.25::
-    
+
         //g stone (0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2
 
     Gnarled hollow tree::
-    
+
         //g -h oak_log (0.5+sin(atan2(x,z)*8)*0.2)*(sqrt(x*x+z*z)/0.5)^(-2)-1.2 < y
 
     Rainbow Torus::
-    
+
         //g wool data=(32+15/2/pi*atan2(x,y))%16; (0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2
 
     Rainbow Egg::
@@ -148,7 +148,7 @@ Shape Examples
 
     A heart::
 
-        //g red_wool (z/2)^2+x^2+(5*y/4-sqrt(abs(x)))^2<0.6 
+        //g red_wool (z/2)^2+x^2+(5*y/4-sqrt(abs(x)))^2<0.6
 
     Sine wave::
 
@@ -159,8 +159,8 @@ Shape Examples
         //g -h glass cos(sqrt(x^2+z^2)*5)/2<y
 
     Circular hyperboloid::
-    
+
         //g stone -(z^2/12)+(y^2/4)-(x^2/12)>-0.03
-        
+
 
 .. tip:: Want more cool shapes? Try out a program like `MathMod <https://github.com/parisolab/mathmod/releases>`_ which comes with tons of shapes and helps you make more. Note that WorldEdit uses isometric (x,y,z) formulas, not parametric (u,v,t). Also, you may have to scale your x, y, and z variable depending on your selection size and the domain of the function.

@@ -2,6 +2,10 @@
 Installation
 ============
 
+.. contents::
+    :local:
+    :backlinks: none
+
 Requirements
 ============
 
@@ -59,3 +63,5 @@ First, you'll have to install your server software of choice. For Forge, you can
 3. Start the server.
 
 Check your server log for errors. If you encounter errors, see the :doc:`FAQ <faq>` page.
+
+.. include:: cuitip.rst

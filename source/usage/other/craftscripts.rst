@@ -1,6 +1,8 @@
 CraftScripts
 ============
 
+.. highlight:: javascript
+
 Scripts allow you to program small tasks without having to learn Java, figure out how to compile WorldEdit, or bother with reinventing the wheel. CraftScripts are written in JavaScript.
 
 Requirements
@@ -54,12 +56,14 @@ All block editing in WorldEdit is done through an EditSession. This object handl
 
 Every time you call that method, you will get a new ``EditSession``, so be sure to keep one around. To set blocks, you will either need to provide a ``BlockState`` which is a combination of a block type and one or more states, or a ``BaseBlock``, which is a ``BlockState`` that may additionally have NBT data.
 
-.. topic:: Example: Setting a block to wool::
+.. topic:: Example: Setting a block to wool
 
-    importPackage(Packages.com.sk89q.worldedit.world.block);
+    ::
 
-    var sess = context.remember();
-    sess.setBlock(player.getBlockOn(), BlockTypes.WOOL.getDefaultState());
+        importPackage(Packages.com.sk89q.worldedit.world.block);
+
+        var sess = context.remember();
+        sess.setBlock(player.getBlockOn(), BlockTypes.WOOL.getDefaultState());
 
 Note that because ``BlockTypes`` is in the ``com.sk89q.worldedit.world.block`` namespace, it had to be imported first. The first argument for ``setBlock()`` is a ``BlockVector3`` indicating the position in the world.
 
@@ -74,10 +78,10 @@ The ``CraftScriptContext`` can to some basic argument parsing with ``CraftScript
 
 .. topic:: Example: Checking arguments
 
-::
+    ::
 
-    context.checkArgs(1, 3, "<block> [width] [height]");
-    var block = context.getBlock(argv[1]);
+        context.checkArgs(1, 3, "<block> [width] [height]");
+        var block = context.getBlock(argv[1]);
 
 What happens if the user inputs an invalid block? An exception will be raised and if you don't catch it, the user will be informed about their error and your script will be halted.
 

@@ -71,6 +71,12 @@ Some potential uses for this include:
 * Making tunnels
 * Repeating a segment of a hand-built structure
 
+There are several flags available:
+
+* ``-m <mask>`` will set a source :doc:`mask <general/masks>`, only stacking matching blocks
+* ``-e`` will also copy entities into each stacked area
+* ``-b`` will also copy biomes into each stacked area (you may need to re-join the world to see changes)
+
 .. topic:: Some uses of the stack command
 
     .. figure:: /images/selections/stack_bridge.jpg
@@ -95,6 +101,8 @@ The direction parameter works like that of the ``//stack`` command: use any dire
 If you don't provide a block to fill with, the area left behind will be filled with air.
 
 You can also use the ``-s`` flag to move your selection along with the blocks, so your new selection will be in the same place as the moved blocks.
+
+The move command also takes the same three flags as ``//stack``, ``-e`` to move entities, ``-b`` to copy biomes (source biomes unaffected), and ``-m <mask>`` to move only matching blocks.
 
 .. topic:: Example: Using the move command
 

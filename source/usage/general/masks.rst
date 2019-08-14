@@ -100,8 +100,8 @@ Block categories, or `tags <https://minecraft.gamepedia.com/Tag>`_ can also be u
 
        //replace ##carpets snow
 
-Noise Mask
-----------
+Random Noise Mask
+-----------------
 
 The noise mask can create random noise. Specifying ``%<percent>`` will match the given percentage of blocks. Unlike the weighted patterns, ``%50`` is actually 50% of blocks.
 
@@ -136,4 +136,4 @@ This mask can evaluate a mathematical expression upon each block. The mask start
 Biome Mask
 ----------
 
-The biome mask matches blocks in columns with the given biome. It's syntax is ``$<biome id>``. The biome ID must be the `namespaced id <https://minecraft.gamepedia.com/Java_Edition_data_values#Biomes>`_, with `minecraft:` being optional for vanilla biomes, and mod ids being required for mod-added biomes.
+The biome mask matches blocks in columns with the given biome. Its syntax is ``$<biome id>``. The biome ID must be the `namespaced id <https://minecraft.gamepedia.com/Java_Edition_data_values#Biomes>`_, with `minecraft:` being optional for vanilla biomes, and mod ids being required for mod-added biomes.

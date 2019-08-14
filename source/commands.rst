@@ -180,20 +180,6 @@ General Commands
 
 .. raw:: html
 
-    <span id="command-//reorder"></span>
-
-.. topic:: ``//reorder``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Sets the reorder mode of WorldEdit"
-        **Permissions**,"``worldedit.reorder``"
-        **Usage**,"``//reorder [reorderMode]``"
-          ``[reorderMode]``,"The reorder mode"
-
-.. raw:: html
-
     <span id="command-//fast"></span>
 
 .. topic:: ``//fast``
@@ -205,6 +191,20 @@ General Commands
         **Permissions**,"``worldedit.fast``"
         **Usage**,"``//fast [fastMode]``"
           ``[fastMode]``,"The new fast mode state"
+
+.. raw:: html
+
+    <span id="command-//reorder"></span>
+
+.. topic:: ``//reorder``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Sets the reorder mode of WorldEdit"
+        **Permissions**,"``worldedit.reorder``"
+        **Usage**,"``//reorder [reorderMode]``"
+          ``[reorderMode]``,"The reorder mode"
 
 .. raw:: html
 
@@ -222,18 +222,6 @@ General Commands
 
 .. raw:: html
 
-    <span id="command-/toggleplace"></span>
-
-.. topic:: ``/toggleplace`` (or ``//toggleplace``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Switch between your position and pos1 for placement"
-        **Usage**,"``/toggleplace``"
-
-.. raw:: html
-
     <span id="command-/gmask"></span>
 
 .. topic:: ``/gmask`` (or ``//gmask``)
@@ -245,6 +233,18 @@ General Commands
         **Permissions**,"``worldedit.global-mask``"
         **Usage**,"``/gmask [mask]``"
           ``[mask]``,"The mask to set"
+
+.. raw:: html
+
+    <span id="command-/toggleplace"></span>
+
+.. topic:: ``/toggleplace`` (or ``//toggleplace``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Switch between your position and pos1 for placement"
+        **Usage**,"``/toggleplace``"
 
 .. raw:: html
 
@@ -266,65 +266,6 @@ General Commands
 
 Navigation Commands
 ~~~~~~~~~~~~~~~~~~~
-.. raw:: html
-
-    <span id="command-/ceil"></span>
-
-.. topic:: ``/ceil``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Go to the ceiling"
-        **Permissions**,"``worldedit.navigation.ceiling``"
-        **Usage**,"``/ceil [-fg] [clearance]``"
-          ``[clearance]``,"# of blocks to leave above you"
-          ``[-f]``,"Force using flight to keep you still"
-          ``[-g]``,"Force using glass to keep you still"
-
-.. raw:: html
-
-    <span id="command-/up"></span>
-
-.. topic:: ``/up``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Go upwards some distance"
-        **Permissions**,"``worldedit.navigation.up``"
-        **Usage**,"``/up [-fg] <distance>``"
-          ``<distance>``,"Distance to go upwards"
-          ``[-f]``,"Force using flight to keep you still"
-          ``[-g]``,"Force using glass to keep you still"
-
-.. raw:: html
-
-    <span id="command-/descend"></span>
-
-.. topic:: ``/descend`` (or ``/desc``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Go down a floor"
-        **Permissions**,"``worldedit.navigation.descend``"
-        **Usage**,"``/descend [levels]``"
-          ``[levels]``,"# of levels to descend"
-
-.. raw:: html
-
-    <span id="command-/thru"></span>
-
-.. topic:: ``/thru``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Pass through walls"
-        **Permissions**,"``worldedit.navigation.thru.command``"
-        **Usage**,"``/thru``"
-
 .. raw:: html
 
     <span id="command-/unstuck"></span>
@@ -354,6 +295,49 @@ Navigation Commands
 
 .. raw:: html
 
+    <span id="command-/descend"></span>
+
+.. topic:: ``/descend`` (or ``/desc``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Go down a floor"
+        **Permissions**,"``worldedit.navigation.descend``"
+        **Usage**,"``/descend [levels]``"
+          ``[levels]``,"# of levels to descend"
+
+.. raw:: html
+
+    <span id="command-/ceil"></span>
+
+.. topic:: ``/ceil``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Go to the ceiling"
+        **Permissions**,"``worldedit.navigation.ceiling``"
+        **Usage**,"``/ceil [-fg] [clearance]``"
+          ``[clearance]``,"# of blocks to leave above you"
+          ``[-f]``,"Force using flight to keep you still"
+          ``[-g]``,"Force using glass to keep you still"
+
+.. raw:: html
+
+    <span id="command-/thru"></span>
+
+.. topic:: ``/thru``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Pass through walls"
+        **Permissions**,"``worldedit.navigation.thru.command``"
+        **Usage**,"``/thru``"
+
+.. raw:: html
+
     <span id="command-/jumpto"></span>
 
 .. topic:: ``/jumpto`` (or ``/j``)
@@ -365,82 +349,25 @@ Navigation Commands
         **Permissions**,"``worldedit.navigation.jumpto.command``"
         **Usage**,"``/jumpto``"
 
+.. raw:: html
+
+    <span id="command-/up"></span>
+
+.. topic:: ``/up``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Go upwards some distance"
+        **Permissions**,"``worldedit.navigation.up``"
+        **Usage**,"``/up [-fg] <distance>``"
+          ``<distance>``,"Distance to go upwards"
+          ``[-f]``,"Force using flight to keep you still"
+          ``[-g]``,"Force using glass to keep you still"
+
 
 Selection Commands
 ~~~~~~~~~~~~~~~~~~
-.. raw:: html
-
-    <span id="command-//count"></span>
-
-.. topic:: ``//count``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Counts the number of blocks matching a mask"
-        **Permissions**,"``worldedit.analysis.count``"
-        **Usage**,"``//count <mask>``"
-          ``<mask>``,"The mask of blocks to match"
-
-.. raw:: html
-
-    <span id="command-//size"></span>
-
-.. topic:: ``//size``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Get information about the selection"
-        **Permissions**,"``worldedit.selection.size``"
-        **Usage**,"``//size [-c]``"
-          ``[-c]``,"Get clipboard info instead"
-
-.. raw:: html
-
-    <span id="command-//shift"></span>
-
-.. topic:: ``//shift``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Shift the selection area"
-        **Permissions**,"``worldedit.selection.shift``"
-        **Usage**,"``//shift <amount> [direction]``"
-          ``<amount>``,"Amount to shift the selection by"
-          ``[direction]``,"Direction to contract"
-
-.. raw:: html
-
-    <span id="command-//sel"></span>
-
-.. topic:: ``//sel`` (or ``/;``, ``//desel``, ``//deselect``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Choose a region selector"
-        **Usage**,"``//sel [-d] [selector]``"
-          ``[selector]``,"Selector to switch to"
-          ``[-d]``,"Set default selector"
-
-.. raw:: html
-
-    <span id="command-//contract"></span>
-
-.. topic:: ``//contract``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Contract the selection area"
-        **Permissions**,"``worldedit.selection.contract``"
-        **Usage**,"``//contract <amount> [reverseAmount] [direction]``"
-          ``<amount>``,"Amount to contract the selection by"
-          ``[reverseAmount]``,"Amount to contract the selection by in the other direction"
-          ``[direction]``,"Direction to contract"
-
 .. raw:: html
 
     <span id="command-//pos1"></span>
@@ -527,6 +454,50 @@ Selection Commands
 
 .. raw:: html
 
+    <span id="command-/toggleeditwand"></span>
+
+.. topic:: ``/toggleeditwand``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Remind the user that the wand is now a tool and can be unbound with /none."
+        **Permissions**,"``worldedit.wand.toggle``"
+        **Usage**,"``/toggleeditwand``"
+
+.. raw:: html
+
+    <span id="command-//contract"></span>
+
+.. topic:: ``//contract``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Contract the selection area"
+        **Permissions**,"``worldedit.selection.contract``"
+        **Usage**,"``//contract <amount> [reverseAmount] [direction]``"
+          ``<amount>``,"Amount to contract the selection by"
+          ``[reverseAmount]``,"Amount to contract the selection by in the other direction"
+          ``[direction]``,"Direction to contract"
+
+.. raw:: html
+
+    <span id="command-//shift"></span>
+
+.. topic:: ``//shift``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Shift the selection area"
+        **Permissions**,"``worldedit.selection.shift``"
+        **Usage**,"``//shift <amount> [direction]``"
+          ``<amount>``,"Amount to shift the selection by"
+          ``[direction]``,"Direction to contract"
+
+.. raw:: html
+
     <span id="command-//outset"></span>
 
 .. topic:: ``//outset``
@@ -540,19 +511,6 @@ Selection Commands
           ``<amount>``,"Amount to expand the selection by in all directions"
           ``[-h]``,"Only expand horizontally"
           ``[-v]``,"Only expand vertically"
-
-.. raw:: html
-
-    <span id="command-/toggleeditwand"></span>
-
-.. topic:: ``/toggleeditwand``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Remind the user that the wand is now a tool and can be unbound with /none."
-        **Permissions**,"``worldedit.wand.toggle``"
-        **Usage**,"``/toggleeditwand``"
 
 .. raw:: html
 
@@ -572,6 +530,34 @@ Selection Commands
 
 .. raw:: html
 
+    <span id="command-//size"></span>
+
+.. topic:: ``//size``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Get information about the selection"
+        **Permissions**,"``worldedit.selection.size``"
+        **Usage**,"``//size [-c]``"
+          ``[-c]``,"Get clipboard info instead"
+
+.. raw:: html
+
+    <span id="command-//count"></span>
+
+.. topic:: ``//count``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Counts the number of blocks matching a mask"
+        **Permissions**,"``worldedit.analysis.count``"
+        **Usage**,"``//count <mask>``"
+          ``<mask>``,"The mask of blocks to match"
+
+.. raw:: html
+
     <span id="command-//distr"></span>
 
 .. topic:: ``//distr``
@@ -588,70 +574,21 @@ Selection Commands
 
 .. raw:: html
 
-    <span id="command-//expand"></span>
+    <span id="command-//sel"></span>
 
-.. topic:: ``//expand``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Expand the selection area"
-        **Permissions**,"``worldedit.selection.expand``"
-        **Usage**,"``//expand <vert|<amount> [reverseAmount] [direction]>``"
-          ``<amount>``,"Amount to expand the selection by, can be `vert` to expand to the whole vertical column"
-          ``[reverseAmount]``,"Amount to expand the selection by in the other direction"
-          ``[direction]``,"Direction to expand"
-
-.. raw:: html
-
-    <span id="command-//expand-vert"></span>
-
-.. topic:: ``//expand vert``
+.. topic:: ``//sel`` (or ``/;``, ``//desel``, ``//deselect``)
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Vertically expand the selection to world limits."
-        **Usage**,"``//expand vert``"
+        **Description**,"Choose a region selector"
+        **Usage**,"``//sel [-d] [selector]``"
+          ``[selector]``,"Selector to switch to"
+          ``[-d]``,"Set default selector"
 
 
 Region Commands
 ~~~~~~~~~~~~~~~
-.. raw:: html
-
-    <span id="command-//replace"></span>
-
-.. topic:: ``//replace`` (or ``//re``, ``//rep``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Replace all blocks in the selection with another"
-        **Permissions**,"``worldedit.region.replace``"
-        **Usage**,"``//replace [from] <to>``"
-          ``[from]``,"The mask representing blocks to replace"
-          ``<to>``,"The pattern of blocks to replace with"
-
-.. raw:: html
-
-    <span id="command-//stack"></span>
-
-.. topic:: ``//stack``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Repeat the contents of the selection"
-        **Permissions**,"``worldedit.region.stack``"
-        **Usage**,"``//stack [-abes] [count] [direction] [-m <mask>]``"
-          ``[count]``,"# of copies to stack"
-          ``[direction]``,"The direction to stack"
-          ``[-s]``,"Shift the selection to the last stacked copy"
-          ``[-a]``,"Ignore air blocks"
-          ``[-e]``,"Also copy entities"
-          ``[-b]``,"Also copy biomes"
-          ``[-m <mask>]``,"Set the include mask, non-matching blocks become air"
-
 .. raw:: html
 
     <span id="command-//set"></span>
@@ -676,13 +613,60 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Draws a line segment between cuboid selection corners
-        
+
         Can only be used with a cuboid selection"
         **Permissions**,"``worldedit.region.line``"
         **Usage**,"``//line [-h] <pattern> [thickness]``"
           ``<pattern>``,"The pattern of blocks to place"
           ``[thickness]``,"The thickness of the line"
           ``[-h]``,"Generate only a shell"
+
+.. raw:: html
+
+    <span id="command-//curve"></span>
+
+.. topic:: ``//curve``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Draws a spline through selected points
+
+        Can only be used with a convex polyhedral selection"
+        **Permissions**,"``worldedit.region.curve``"
+        **Usage**,"``//curve [-h] <pattern> [thickness]``"
+          ``<pattern>``,"The pattern of blocks to place"
+          ``[thickness]``,"The thickness of the curve"
+          ``[-h]``,"Generate only a shell"
+
+.. raw:: html
+
+    <span id="command-//replace"></span>
+
+.. topic:: ``//replace`` (or ``//re``, ``//rep``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Replace all blocks in the selection with another"
+        **Permissions**,"``worldedit.region.replace``"
+        **Usage**,"``//replace [from] <to>``"
+          ``[from]``,"The mask representing blocks to replace"
+          ``<to>``,"The pattern of blocks to replace with"
+
+.. raw:: html
+
+    <span id="command-//overlay"></span>
+
+.. topic:: ``//overlay``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Set a block on top of blocks in the region"
+        **Permissions**,"``worldedit.region.overlay``"
+        **Usage**,"``//overlay <pattern>``"
+          ``<pattern>``,"The pattern of blocks to overlay"
 
 .. raw:: html
 
@@ -696,6 +680,33 @@ Region Commands
         **Description**,"Set the center block(s)"
         **Permissions**,"``worldedit.region.center``"
         **Usage**,"``//center <pattern>``"
+          ``<pattern>``,"The pattern of blocks to set"
+
+.. raw:: html
+
+    <span id="command-//naturalize"></span>
+
+.. topic:: ``//naturalize``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"3 layers of dirt on top then rock below"
+        **Permissions**,"``worldedit.region.naturalize``"
+        **Usage**,"``//naturalize``"
+
+.. raw:: html
+
+    <span id="command-//walls"></span>
+
+.. topic:: ``//walls``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Build the four sides of the selection"
+        **Permissions**,"``worldedit.region.walls``"
+        **Usage**,"``//walls <pattern>``"
           ``<pattern>``,"The pattern of blocks to set"
 
 .. raw:: html
@@ -714,58 +725,6 @@ Region Commands
 
 .. raw:: html
 
-    <span id="command-//hollow"></span>
-
-.. topic:: ``//hollow``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Hollows out the object contained in this selection
-        
-        Thickness is measured in manhattan distance."
-        **Permissions**,"``worldedit.region.hollow``"
-        **Usage**,"``//hollow [thickness] [pattern]``"
-          ``[thickness]``,"Thickness of the shell to leave"
-          ``[pattern]``,"The pattern of blocks to replace the hollowed area with"
-
-.. raw:: html
-
-    <span id="command-//deform"></span>
-
-.. topic:: ``//deform``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Deforms a selected region with an expression
-        
-        The expression is executed for each block and is expected
-        to modify the variables x, y and z to point to a new block
-        to fetch. See also https://tinyurl.com/weexpr"
-        **Permissions**,"``worldedit.region.deform``"
-        **Usage**,"``//deform [-or] <expression...>``"
-          ``<expression...>``,"The expression to use"
-          ``[-r]``,"Use the game's coordinate origin"
-          ``[-o]``,"Use the selection's center as origin"
-
-.. raw:: html
-
-    <span id="command-//forest"></span>
-
-.. topic:: ``//forest``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Make a forest within the region"
-        **Permissions**,"``worldedit.region.forest``"
-        **Usage**,"``//forest [type] [density]``"
-          ``[type]``,"The type of tree to place"
-          ``[density]``,"The density of the forest"
-
-.. raw:: html
-
     <span id="command-//smooth"></span>
 
 .. topic:: ``//smooth``
@@ -774,85 +733,12 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Smooth the elevation in the selection
-        
+
         Example: '//smooth 1 grass_block,dirt,stone' would only smooth natural surface terrain."
         **Permissions**,"``worldedit.region.smooth``"
         **Usage**,"``//smooth [iterations] [mask]``"
           ``[iterations]``,"# of iterations to perform"
           ``[mask]``,"The mask of blocks to use as the height map"
-
-.. raw:: html
-
-    <span id="command-//flora"></span>
-
-.. topic:: ``//flora``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Make flora within the region"
-        **Permissions**,"``worldedit.region.flora``"
-        **Usage**,"``//flora [density]``"
-          ``[density]``,"The density of the forest"
-
-.. raw:: html
-
-    <span id="command-//overlay"></span>
-
-.. topic:: ``//overlay``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Set a block on top of blocks in the region"
-        **Permissions**,"``worldedit.region.overlay``"
-        **Usage**,"``//overlay <pattern>``"
-          ``<pattern>``,"The pattern of blocks to overlay"
-
-.. raw:: html
-
-    <span id="command-//walls"></span>
-
-.. topic:: ``//walls``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Build the four sides of the selection"
-        **Permissions**,"``worldedit.region.walls``"
-        **Usage**,"``//walls <pattern>``"
-          ``<pattern>``,"The pattern of blocks to set"
-
-.. raw:: html
-
-    <span id="command-//naturalize"></span>
-
-.. topic:: ``//naturalize``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"3 layers of dirt on top then rock below"
-        **Permissions**,"``worldedit.region.naturalize``"
-        **Usage**,"``//naturalize``"
-
-.. raw:: html
-
-    <span id="command-//curve"></span>
-
-.. topic:: ``//curve``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Draws a spline through selected points
-        
-        Can only be used with a convex polyhedral selection"
-        **Permissions**,"``worldedit.region.curve``"
-        **Usage**,"``//curve [-h] <pattern> [thickness]``"
-          ``<pattern>``,"The pattern of blocks to place"
-          ``[thickness]``,"The thickness of the curve"
-          ``[-h]``,"Generate only a shell"
 
 .. raw:: html
 
@@ -877,6 +763,26 @@ Region Commands
 
 .. raw:: html
 
+    <span id="command-//stack"></span>
+
+.. topic:: ``//stack``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Repeat the contents of the selection"
+        **Permissions**,"``worldedit.region.stack``"
+        **Usage**,"``//stack [-abes] [count] [direction] [-m <mask>]``"
+          ``[count]``,"# of copies to stack"
+          ``[direction]``,"The direction to stack"
+          ``[-s]``,"Shift the selection to the last stacked copy"
+          ``[-a]``,"Ignore air blocks"
+          ``[-e]``,"Also copy entities"
+          ``[-b]``,"Also copy biomes"
+          ``[-m <mask>]``,"Set the include mask, non-matching blocks become air"
+
+.. raw:: html
+
     <span id="command-//regen"></span>
 
 .. topic:: ``//regen``
@@ -885,35 +791,96 @@ Region Commands
         :widths: 8, 15
 
         **Description**,"Regenerates the contents of the selection
-        
+
         This command might affect things outside the selection,
         if they are within the same chunk."
         **Permissions**,"``worldedit.regen``"
         **Usage**,"``//regen``"
+
+.. raw:: html
+
+    <span id="command-//deform"></span>
+
+.. topic:: ``//deform``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Deforms a selected region with an expression
+
+        The expression is executed for each block and is expected
+        to modify the variables x, y and z to point to a new block
+        to fetch. See also https://tinyurl.com/weexpr"
+        **Permissions**,"``worldedit.region.deform``"
+        **Usage**,"``//deform [-or] <expression...>``"
+          ``<expression...>``,"The expression to use"
+          ``[-r]``,"Use the game's coordinate origin"
+          ``[-o]``,"Use the selection's center as origin"
+
+.. raw:: html
+
+    <span id="command-//hollow"></span>
+
+.. topic:: ``//hollow``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Hollows out the object contained in this selection
+
+        Thickness is measured in manhattan distance."
+        **Permissions**,"``worldedit.region.hollow``"
+        **Usage**,"``//hollow [thickness] [pattern]``"
+          ``[thickness]``,"Thickness of the shell to leave"
+          ``[pattern]``,"The pattern of blocks to replace the hollowed area with"
+
+.. raw:: html
+
+    <span id="command-//forest"></span>
+
+.. topic:: ``//forest``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Make a forest within the region"
+        **Permissions**,"``worldedit.region.forest``"
+        **Usage**,"``//forest [type] [density]``"
+          ``[type]``,"The type of tree to place"
+          ``[density]``,"The density of the forest"
+
+.. raw:: html
+
+    <span id="command-//flora"></span>
+
+.. topic:: ``//flora``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Make flora within the region"
+        **Permissions**,"``worldedit.region.flora``"
+        **Usage**,"``//flora [density]``"
+          ``[density]``,"The density of the forest"
 
 
 Generation Commands
 ~~~~~~~~~~~~~~~~~~~
 .. raw:: html
 
-    <span id="command-//generate"></span>
+    <span id="command-//hcyl"></span>
 
-.. topic:: ``//generate`` (or ``//gen``, ``//g``)
+.. topic:: ``//hcyl``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Generates a shape according to a formula.
-        
-        See also https://tinyurl.com/weexpr."
-        **Permissions**,"``worldedit.generation.shape``"
-        **Usage**,"``//generate [-chor] <pattern> <expression...>``"
-          ``<pattern>``,"The pattern of blocks to set"
-          ``<expression...>``,"Expression to test block placement locations and set block type"
-          ``[-h]``,"Generate a hollow shape"
-          ``[-r]``,"Use the game's coordinate origin"
-          ``[-o]``,"Use the placement's coordinate origin"
-          ``[-c]``,"Use the selection's center as origin"
+        **Description**,"Generates a hollow cylinder."
+        **Permissions**,"``worldedit.generation.cylinder``"
+        **Usage**,"``//hcyl <pattern> <radii> [height]``"
+          ``<pattern>``,"The pattern of blocks to generate"
+          ``<radii>``,"The radii of the cylinder. 1st is N/S, 2nd is E/W"
+          ``[height]``,"The height of the cylinder"
 
 .. raw:: html
 
@@ -934,6 +901,22 @@ Generation Commands
 
 .. raw:: html
 
+    <span id="command-//hsphere"></span>
+
+.. topic:: ``//hsphere``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Generates a hollow sphere."
+        **Permissions**,"``worldedit.generation.sphere``"
+        **Usage**,"``//hsphere [-r] <pattern> <radii>``"
+          ``<pattern>``,"The pattern of blocks to generate"
+          ``<radii>``,"The radii of the sphere. Order is N/S, U/D, E/W"
+          ``[-r]``,"Raise the bottom of the sphere to the placement position"
+
+.. raw:: html
+
     <span id="command-//sphere"></span>
 
 .. topic:: ``//sphere``
@@ -948,52 +931,6 @@ Generation Commands
           ``<radii>``,"The radii of the sphere. Order is N/S, U/D, E/W"
           ``[-r]``,"Raise the bottom of the sphere to the placement position"
           ``[-h]``,"Make a hollow sphere"
-
-.. raw:: html
-
-    <span id="command-/pumpkins"></span>
-
-.. topic:: ``/pumpkins``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Generate pumpkin patches"
-        **Permissions**,"``worldedit.generation.pumpkins``"
-        **Usage**,"``/pumpkins [size]``"
-          ``[size]``,"The size of the patch"
-
-.. raw:: html
-
-    <span id="command-//hcyl"></span>
-
-.. topic:: ``//hcyl``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Generates a hollow cylinder."
-        **Permissions**,"``worldedit.generation.cylinder``"
-        **Usage**,"``//hcyl <pattern> <radii> [height]``"
-          ``<pattern>``,"The pattern of blocks to generate"
-          ``<radii>``,"The radii of the cylinder. 1st is N/S, 2nd is E/W"
-          ``[height]``,"The height of the cylinder"
-
-.. raw:: html
-
-    <span id="command-//hsphere"></span>
-
-.. topic:: ``//hsphere``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Generates a hollow sphere."
-        **Permissions**,"``worldedit.generation.sphere``"
-        **Usage**,"``//hsphere [-r] <pattern> <radii>``"
-          ``<pattern>``,"The pattern of blocks to generate"
-          ``<radii>``,"The radii of the sphere. Order is N/S, U/D, E/W"
-          ``[-r]``,"Raise the bottom of the sphere to the placement position"
 
 .. raw:: html
 
@@ -1013,6 +950,20 @@ Generation Commands
 
 .. raw:: html
 
+    <span id="command-/pumpkins"></span>
+
+.. topic:: ``/pumpkins``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Generate pumpkin patches"
+        **Permissions**,"``worldedit.generation.pumpkins``"
+        **Usage**,"``/pumpkins [size]``"
+          ``[size]``,"The size of the patch"
+
+.. raw:: html
+
     <span id="command-//hpyramid"></span>
 
 .. topic:: ``//hpyramid``
@@ -1025,27 +976,6 @@ Generation Commands
         **Usage**,"``//hpyramid <pattern> <size>``"
           ``<pattern>``,"The pattern of blocks to set"
           ``<size>``,"The size of the pyramid"
-
-.. raw:: html
-
-    <span id="command-//generatebiome"></span>
-
-.. topic:: ``//generatebiome`` (or ``//genbiome``, ``//gb``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Sets biome according to a formula.
-        
-        See also https://tinyurl.com/weexpr."
-        **Permissions**,"``worldedit.generation.shape.biome``"
-        **Usage**,"``//generatebiome [-chor] <target> <expression...>``"
-          ``<target>``,"The biome type to set"
-          ``<expression...>``,"Expression to test block placement locations and set biome type"
-          ``[-h]``,"Generate a hollow shape"
-          ``[-r]``,"Use the game's coordinate origin"
-          ``[-o]``,"Use the placement's coordinate origin"
-          ``[-c]``,"Use the selection's center as origin"
 
 .. raw:: html
 
@@ -1062,6 +992,48 @@ Generation Commands
           ``<pattern>``,"The pattern of blocks to set"
           ``<size>``,"The size of the pyramid"
           ``[-h]``,"Make a hollow pyramid"
+
+.. raw:: html
+
+    <span id="command-//generate"></span>
+
+.. topic:: ``//generate`` (or ``//gen``, ``//g``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Generates a shape according to a formula.
+
+        See also https://tinyurl.com/weexpr."
+        **Permissions**,"``worldedit.generation.shape``"
+        **Usage**,"``//generate [-chor] <pattern> <expression...>``"
+          ``<pattern>``,"The pattern of blocks to set"
+          ``<expression...>``,"Expression to test block placement locations and set block type"
+          ``[-h]``,"Generate a hollow shape"
+          ``[-r]``,"Use the game's coordinate origin"
+          ``[-o]``,"Use the placement's coordinate origin"
+          ``[-c]``,"Use the selection's center as origin"
+
+.. raw:: html
+
+    <span id="command-//generatebiome"></span>
+
+.. topic:: ``//generatebiome`` (or ``//genbiome``, ``//gb``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Sets biome according to a formula.
+
+        See also https://tinyurl.com/weexpr."
+        **Permissions**,"``worldedit.generation.shape.biome``"
+        **Usage**,"``//generatebiome [-chor] <target> <expression...>``"
+          ``<target>``,"The biome type to set"
+          ``<expression...>``,"Expression to test block placement locations and set biome type"
+          ``[-h]``,"Generate a hollow shape"
+          ``[-r]``,"Use the game's coordinate origin"
+          ``[-o]``,"Use the placement's coordinate origin"
+          ``[-c]``,"Use the selection's center as origin"
 
 
 Schematic and Clipboard Commands
@@ -1089,7 +1061,7 @@ Schematic and Clipboard Commands
         :widths: 8, 15
 
         **Description**,"List saved schematics
-        
+
         Note: Format is not fully verified until loading."
         **Permissions**,"``worldedit.schematic.list``"
         **Usage**,"``/schematic list [-dn] [-p <page>]``"
@@ -1173,50 +1145,20 @@ Schematic and Clipboard Commands
 
 .. raw:: html
 
-    <span id="command-//flip"></span>
+    <span id="command-//cut"></span>
 
-.. topic:: ``//flip``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Flip the contents of the clipboard across the origin"
-        **Permissions**,"``worldedit.clipboard.flip``"
-        **Usage**,"``//flip [direction]``"
-          ``[direction]``,"The direction to flip, defaults to look direction."
-
-.. raw:: html
-
-    <span id="command-//rotate"></span>
-
-.. topic:: ``//rotate``
+.. topic:: ``//cut``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Rotate the contents of the clipboard
-        
-        Non-destructively rotate the contents of the clipboard.
-        Angles are provided in degrees and a positive angle will result in a clockwise rotation. Multiple rotations can be stacked. Interpolation is not performed so angles should be a multiple of 90 degrees.
-        "
-        **Permissions**,"``worldedit.clipboard.rotate``"
-        **Usage**,"``//rotate <yRotate> [xRotate] [zRotate]``"
-          ``<yRotate>``,"Amount to rotate on the y-axis"
-          ``[xRotate]``,"Amount to rotate on the x-axis"
-          ``[zRotate]``,"Amount to rotate on the z-axis"
-
-.. raw:: html
-
-    <span id="command-/clearclipboard"></span>
-
-.. topic:: ``/clearclipboard``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Clear your clipboard"
-        **Permissions**,"``worldedit.clipboard.clear``"
-        **Usage**,"``/clearclipboard``"
+        **Description**,"Cut the selection to the clipboard"
+        **Permissions**,"``worldedit.clipboard.cut``"
+        **Usage**,"``//cut [-be] [leavePattern] [-m <mask>]``"
+          ``[leavePattern]``,"Pattern to leave in place of the selection"
+          ``[-e]``,"Also cut entities"
+          ``[-b]``,"Also copy biomes, source biomes are unaffected"
+          ``[-m <mask>]``,"Set the exclude mask, non-matching blocks become air"
 
 .. raw:: html
 
@@ -1239,24 +1181,105 @@ Schematic and Clipboard Commands
 
 .. raw:: html
 
-    <span id="command-//cut"></span>
+    <span id="command-//rotate"></span>
 
-.. topic:: ``//cut``
+.. topic:: ``//rotate``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Cut the selection to the clipboard"
-        **Permissions**,"``worldedit.clipboard.cut``"
-        **Usage**,"``//cut [-be] [leavePattern] [-m <mask>]``"
-          ``[leavePattern]``,"Pattern to leave in place of the selection"
-          ``[-e]``,"Also cut entities"
-          ``[-b]``,"Also copy biomes, source biomes are unaffected"
-          ``[-m <mask>]``,"Set the exclude mask, non-matching blocks become air"
+        **Description**,"Rotate the contents of the clipboard
+
+        Non-destructively rotate the contents of the clipboard.
+        Angles are provided in degrees and a positive angle will result in a clockwise rotation. Multiple rotations can be stacked. Interpolation is not performed so angles should be a multiple of 90 degrees.
+"
+        **Permissions**,"``worldedit.clipboard.rotate``"
+        **Usage**,"``//rotate <yRotate> [xRotate] [zRotate]``"
+          ``<yRotate>``,"Amount to rotate on the y-axis"
+          ``[xRotate]``,"Amount to rotate on the x-axis"
+          ``[zRotate]``,"Amount to rotate on the z-axis"
+
+.. raw:: html
+
+    <span id="command-//flip"></span>
+
+.. topic:: ``//flip``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Flip the contents of the clipboard across the origin"
+        **Permissions**,"``worldedit.clipboard.flip``"
+        **Usage**,"``//flip [direction]``"
+          ``[direction]``,"The direction to flip, defaults to look direction."
+
+.. raw:: html
+
+    <span id="command-/clearclipboard"></span>
+
+.. topic:: ``/clearclipboard``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Clear your clipboard"
+        **Permissions**,"``worldedit.clipboard.clear``"
+        **Usage**,"``/clearclipboard``"
 
 
 Tool Commands
 ~~~~~~~~~~~~~
+.. raw:: html
+
+    <span id="command-/none"></span>
+
+.. topic:: ``/none``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Unbind a bound tool from your current item"
+        **Usage**,"``/none``"
+
+.. raw:: html
+
+    <span id="command-//selwand"></span>
+
+.. topic:: ``//selwand`` (or ``/selwand``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Selection wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``//selwand``"
+
+.. raw:: html
+
+    <span id="command-//navwand"></span>
+
+.. topic:: ``//navwand`` (or ``/navwand``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Navigation wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``//navwand``"
+
+.. raw:: html
+
+    <span id="command-/info"></span>
+
+.. topic:: ``/info``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block information tool"
+        **Permissions**,"``worldedit.tool.info``"
+        **Usage**,"``/info``"
+
 .. raw:: html
 
     <span id="command-/tree"></span>
@@ -1287,54 +1310,16 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/info"></span>
+    <span id="command-/cycler"></span>
 
-.. topic:: ``/info``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block information tool"
-        **Permissions**,"``worldedit.tool.info``"
-        **Usage**,"``/info``"
-
-.. raw:: html
-
-    <span id="command-/none"></span>
-
-.. topic:: ``/none``
+.. topic:: ``/cycler``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Unbind a bound tool from your current item"
-        **Usage**,"``/none``"
-
-.. raw:: html
-
-    <span id="command-/farwand"></span>
-
-.. topic:: ``/farwand``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Wand at a distance tool"
-        **Permissions**,"``worldedit.tool.farwand``"
-        **Usage**,"``/farwand``"
-
-.. raw:: html
-
-    <span id="command-//selwand"></span>
-
-.. topic:: ``//selwand`` (or ``/selwand``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Selection wand tool"
-        **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``//selwand``"
+        **Description**,"Block data cycler tool"
+        **Permissions**,"``worldedit.tool.data-cycler``"
+        **Usage**,"``/cycler``"
 
 .. raw:: html
 
@@ -1353,19 +1338,6 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-//navwand"></span>
-
-.. topic:: ``//navwand`` (or ``/navwand``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Navigation wand tool"
-        **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``//navwand``"
-
-.. raw:: html
-
     <span id="command-/deltree"></span>
 
 .. topic:: ``/deltree``
@@ -1379,16 +1351,16 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/cycler"></span>
+    <span id="command-/farwand"></span>
 
-.. topic:: ``/cycler``
+.. topic:: ``/farwand``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Block data cycler tool"
-        **Permissions**,"``worldedit.tool.data-cycler``"
-        **Usage**,"``/cycler``"
+        **Description**,"Wand at a distance tool"
+        **Permissions**,"``worldedit.tool.farwand``"
+        **Usage**,"``/farwand``"
 
 .. raw:: html
 
@@ -1407,31 +1379,17 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/size"></span>
+    <span id="command-//"></span>
 
-.. topic:: ``/size``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Set the brush size"
-        **Permissions**,"``worldedit.brush.options.size``"
-        **Usage**,"``/size <size>``"
-          ``<size>``,"The size of the brush"
-
-.. raw:: html
-
-    <span id="command-/range"></span>
-
-.. topic:: ``/range``
+.. topic:: ``//`` (or ``/,``)
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Set the brush range"
-        **Permissions**,"``worldedit.brush.options.range``"
-        **Usage**,"``/range <range>``"
-          ``<range>``,"The range of the brush"
+        **Description**,"Toggle the super pickaxe function"
+        **Permissions**,"``worldedit.superpickaxe``"
+        **Usage**,"``// [superPickaxe]``"
+          ``[superPickaxe]``,"The new super pickaxe state"
 
 .. raw:: html
 
@@ -1463,17 +1421,31 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-//"></span>
+    <span id="command-/range"></span>
 
-.. topic:: ``//`` (or ``/,``)
+.. topic:: ``/range``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Toggle the super pickaxe function"
-        **Permissions**,"``worldedit.superpickaxe``"
-        **Usage**,"``// [superPickaxe]``"
-          ``[superPickaxe]``,"The new super pickaxe state"
+        **Description**,"Set the brush range"
+        **Permissions**,"``worldedit.brush.options.range``"
+        **Usage**,"``/range <range>``"
+          ``<range>``,"The range of the brush"
+
+.. raw:: html
+
+    <span id="command-/size"></span>
+
+.. topic:: ``/size``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Set the brush size"
+        **Permissions**,"``worldedit.brush.options.size``"
+        **Usage**,"``/size <size>``"
+          ``<size>``,"The size of the brush"
 
 .. raw:: html
 
@@ -1786,7 +1758,7 @@ Brush Commands
         :widths: 8, 15
 
         **Description**,"Choose the terrain softener brush
-        
+
         Example: '/brush smooth 2 4 grass_block,dirt,stone'"
         **Permissions**,"``worldedit.brush.smooth``"
         **Usage**,"``/brush smooth [radius] [iterations] [mask]``"
@@ -1797,40 +1769,6 @@ Brush Commands
 
 Biome Commands
 ~~~~~~~~~~~~~~
-.. raw:: html
-
-    <span id="command-//setbiome"></span>
-
-.. topic:: ``//setbiome``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Sets the biome of your current block or region.
-        
-        By default, uses all the blocks in your selection"
-        **Permissions**,"``worldedit.biome.set``"
-        **Usage**,"``//setbiome [-p] <target>``"
-          ``<target>``,"Biome type."
-          ``[-p]``,"Use your current position"
-
-.. raw:: html
-
-    <span id="command-/biomeinfo"></span>
-
-.. topic:: ``/biomeinfo``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Get the biome of the targeted block.
-        
-        By default, uses all blocks in your selection."
-        **Permissions**,"``worldedit.biome.info``"
-        **Usage**,"``/biomeinfo [-pt]``"
-          ``[-t]``,"Use the block you are looking at."
-          ``[-p]``,"Use the block you are currently in."
-
 .. raw:: html
 
     <span id="command-/biomelist"></span>
@@ -1844,6 +1782,40 @@ Biome Commands
         **Permissions**,"``worldedit.biome.list``"
         **Usage**,"``/biomelist [-p <page>]``"
           ``[-p <page>]``,"Page number."
+
+.. raw:: html
+
+    <span id="command-/biomeinfo"></span>
+
+.. topic:: ``/biomeinfo``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Get the biome of the targeted block.
+
+        By default, uses all blocks in your selection."
+        **Permissions**,"``worldedit.biome.info``"
+        **Usage**,"``/biomeinfo [-pt]``"
+          ``[-t]``,"Use the block you are looking at."
+          ``[-p]``,"Use the block you are currently in."
+
+.. raw:: html
+
+    <span id="command-//setbiome"></span>
+
+.. topic:: ``//setbiome``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Sets the biome of your current block or region.
+
+        By default, uses all the blocks in your selection"
+        **Permissions**,"``worldedit.biome.set``"
+        **Usage**,"``//setbiome [-p] <target>``"
+          ``<target>``,"Biome type."
+          ``[-p]``,"Use your current position"
 
 
 Chunk Commands
@@ -2026,21 +1998,6 @@ Utility Commands
 ~~~~~~~~~~~~~~~~
 .. raw:: html
 
-    <span id="command-/remove"></span>
-
-.. topic:: ``/remove`` (or ``/rem``, ``/rement``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Remove all entities of a type"
-        **Permissions**,"``worldedit.remove``"
-        **Usage**,"``/remove <remover> <radius>``"
-          ``<remover>``,"The type of entity to remove"
-          ``<radius>``,"The radius of the cuboid to remove from"
-
-.. raw:: html
-
     <span id="command-//fill"></span>
 
 .. topic:: ``//fill``
@@ -2057,49 +2014,62 @@ Utility Commands
 
 .. raw:: html
 
-    <span id="command-//help"></span>
+    <span id="command-//fillr"></span>
 
-.. topic:: ``//help``
+.. topic:: ``//fillr``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Displays help for WorldEdit commands"
-        **Permissions**,"``worldedit.help``"
-        **Usage**,"``//help [-s] [-p <page>] [command...]``"
-          ``[-s]``,"List sub-commands of the given command, if applicable"
-          ``[-p <page>]``,"The page to retrieve"
-          ``[command...]``,"The command to retrieve help for"
+        **Description**,"Fill a hole recursively"
+        **Permissions**,"``worldedit.fill.recursive``"
+        **Usage**,"``//fillr <pattern> <radius> [depth]``"
+          ``<pattern>``,"The blocks to fill with"
+          ``<radius>``,"The radius to fill in"
+          ``[depth]``,"The depth to fill"
 
 .. raw:: html
 
-    <span id="command-/removenear"></span>
+    <span id="command-//drain"></span>
 
-.. topic:: ``/removenear`` (or ``//removenear``)
+.. topic:: ``//drain``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Remove blocks near you."
-        **Permissions**,"``worldedit.removenear``"
-        **Usage**,"``/removenear <mask> [radius]``"
-          ``<mask>``,"The mask of blocks to remove"
-          ``[radius]``,"The radius of the square to remove from"
+        **Description**,"Drain a pool"
+        **Permissions**,"``worldedit.drain``"
+        **Usage**,"``//drain [-w] <radius>``"
+          ``<radius>``,"The radius to drain"
+          ``[-w]``,"Also un-waterlog blocks"
 
 .. raw:: html
 
-    <span id="command-/removebelow"></span>
+    <span id="command-/fixlava"></span>
 
-.. topic:: ``/removebelow`` (or ``//removebelow``)
+.. topic:: ``/fixlava`` (or ``//fixlava``)
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Remove blocks below you."
-        **Permissions**,"``worldedit.removebelow``"
-        **Usage**,"``/removebelow [size] [height]``"
-          ``[size]``,"The apothem of the square to remove from"
-          ``[height]``,"The maximum height below you to remove from"
+        **Description**,"Fix lava to be stationary"
+        **Permissions**,"``worldedit.fixlava``"
+        **Usage**,"``/fixlava <radius>``"
+          ``<radius>``,"The radius to fix in"
+
+.. raw:: html
+
+    <span id="command-/fixwater"></span>
+
+.. topic:: ``/fixwater`` (or ``//fixwater``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Fix water to be stationary"
+        **Permissions**,"``worldedit.fixwater``"
+        **Usage**,"``/fixwater <radius>``"
+          ``<radius>``,"The radius to fix in"
 
 .. raw:: html
 
@@ -2118,17 +2088,49 @@ Utility Commands
 
 .. raw:: html
 
-    <span id="command-/thaw"></span>
+    <span id="command-/removebelow"></span>
 
-.. topic:: ``/thaw`` (or ``//thaw``)
+.. topic:: ``/removebelow`` (or ``//removebelow``)
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Thaws the area"
-        **Permissions**,"``worldedit.thaw``"
-        **Usage**,"``/thaw [size]``"
-          ``[size]``,"The radius of the circle to thaw in"
+        **Description**,"Remove blocks below you."
+        **Permissions**,"``worldedit.removebelow``"
+        **Usage**,"``/removebelow [size] [height]``"
+          ``[size]``,"The apothem of the square to remove from"
+          ``[height]``,"The maximum height below you to remove from"
+
+.. raw:: html
+
+    <span id="command-/removenear"></span>
+
+.. topic:: ``/removenear`` (or ``//removenear``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Remove blocks near you."
+        **Permissions**,"``worldedit.removenear``"
+        **Usage**,"``/removenear <mask> [radius]``"
+          ``<mask>``,"The mask of blocks to remove"
+          ``[radius]``,"The radius of the square to remove from"
+
+.. raw:: html
+
+    <span id="command-/replacenear"></span>
+
+.. topic:: ``/replacenear`` (or ``//replacenear``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Replace nearby blocks"
+        **Permissions**,"``worldedit.replacenear``"
+        **Usage**,"``/replacenear <radius> [from] <to>``"
+          ``<radius>``,"The radius of the square to remove in"
+          ``[from]``,"The mask matching blocks to remove"
+          ``<to>``,"The pattern of blocks to replace with"
 
 .. raw:: html
 
@@ -2146,6 +2148,20 @@ Utility Commands
 
 .. raw:: html
 
+    <span id="command-/thaw"></span>
+
+.. topic:: ``/thaw`` (or ``//thaw``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Thaws the area"
+        **Permissions**,"``worldedit.thaw``"
+        **Usage**,"``/thaw [size]``"
+          ``[size]``,"The radius of the circle to thaw in"
+
+.. raw:: html
+
     <span id="command-/green"></span>
 
 .. topic:: ``/green`` (or ``//green``)
@@ -2158,6 +2174,20 @@ Utility Commands
         **Usage**,"``/green [-f] [size]``"
           ``[size]``,"The radius of the circle to convert in"
           ``[-f]``,"Also convert coarse dirt"
+
+.. raw:: html
+
+    <span id="command-/extinguish"></span>
+
+.. topic:: ``/extinguish`` (or ``//ex``, ``//ext``, ``//extinguish``, ``/ex``, ``/ext``)
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Extinguish nearby fire"
+        **Permissions**,"``worldedit.extinguish``"
+        **Usage**,"``/extinguish [radius]``"
+          ``[radius]``,"The radius of the square to remove in"
 
 .. raw:: html
 
@@ -2183,62 +2213,18 @@ Utility Commands
 
 .. raw:: html
 
-    <span id="command-/extinguish"></span>
+    <span id="command-/remove"></span>
 
-.. topic:: ``/extinguish`` (or ``//ex``, ``//ext``, ``//extinguish``, ``/ex``, ``/ext``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Extinguish nearby fire"
-        **Permissions**,"``worldedit.extinguish``"
-        **Usage**,"``/extinguish [radius]``"
-          ``[radius]``,"The radius of the square to remove in"
-
-.. raw:: html
-
-    <span id="command-/replacenear"></span>
-
-.. topic:: ``/replacenear`` (or ``//replacenear``)
+.. topic:: ``/remove`` (or ``/rem``, ``/rement``)
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Replace nearby blocks"
-        **Permissions**,"``worldedit.replacenear``"
-        **Usage**,"``/replacenear <radius> [from] <to>``"
-          ``<radius>``,"The radius of the square to remove in"
-          ``[from]``,"The mask matching blocks to remove"
-          ``<to>``,"The pattern of blocks to replace with"
-
-.. raw:: html
-
-    <span id="command-//drain"></span>
-
-.. topic:: ``//drain``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Drain a pool"
-        **Permissions**,"``worldedit.drain``"
-        **Usage**,"``//drain [-w] <radius>``"
-          ``<radius>``,"The radius to drain"
-          ``[-w]``,"Also un-waterlog blocks"
-
-.. raw:: html
-
-    <span id="command-/fixwater"></span>
-
-.. topic:: ``/fixwater`` (or ``//fixwater``)
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Fix water to be stationary"
-        **Permissions**,"``worldedit.fixwater``"
-        **Usage**,"``/fixwater <radius>``"
-          ``<radius>``,"The radius to fix in"
+        **Description**,"Remove all entities of a type"
+        **Permissions**,"``worldedit.remove``"
+        **Usage**,"``/remove <remover> <radius>``"
+          ``<remover>``,"The type of entity to remove"
+          ``<radius>``,"The radius of the cuboid to remove from"
 
 .. raw:: html
 
@@ -2256,31 +2242,17 @@ Utility Commands
 
 .. raw:: html
 
-    <span id="command-//fillr"></span>
+    <span id="command-//help"></span>
 
-.. topic:: ``//fillr``
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Fill a hole recursively"
-        **Permissions**,"``worldedit.fill.recursive``"
-        **Usage**,"``//fillr <pattern> <radius> [depth]``"
-          ``<pattern>``,"The blocks to fill with"
-          ``<radius>``,"The radius to fill in"
-          ``[depth]``,"The depth to fill"
-
-.. raw:: html
-
-    <span id="command-/fixlava"></span>
-
-.. topic:: ``/fixlava`` (or ``//fixlava``)
+.. topic:: ``//help``
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Fix lava to be stationary"
-        **Permissions**,"``worldedit.fixlava``"
-        **Usage**,"``/fixlava <radius>``"
-          ``<radius>``,"The radius to fix in"
+        **Description**,"Displays help for WorldEdit commands"
+        **Permissions**,"``worldedit.help``"
+        **Usage**,"``//help [-s] [-p <page>] [command...]``"
+          ``[-s]``,"List sub-commands of the given command, if applicable"
+          ``[-p <page>]``,"The page to retrieve"
+          ``[command...]``,"The command to retrieve help for"
 

@@ -20,6 +20,7 @@ General Commands
     <span id="command-/worldedit"></span>
 
 .. topic:: ``/worldedit`` (or ``/we``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -32,6 +33,7 @@ General Commands
     <span id="command-/worldedit-help"></span>
 
 .. topic:: ``/worldedit help``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -48,6 +50,7 @@ General Commands
     <span id="command-/worldedit-version"></span>
 
 .. topic:: ``/worldedit version`` (or ``/worldedit ver``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -60,6 +63,7 @@ General Commands
     <span id="command-/worldedit-reload"></span>
 
 .. topic:: ``/worldedit reload``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -73,6 +77,7 @@ General Commands
     <span id="command-/worldedit-cui"></span>
 
 .. topic:: ``/worldedit cui``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -85,6 +90,7 @@ General Commands
     <span id="command-/worldedit-tz"></span>
 
 .. topic:: ``/worldedit tz``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -98,6 +104,7 @@ General Commands
     <span id="command-/worldedit-report"></span>
 
 .. topic:: ``/worldedit report``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -112,6 +119,7 @@ General Commands
     <span id="command-/undo"></span>
 
 .. topic:: ``/undo`` (or ``//undo``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -127,6 +135,7 @@ General Commands
     <span id="command-/redo"></span>
 
 .. topic:: ``/redo`` (or ``//redo``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -142,6 +151,7 @@ General Commands
     <span id="command-/clearhistory"></span>
 
 .. topic:: ``/clearhistory`` (or ``//clearhistory``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -155,6 +165,7 @@ General Commands
     <span id="command-//limit"></span>
 
 .. topic:: ``//limit``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -169,6 +180,7 @@ General Commands
     <span id="command-//timeout"></span>
 
 .. topic:: ``//timeout``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -183,6 +195,7 @@ General Commands
     <span id="command-//fast"></span>
 
 .. topic:: ``//fast``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -197,6 +210,7 @@ General Commands
     <span id="command-//reorder"></span>
 
 .. topic:: ``//reorder``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -211,6 +225,7 @@ General Commands
     <span id="command-//drawsel"></span>
 
 .. topic:: ``//drawsel``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -225,6 +240,7 @@ General Commands
     <span id="command-//world"></span>
 
 .. topic:: ``//world``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -239,6 +255,7 @@ General Commands
     <span id="command-/gmask"></span>
 
 .. topic:: ``/gmask`` (or ``//gmask``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -253,6 +270,7 @@ General Commands
     <span id="command-/toggleplace"></span>
 
 .. topic:: ``/toggleplace`` (or ``//toggleplace``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -265,6 +283,7 @@ General Commands
     <span id="command-/searchitem"></span>
 
 .. topic:: ``/searchitem`` (or ``//searchitem``, ``//l``, ``//search``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -285,6 +304,7 @@ Navigation Commands
     <span id="command-/unstuck"></span>
 
 .. topic:: ``/unstuck`` (or ``/!``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -298,6 +318,7 @@ Navigation Commands
     <span id="command-/ascend"></span>
 
 .. topic:: ``/ascend`` (or ``/asc``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -312,6 +333,7 @@ Navigation Commands
     <span id="command-/descend"></span>
 
 .. topic:: ``/descend`` (or ``/desc``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -326,6 +348,7 @@ Navigation Commands
     <span id="command-/ceil"></span>
 
 .. topic:: ``/ceil``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -342,6 +365,7 @@ Navigation Commands
     <span id="command-/thru"></span>
 
 .. topic:: ``/thru``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -355,6 +379,7 @@ Navigation Commands
     <span id="command-/jumpto"></span>
 
 .. topic:: ``/jumpto`` (or ``/j``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -368,6 +393,7 @@ Navigation Commands
     <span id="command-/up"></span>
 
 .. topic:: ``/up``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -387,6 +413,7 @@ Selection Commands
     <span id="command-//pos1"></span>
 
 .. topic:: ``//pos1``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -401,6 +428,7 @@ Selection Commands
     <span id="command-//pos2"></span>
 
 .. topic:: ``//pos2``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -415,6 +443,7 @@ Selection Commands
     <span id="command-//hpos1"></span>
 
 .. topic:: ``//hpos1``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -428,6 +457,7 @@ Selection Commands
     <span id="command-//hpos2"></span>
 
 .. topic:: ``//hpos2``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -441,6 +471,7 @@ Selection Commands
     <span id="command-//chunk"></span>
 
 .. topic:: ``//chunk``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -457,6 +488,7 @@ Selection Commands
     <span id="command-//wand"></span>
 
 .. topic:: ``//wand``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -471,6 +503,7 @@ Selection Commands
     <span id="command-/toggleeditwand"></span>
 
 .. topic:: ``/toggleeditwand``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -484,6 +517,7 @@ Selection Commands
     <span id="command-//contract"></span>
 
 .. topic:: ``//contract``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -500,6 +534,7 @@ Selection Commands
     <span id="command-//shift"></span>
 
 .. topic:: ``//shift``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -515,6 +550,7 @@ Selection Commands
     <span id="command-//outset"></span>
 
 .. topic:: ``//outset``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -531,6 +567,7 @@ Selection Commands
     <span id="command-//inset"></span>
 
 .. topic:: ``//inset``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -547,6 +584,7 @@ Selection Commands
     <span id="command-//size"></span>
 
 .. topic:: ``//size``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -561,6 +599,7 @@ Selection Commands
     <span id="command-//count"></span>
 
 .. topic:: ``//count``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -575,6 +614,7 @@ Selection Commands
     <span id="command-//distr"></span>
 
 .. topic:: ``//distr``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -591,6 +631,7 @@ Selection Commands
     <span id="command-//sel"></span>
 
 .. topic:: ``//sel`` (or ``/;``, ``//desel``, ``//deselect``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -608,6 +649,7 @@ Region Commands
     <span id="command-//set"></span>
 
 .. topic:: ``//set``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -622,6 +664,7 @@ Region Commands
     <span id="command-//line"></span>
 
 .. topic:: ``//line``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -640,6 +683,7 @@ Region Commands
     <span id="command-//curve"></span>
 
 .. topic:: ``//curve``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -658,6 +702,7 @@ Region Commands
     <span id="command-//replace"></span>
 
 .. topic:: ``//replace`` (or ``//re``, ``//rep``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -673,6 +718,7 @@ Region Commands
     <span id="command-//overlay"></span>
 
 .. topic:: ``//overlay``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -687,6 +733,7 @@ Region Commands
     <span id="command-//center"></span>
 
 .. topic:: ``//center`` (or ``//middle``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -701,6 +748,7 @@ Region Commands
     <span id="command-//naturalize"></span>
 
 .. topic:: ``//naturalize``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -714,6 +762,7 @@ Region Commands
     <span id="command-//walls"></span>
 
 .. topic:: ``//walls``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -728,6 +777,7 @@ Region Commands
     <span id="command-//faces"></span>
 
 .. topic:: ``//faces`` (or ``//outline``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -742,6 +792,7 @@ Region Commands
     <span id="command-//smooth"></span>
 
 .. topic:: ``//smooth``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -759,6 +810,7 @@ Region Commands
     <span id="command-//move"></span>
 
 .. topic:: ``//move``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -780,6 +832,7 @@ Region Commands
     <span id="command-//stack"></span>
 
 .. topic:: ``//stack``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -800,6 +853,7 @@ Region Commands
     <span id="command-//regen"></span>
 
 .. topic:: ``//regen``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -816,6 +870,7 @@ Region Commands
     <span id="command-//deform"></span>
 
 .. topic:: ``//deform``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -836,6 +891,7 @@ Region Commands
     <span id="command-//hollow"></span>
 
 .. topic:: ``//hollow``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -853,6 +909,7 @@ Region Commands
     <span id="command-//forest"></span>
 
 .. topic:: ``//forest``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -868,6 +925,7 @@ Region Commands
     <span id="command-//flora"></span>
 
 .. topic:: ``//flora``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -885,6 +943,7 @@ Generation Commands
     <span id="command-//hcyl"></span>
 
 .. topic:: ``//hcyl``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -901,6 +960,7 @@ Generation Commands
     <span id="command-//cyl"></span>
 
 .. topic:: ``//cyl``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -918,6 +978,7 @@ Generation Commands
     <span id="command-//hsphere"></span>
 
 .. topic:: ``//hsphere``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -934,6 +995,7 @@ Generation Commands
     <span id="command-//sphere"></span>
 
 .. topic:: ``//sphere``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -951,6 +1013,7 @@ Generation Commands
     <span id="command-/forestgen"></span>
 
 .. topic:: ``/forestgen``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -967,6 +1030,7 @@ Generation Commands
     <span id="command-/pumpkins"></span>
 
 .. topic:: ``/pumpkins``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -981,6 +1045,7 @@ Generation Commands
     <span id="command-//hpyramid"></span>
 
 .. topic:: ``//hpyramid``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -996,6 +1061,7 @@ Generation Commands
     <span id="command-//pyramid"></span>
 
 .. topic:: ``//pyramid``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1012,6 +1078,7 @@ Generation Commands
     <span id="command-//generate"></span>
 
 .. topic:: ``//generate`` (or ``//gen``, ``//g``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1033,6 +1100,7 @@ Generation Commands
     <span id="command-//generatebiome"></span>
 
 .. topic:: ``//generatebiome`` (or ``//genbiome``, ``//gb``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1057,6 +1125,7 @@ Schematic and Clipboard Commands
     <span id="command-/schematic"></span>
 
 .. topic:: ``/schematic`` (or ``/schem``, ``//schematic``, ``//schem``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1070,6 +1139,7 @@ Schematic and Clipboard Commands
     <span id="command-/schematic-list"></span>
 
 .. topic:: ``/schematic list`` (or ``/schematic all``, ``/schematic ls``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1088,6 +1158,7 @@ Schematic and Clipboard Commands
     <span id="command-/schematic-formats"></span>
 
 .. topic:: ``/schematic formats`` (or ``/schematic listformats``, ``/schematic f``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1101,6 +1172,7 @@ Schematic and Clipboard Commands
     <span id="command-/schematic-load"></span>
 
 .. topic:: ``/schematic load``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1116,6 +1188,7 @@ Schematic and Clipboard Commands
     <span id="command-/schematic-delete"></span>
 
 .. topic:: ``/schematic delete`` (or ``/schematic d``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1130,6 +1203,7 @@ Schematic and Clipboard Commands
     <span id="command-/schematic-save"></span>
 
 .. topic:: ``/schematic save``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1146,6 +1220,7 @@ Schematic and Clipboard Commands
     <span id="command-//copy"></span>
 
 .. topic:: ``//copy``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1162,6 +1237,7 @@ Schematic and Clipboard Commands
     <span id="command-//cut"></span>
 
 .. topic:: ``//cut``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1179,6 +1255,7 @@ Schematic and Clipboard Commands
     <span id="command-//paste"></span>
 
 .. topic:: ``//paste``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1198,6 +1275,7 @@ Schematic and Clipboard Commands
     <span id="command-//rotate"></span>
 
 .. topic:: ``//rotate``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1217,6 +1295,7 @@ Schematic and Clipboard Commands
     <span id="command-//flip"></span>
 
 .. topic:: ``//flip``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1231,6 +1310,7 @@ Schematic and Clipboard Commands
     <span id="command-/clearclipboard"></span>
 
 .. topic:: ``/clearclipboard``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1247,6 +1327,7 @@ Tool Commands
     <span id="command-/none"></span>
 
 .. topic:: ``/none``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1259,6 +1340,7 @@ Tool Commands
     <span id="command-//selwand"></span>
 
 .. topic:: ``//selwand`` (or ``/selwand``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1272,6 +1354,7 @@ Tool Commands
     <span id="command-//navwand"></span>
 
 .. topic:: ``//navwand`` (or ``/navwand``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1285,6 +1368,7 @@ Tool Commands
     <span id="command-/info"></span>
 
 .. topic:: ``/info``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1298,6 +1382,7 @@ Tool Commands
     <span id="command-/tree"></span>
 
 .. topic:: ``/tree``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1312,6 +1397,7 @@ Tool Commands
     <span id="command-/repl"></span>
 
 .. topic:: ``/repl``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1326,6 +1412,7 @@ Tool Commands
     <span id="command-/cycler"></span>
 
 .. topic:: ``/cycler``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1339,6 +1426,7 @@ Tool Commands
     <span id="command-/floodfill"></span>
 
 .. topic:: ``/floodfill`` (or ``/flood``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1354,6 +1442,7 @@ Tool Commands
     <span id="command-/deltree"></span>
 
 .. topic:: ``/deltree``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1367,6 +1456,7 @@ Tool Commands
     <span id="command-/farwand"></span>
 
 .. topic:: ``/farwand``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1380,6 +1470,7 @@ Tool Commands
     <span id="command-/lrbuild"></span>
 
 .. topic:: ``/lrbuild`` (or ``//lrbuild``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1395,6 +1486,7 @@ Tool Commands
     <span id="command-//"></span>
 
 .. topic:: ``//`` (or ``/,``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1409,6 +1501,7 @@ Tool Commands
     <span id="command-/mask"></span>
 
 .. topic:: ``/mask``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1423,6 +1516,7 @@ Tool Commands
     <span id="command-/material"></span>
 
 .. topic:: ``/material`` (or ``//material``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1437,6 +1531,7 @@ Tool Commands
     <span id="command-/range"></span>
 
 .. topic:: ``/range``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1451,6 +1546,7 @@ Tool Commands
     <span id="command-/size"></span>
 
 .. topic:: ``/size``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1465,6 +1561,7 @@ Tool Commands
     <span id="command-/tracemask"></span>
 
 .. topic:: ``/tracemask``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1482,6 +1579,7 @@ Super Pickaxe Commands
     <span id="command-/superpickaxe"></span>
 
 .. topic:: ``/superpickaxe`` (or ``/pickaxe``, ``/sp``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1495,6 +1593,7 @@ Super Pickaxe Commands
     <span id="command-/superpickaxe-single"></span>
 
 .. topic:: ``/superpickaxe single``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1508,6 +1607,7 @@ Super Pickaxe Commands
     <span id="command-/superpickaxe-area"></span>
 
 .. topic:: ``/superpickaxe area``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1522,6 +1622,7 @@ Super Pickaxe Commands
     <span id="command-/superpickaxe-recursive"></span>
 
 .. topic:: ``/superpickaxe recursive`` (or ``/superpickaxe recur``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1539,6 +1640,7 @@ Brush Commands
     <span id="command-/brush"></span>
 
 .. topic:: ``/brush`` (or ``/br``, ``//brush``, ``//br``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1552,6 +1654,7 @@ Brush Commands
     <span id="command-/brush-forest"></span>
 
 .. topic:: ``/brush forest``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1569,6 +1672,7 @@ Brush Commands
     <span id="command-/brush-cylinder"></span>
 
 .. topic:: ``/brush cylinder`` (or ``/brush cyl``, ``/brush c``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1586,6 +1690,7 @@ Brush Commands
     <span id="command-/brush-set"></span>
 
 .. topic:: ``/brush set``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1602,6 +1707,7 @@ Brush Commands
     <span id="command-/brush-apply"></span>
 
 .. topic:: ``/brush apply``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1617,6 +1723,7 @@ Brush Commands
     <span id="command-/brush-deform"></span>
 
 .. topic:: ``/brush deform``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1635,6 +1742,7 @@ Brush Commands
     <span id="command-/brush-lower"></span>
 
 .. topic:: ``/brush lower``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1650,6 +1758,7 @@ Brush Commands
     <span id="command-/brush-butcher"></span>
 
 .. topic:: ``/brush butcher`` (or ``/brush kill``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1672,6 +1781,7 @@ Brush Commands
     <span id="command-/brush-paint"></span>
 
 .. topic:: ``/brush paint``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1688,6 +1798,7 @@ Brush Commands
     <span id="command-/brush-clipboard"></span>
 
 .. topic:: ``/brush clipboard`` (or ``/brush copy``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1706,6 +1817,7 @@ Brush Commands
     <span id="command-/brush-gravity"></span>
 
 .. topic:: ``/brush gravity`` (or ``/brush grav``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1721,6 +1833,7 @@ Brush Commands
     <span id="command-/brush-extinguish"></span>
 
 .. topic:: ``/brush extinguish`` (or ``/brush ex``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1735,6 +1848,7 @@ Brush Commands
     <span id="command-/brush-sphere"></span>
 
 .. topic:: ``/brush sphere`` (or ``/brush s``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1751,6 +1865,7 @@ Brush Commands
     <span id="command-/brush-raise"></span>
 
 .. topic:: ``/brush raise``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1766,6 +1881,7 @@ Brush Commands
     <span id="command-/brush-smooth"></span>
 
 .. topic:: ``/brush smooth``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1787,6 +1903,7 @@ Biome Commands
     <span id="command-/biomelist"></span>
 
 .. topic:: ``/biomelist`` (or ``/biomels``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1801,6 +1918,7 @@ Biome Commands
     <span id="command-/biomeinfo"></span>
 
 .. topic:: ``/biomeinfo``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1818,6 +1936,7 @@ Biome Commands
     <span id="command-//setbiome"></span>
 
 .. topic:: ``//setbiome``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1838,6 +1957,7 @@ Chunk Commands
     <span id="command-/chunkinfo"></span>
 
 .. topic:: ``/chunkinfo``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1851,6 +1971,7 @@ Chunk Commands
     <span id="command-/listchunks"></span>
 
 .. topic:: ``/listchunks``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1865,6 +1986,7 @@ Chunk Commands
     <span id="command-/delchunks"></span>
 
 .. topic:: ``/delchunks``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1882,6 +2004,7 @@ Snapshot Commands
     <span id="command-/restore"></span>
 
 .. topic:: ``/restore`` (or ``//restore``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1896,6 +2019,7 @@ Snapshot Commands
     <span id="command-/snapshot"></span>
 
 .. topic:: ``/snapshot`` (or ``/snap``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1909,6 +2033,7 @@ Snapshot Commands
     <span id="command-/snapshot-before"></span>
 
 .. topic:: ``/snapshot before``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1923,6 +2048,7 @@ Snapshot Commands
     <span id="command-/snapshot-use"></span>
 
 .. topic:: ``/snapshot use``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1937,6 +2063,7 @@ Snapshot Commands
     <span id="command-/snapshot-sel"></span>
 
 .. topic:: ``/snapshot sel``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1951,6 +2078,7 @@ Snapshot Commands
     <span id="command-/snapshot-after"></span>
 
 .. topic:: ``/snapshot after``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1965,6 +2093,7 @@ Snapshot Commands
     <span id="command-/snapshot-list"></span>
 
 .. topic:: ``/snapshot list``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1982,6 +2111,7 @@ Scripting Commands
     <span id="command-/cs"></span>
 
 .. topic:: ``/cs``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -1997,6 +2127,7 @@ Scripting Commands
     <span id="command-/.s"></span>
 
 .. topic:: ``/.s``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2014,6 +2145,7 @@ Utility Commands
     <span id="command-//fill"></span>
 
 .. topic:: ``//fill``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2030,6 +2162,7 @@ Utility Commands
     <span id="command-//fillr"></span>
 
 .. topic:: ``//fillr``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2046,6 +2179,7 @@ Utility Commands
     <span id="command-//drain"></span>
 
 .. topic:: ``//drain``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2061,6 +2195,7 @@ Utility Commands
     <span id="command-/fixlava"></span>
 
 .. topic:: ``/fixlava`` (or ``//fixlava``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2075,6 +2210,7 @@ Utility Commands
     <span id="command-/fixwater"></span>
 
 .. topic:: ``/fixwater`` (or ``//fixwater``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2089,6 +2225,7 @@ Utility Commands
     <span id="command-/removeabove"></span>
 
 .. topic:: ``/removeabove`` (or ``//removeabove``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2104,6 +2241,7 @@ Utility Commands
     <span id="command-/removebelow"></span>
 
 .. topic:: ``/removebelow`` (or ``//removebelow``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2119,6 +2257,7 @@ Utility Commands
     <span id="command-/removenear"></span>
 
 .. topic:: ``/removenear`` (or ``//removenear``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2134,6 +2273,7 @@ Utility Commands
     <span id="command-/replacenear"></span>
 
 .. topic:: ``/replacenear`` (or ``//replacenear``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2150,6 +2290,7 @@ Utility Commands
     <span id="command-/snow"></span>
 
 .. topic:: ``/snow`` (or ``//snow``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2164,6 +2305,7 @@ Utility Commands
     <span id="command-/thaw"></span>
 
 .. topic:: ``/thaw`` (or ``//thaw``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2178,6 +2320,7 @@ Utility Commands
     <span id="command-/green"></span>
 
 .. topic:: ``/green`` (or ``//green``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2193,6 +2336,7 @@ Utility Commands
     <span id="command-/extinguish"></span>
 
 .. topic:: ``/extinguish`` (or ``//ex``, ``//ext``, ``//extinguish``, ``/ex``, ``/ext``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2207,6 +2351,7 @@ Utility Commands
     <span id="command-/butcher"></span>
 
 .. topic:: ``/butcher``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2229,6 +2374,7 @@ Utility Commands
     <span id="command-/remove"></span>
 
 .. topic:: ``/remove`` (or ``/rem``, ``/rement``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2244,6 +2390,7 @@ Utility Commands
     <span id="command-//calculate"></span>
 
 .. topic:: ``//calculate`` (or ``//calc``, ``//eval``, ``//evaluate``, ``//solve``)
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
@@ -2258,6 +2405,7 @@ Utility Commands
     <span id="command-//help"></span>
 
 .. topic:: ``//help``
+    :class: command-topic
 
     .. csv-table::
         :widths: 8, 15

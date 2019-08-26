@@ -30,6 +30,7 @@ See the :doc:`commands` page for an explanation of some of these commands.
     ``//fast``,"``worldedit.fast``"
     ``//reorder``,"``worldedit.reorder``"
     ``//drawsel``,"``worldedit.drawsel``"
+    ``//world``,"``worldedit.world``"
     ``/gmask``,"``worldedit.global-mask``"
     ``/toggleplace``,""
     ``/searchitem``,"``worldedit.searchitem``"

@@ -222,6 +222,20 @@ General Commands
 
 .. raw:: html
 
+    <span id="command-//world"></span>
+
+.. topic:: ``//world``
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Sets the world override"
+        **Permissions**,"``worldedit.world``"
+        **Usage**,"``//world [world]``"
+          ``[world]``,"The world override"
+
+.. raw:: html
+
     <span id="command-/gmask"></span>
 
 .. topic:: ``/gmask`` (or ``//gmask``)
@@ -1191,8 +1205,7 @@ Schematic and Clipboard Commands
         **Description**,"Rotate the contents of the clipboard
 
         Non-destructively rotate the contents of the clipboard.
-        Angles are provided in degrees and a positive angle will result in a clockwise rotation. Multiple rotations can be stacked. Interpolation is not performed so angles should be a multiple of 90 degrees.
-"
+        Angles are provided in degrees and a positive angle will result in a clockwise rotation. Multiple rotations can be stacked. Interpolation is not performed so angles should be a multiple of 90 degrees."
         **Permissions**,"``worldedit.clipboard.rotate``"
         **Usage**,"``//rotate <yRotate> [xRotate] [zRotate]``"
           ``<yRotate>``,"Amount to rotate on the y-axis"

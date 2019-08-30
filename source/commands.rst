@@ -641,6 +641,36 @@ Selection Commands
           ``[selector]``,"Selector to switch to"
           ``[-d]``,"Set default selector"
 
+.. raw:: html
+
+    <span id="command-//expand"></span>
+
+.. topic:: ``//expand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Expand the selection area"
+        **Permissions**,"``worldedit.selection.expand``"
+        **Usage**,"``//expand <vert|<amount> [reverseAmount] [direction]>``"
+          ``<amount>``,"Amount to expand the selection by, can be `vert` to expand to the whole vertical column"
+          ``[reverseAmount]``,"Amount to expand the selection by in the other direction"
+          ``[direction]``,"Direction to expand"
+
+.. raw:: html
+
+    <span id="command-//expand-vert"></span>
+
+.. topic:: ``//expand vert``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Vertically expand the selection to world limits."
+        **Usage**,"``//expand vert``"
+
 
 Region Commands
 ~~~~~~~~~~~~~~~

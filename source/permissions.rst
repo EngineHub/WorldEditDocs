@@ -56,6 +56,8 @@ See the :doc:`commands` page for an explanation of some of these commands.
     ``//count``,"``worldedit.analysis.count``"
     ``//distr``,"``worldedit.analysis.distr``"
     ``//sel``,""
+    ``//expand``,"``worldedit.selection.expand``"
+    ``//expand vert``,""
     ``//set``,"``worldedit.region.set``"
     ``//line``,"``worldedit.region.line``"
     ``//curve``,"``worldedit.region.curve``"

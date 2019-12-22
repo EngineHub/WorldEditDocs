@@ -6,6 +6,7 @@ Developer API
     :hidden:
 
     concepts/index
+    examples/index
     internal-apis
 
 WorldEdit provides a stable public interface for other mods and plugins to build off of. It provides
@@ -35,7 +36,8 @@ latest Minecraft version, but generally the API is similar enough across version
 These documents also only cover the latest version of WorldEdit, although old versions may be reached using the
 navigator in the bottom right.
 
-To get started with the API, read :doc:`API Concepts <concepts/index>`.
+To get started with the API, read :doc:`API Concepts <concepts/index>`. Some common API usages are documented in
+:doc:`API Examples <examples/index>`.
 When developing, take note of :doc:`Internal APIs <internal-apis>` to ensure you're using supported APIs.
 
 .. _Maven repository: https://help.sonatype.com/repomanager3/repository-manager-concepts/an-example---maven-repository-format

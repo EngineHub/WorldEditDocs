@@ -3,10 +3,10 @@ Clipboard Examples
 
 .. note::
     This documentation covers the API for using clipboards.
-    See :doc:`Clipboard <../../../usage/clipboard>` for in-game usage & explanations of what clipboards are.
+    See :doc:`/usage/clipboard` for in-game usage & explanations of what clipboards are.
 
-Concepts used in these examples: :doc:`Regions <../concepts/regions>`,
-:doc:`Edit Sessions <../concepts/edit-sessions>`, :doc:`Extents <../concepts/extents>`
+Concepts used in these examples: :doc:`../concepts/regions`, :doc:`../concepts/edit-sessions`,
+:doc:`../concepts/extents`
 
 Copying
 -------

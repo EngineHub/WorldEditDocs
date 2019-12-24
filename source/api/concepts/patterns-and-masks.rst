@@ -1,9 +1,8 @@
 Patterns and Masks
 ==================
 
-Patterns and masks are the same as described in :doc:`Patterns <../../usage/general/patterns>` and
-:doc:`Masks <../../usage/general/masks>`. The only difference is that they must be constructed via
-their respective classes, rather than from formatted strings.
+Patterns and masks are the same as described in :doc:`/usage/general/patterns` and :doc:`/usage/general/masks`.
+The only difference is that they must be constructed via their respective classes, rather than from formatted strings.
 
 A single block pattern can be represented using a ``BlockStateHolder``, such as ``BlockState`` and ``BaseBlock``.
 Other patterns types are fairly obvious from their names, such as ``TypeApplyingPattern`` or ``RandomStatePattern``.

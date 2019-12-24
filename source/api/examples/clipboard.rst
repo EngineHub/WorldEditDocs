@@ -6,7 +6,7 @@ Clipboard Examples
     See :doc:`Clipboard <../../../usage/clipboard>` for in-game usage & explanations of what clipboards are.
 
 Concepts used in these examples: :doc:`Regions <../concepts/regions>`,
-:doc:`Edit Sessions <../concepts/edit-sessions>`.
+:doc:`Edit Sessions <../concepts/edit-sessions>`, :doc:`Extents <../concepts/extents>`
 
 Copying
 -------

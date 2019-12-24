@@ -24,7 +24,7 @@ Then, all you need to do is pass the parameters to the ``ForwardExtentCopy``, ap
         ForwardExtentCopy forwardExtentCopy = new ForwardExtentCopy(
             editSession, region, clipboard, region.getMinimumPoint()
         );
-        forwardExtentCopy.setCopyingEntities(true);
+        // configure here
         Operations.complete(forwardExtentCopy);
     }
 
@@ -48,7 +48,7 @@ Full example:
         Operation operation = new ClipboardHolder(clipboard)
                 .createPaste(editSession)
                 .to(BlockVector3.at(x, y, z))
-                .ignoreAirBlocks(false)
+                // configure here
                 .build();
         Operations.complete(operation);
     }

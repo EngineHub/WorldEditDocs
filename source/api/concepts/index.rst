@@ -14,3 +14,4 @@ be read in the order provided, as later concepts sometimes reference earlier con
     regions
     registries
     edit-sessions
+    adapters

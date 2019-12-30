@@ -28,7 +28,9 @@ Once set, just toss either copies of your world folder or zipped copies of your 
     |z| ``2019-06-01-03-00-00.zip`` (this is one backup holding multiple worlds)
      |f| ``world/``
       |f| ``region/`` (all the ``.mca`` files are in here)
+
      |f| ``world_nether/``
+
     |z| ``2019-05-01-03-00-00.zip`` (another backup from a month before)
 
 .. |f| image:: /images/folder.png
@@ -37,7 +39,7 @@ Once set, just toss either copies of your world folder or zipped copies of your 
 
 As you might have noticed, each individual backup must have a timestamp. WorldEdit expects these timestamps in order to determine which backups are the newest. The world folder must be inside the backup, with a region folder inside that world folder. You can either have backups at the top level with multiple world folders inside, or multiple world folders with backups inside for each individual world.
 
-.. tip:: If you use a Linux-like system, you can use the following line to create a world backup ZIP having an acceptable filename: ``zip -v backups/`date "+%Y-%m-%d-%H-%M-%S"`.zip -r world``. 
+.. tip:: If you use a Linux-like system, you can use the following line to create a world backup ZIP having an acceptable filename: ``zip -v backups/`date "+%Y-%m-%d-%H-%M-%S"`.zip -r world``.
 
 Supported Archive Formats
 -------------------------

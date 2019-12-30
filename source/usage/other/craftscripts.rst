@@ -15,7 +15,9 @@ Using CraftScripts
 
 Once you have the JS engine installed, drop your CraftScript ``.js`` files in the ``craftscripts`` folder (in the WorldEdit config folder - either ``plugins/WorldEdit`` or ``config/WorldEdit`` depending on platform).
 
-To run a CraftScript::
+To run a CraftScript
+
+.. code-block:: text
 
     /cs <filename> <args>
     /.s <args>

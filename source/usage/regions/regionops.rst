@@ -73,7 +73,7 @@ Some potential uses for this include:
 
 There are several flags available:
 
-* ``-m <mask>`` will set a source :doc:`mask <general/masks>`, only stacking matching blocks
+* ``-m <mask>`` will set a source :doc:`mask </usage/general/masks>`, only stacking matching blocks
 * ``-e`` will also copy entities into each stacked area
 * ``-b`` will also copy biomes into each stacked area (you may need to re-join the world to see changes)
 

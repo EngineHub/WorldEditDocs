@@ -170,23 +170,38 @@ Functions
     Additionally, it provides the following functions:
 
     .. csv-table::
-        :widths: 6, 15
+        :widths: 7, 15
 
-        "``rotate(x, y, angle)``","Rotates the given coordinate pair by the given angle."
+        "``rotate(x, y, angle)``","Rotates the given coordinate pair by the given angle, in radians."
         "``swap(x, y)``","Swaps the contents of the 2 given variables."
         "``random()``","Returns a random positive number less than 1.0."
         "``randint(max)``","Returns a random positive integer less than max."
+        "``perlin(seed, x, y, z, frequency, octaves, persisence)``","Generates perlin noise with the given parameters."
+        "``voronoi(seed, x, y, z, frequency)``","Generates voronoi noise with the given parameters."
+        "``ridgedmulti(seed, x, y, z, frequency, octaves)``","Generated ridged multi fractal noise with the given parameters."
 
 .. topic:: Block Query Functions
 
-    The following functions can be used to query blocks in a world in an editting context.
+    The following functions can be used to query blocks in a world in an editing context. Note that they still use legacy ID and data, so they may have undefined behaviors for new (1.13+) blocks.
 
     .. csv-table::
         :widths: 8, 13
 
-        "``query(x, y, z, type, data)``","Returns true, if the block at the given coordinates has the given type and data value. If possible, the type and data of the block will be assigned to type and data."
-        "``queryRel(dx, dy, dz, type, data)``","Like query, except with relative world coordinates"
+        "``query(x, y, z, type, data)``","Returns true if the block at the given coordinates has the given legacy id and data value. If type or data are variables, the id and data of the block will be assigned to that variable."
+        "``queryRel(dx, dy, dz, type, data)``","Like query, except with an offset from the currently evaluated block coordinates"
         "``queryAbs(xp, yp, zp, type, data)``","Like query, except with absolute world coordinates"
+
+.. topic:: Buffer Functions
+
+    These functions provide access to data buffers (essentially, arrays). Two buffers are provided, one is a global shared buffer, and one is local to the expression. The function with `g` prepended accesses the global buffer, without the `g` accesses the local buffer.
+
+    .. csv-table::
+        :widths: 8, 13
+
+        "``(g)megabuf(index)``","Returns the value of the buffer at the given index."
+        "``(g)megabuf(index, value)``","Sets the value of the buffer at the given index."
+        "``(g)closest(x, y, z, index, count, stride)``","Finds the index of the closest set of x,y,z values (as in, three consecutive buffer values) to the given x,y,z values within *count* iterations and *stride* space between each iteration, starting at the given index value."
+
 
 Constants
 ~~~~~~~~~

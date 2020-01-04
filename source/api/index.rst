@@ -19,7 +19,7 @@ API Libraries
 -------------
 
 You can get the API via a `Maven repository`_, compatible with Maven_, Gradle_, sbt_, and many other build systems.
-The repository is `<https://maven.enginehub.org/>`_, and WorldEdit is under the group ``com.sk89q.worldedit``.
+The repository is `<https://maven.enginehub.org/repo/>`_, and WorldEdit is under the group ``com.sk89q.worldedit``.
 Depending on which parts of the API you need, choose one of the following names:
 
 - ``worldedit-core``: The core APIs. Does not depend on any platform, and provides no conversion classes.

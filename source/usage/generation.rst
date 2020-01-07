@@ -110,9 +110,11 @@ This uses the :doc:`expression parser <other/expressions>`.
 Flags
 ------
 
-* ``-r`` - Use raw coordinates, as they appear on the debug screen (F3)
-* ``-o`` - Use raw coordinate offsets with (0,0,0) at your placement position
-* with neither of these flags, coordinates will be normalized to -1..1
+* ``-r`` - Use raw coordinates, with one block equaling one unit
+* ``-c`` - Shift the origin to the center of your selection, with one block equaling one unit
+* ``-o`` - Shift the origin to your placement position (your position or pos1, with ``/togglepos``), with one block equaling one unit
+* Without any of these flags, coordinates will be normalized to -1..1 (from selection min/max points, meaning the entire selection is 2x2x2 units), note that each axis may be a different number of blocks per unit depending on your selection skewness.
+
 * ``-h`` - Generate a hollow shape. Blocks will only be set if they neighbour any blocks that are not part of the shape.
 
 Variables
@@ -121,7 +123,7 @@ Variables
 * ``x``, ``y``, ``z`` (input) - Coordinates
 * ``type``, ``data`` (input/output) - Material to use, defaults to the block/pattern entered
 
-.. note:: Since the expression parser only takes numbers as variables, it only works with blocks that have legacy type/data values. If you need to use it with newer blocks (> MC 1.13), use a placeholder and ``//replace`` that placeholder after generating your shape.
+.. note:: Since the expression parser only takes numbers as variables, type/data variables and query functions only work with blocks that have legacy type/data values. If you need to use it with newer blocks (> MC 1.13), use a placeholder and ``//replace`` that placeholder after generating your shape. The ``<pattern>`` arg of the command is not restricted, only the expression.
 
 The expression should return true (``> 0``) for blocks that are part of the shape and false (``<= 0``) for blocks not part of the shape. The expression is tested for each block in your selection.
 
@@ -164,3 +166,11 @@ Shape Examples
 
 
 .. tip:: Want more cool shapes? Try out a program like `MathMod <https://github.com/parisolab/mathmod/releases>`_ which comes with tons of shapes and helps you make more. Note that WorldEdit uses isometric (x,y,z) formulas, not parametric (u,v,t). Also, you may have to scale your x, y, and z variable depending on your selection size and the domain of the function.
+
+
+Generating Biome Shapes
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Just like the generate command, you can use an expression to set a biome in a particular shape. This uses the same syntax as above, but takes a biome id instead of a pattern. It currently only uses ``x`` and ``z`` as inputs.
+
+.. note:: As of Minecraft 1.15, biomes are stored in 3 dimensions. However, neither Minecraft nor WorldEdit can fully use this format yet, so biomes are still just treated as full columns.

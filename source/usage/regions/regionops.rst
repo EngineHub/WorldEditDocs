@@ -126,7 +126,6 @@ The ``//regen`` command will regenerate your selection to its state when the wor
 
 .. warning:: The regen command will use the current world generator, which means if the world was generated via an external tool, or if Minecraft's terrain generation has changed in the meantime, the regenerated area will not match everything around it. If possible, consider taking a backup of your entire world ahead of time for use with :doc:`snapshots <../snapshots>`.
 
-.. note:: The Bukkit API that WorldEdit uses for this command is non-fuctional as of Minecraft 1.14, so this command will not work. This does not affect other platforms.
 
 Naturalizing
 ------------
@@ -183,3 +182,9 @@ By default, coordinates are normalized from -1 to 1 on each axis, from the min t
     Flipping your selection on its side::
 
         //deform swap(x,y)
+
+
+Setting Biomes
+--------------
+
+While WorldEdit mostly focuses on manipulating blocks, the ``//setbiome <biome>`` command allows you to set the biome in your selection. The biome type should be specifed by `biome id <https://minecraft.gamepedia.com/Biome#Biome_IDs>`_. If you are using a biome added by a mod, the ``namespace:`` must prefix the id, e.g. ``minecraft:plains``.

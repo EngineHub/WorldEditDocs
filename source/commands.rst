@@ -252,6 +252,23 @@ General Commands
 
 .. raw:: html
 
+    <span id="command-//watchdog"></span>
+
+.. topic:: ``//watchdog``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Changes watchdog hook state.
+
+        This is dependent on platform implementation. Not all platforms support watchdog hooks, or contain a watchdog."
+        **Permissions**,"``worldedit.watchdog``"
+        **Usage**,"``//watchdog [hookMode]``"
+          ``[hookMode]``,"The mode to set the watchdog hook to"
+
+.. raw:: html
+
     <span id="command-/gmask"></span>
 
 .. topic:: ``/gmask`` (or ``//gmask``)
@@ -699,9 +716,9 @@ Region Commands
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Draws a line segment between cuboid selection corners
+        **Description**,"Draws line segments between cuboid selection corners or convex polyhedral selection vertices
 
-        Can only be used with a cuboid selection"
+        Can only be used with a cuboid selection or a convex polyhedral selection"
         **Permissions**,"``worldedit.region.line``"
         **Usage**,"``//line [-h] <pattern> [thickness]``"
           ``<pattern>``,"The pattern of blocks to place"
@@ -888,10 +905,7 @@ Region Commands
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Regenerates the contents of the selection
-
-        This command might affect things outside the selection,
-        if they are within the same chunk."
+        **Description**,"Regenerates the contents of the selection"
         **Permissions**,"``worldedit.regen``"
         **Usage**,"``//regen``"
 
@@ -1292,10 +1306,11 @@ Schematic and Clipboard Commands
 
         **Description**,"Paste the clipboard's contents"
         **Permissions**,"``worldedit.clipboard.paste``"
-        **Usage**,"``//paste [-abeos] [-m <sourceMask>]``"
+        **Usage**,"``//paste [-abenos] [-m <sourceMask>]``"
           ``[-a]``,"Skip air blocks"
           ``[-o]``,"Paste at the original position"
           ``[-s]``,"Select the region after pasting"
+          ``[-n]``,"No paste, select only. (Implies -s)"
           ``[-e]``,"Paste entities if available"
           ``[-b]``,"Paste biomes if available"
           ``[-m <sourceMask>]``,"Only paste blocks matching this mask"
@@ -1354,11 +1369,187 @@ Tool Commands
 ~~~~~~~~~~~~~
 .. raw:: html
 
+    <span id="command-/tool"></span>
+
+.. topic:: ``/tool``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Binds a tool to the item in your hand"
+        **Usage**,"``/tool <navwand|deltree|none|tree|lrbuild|repl|floodfill|selwand|info|farwand|cycler>``"
+
+.. raw:: html
+
+    <span id="command-/tool-navwand"></span>
+
+.. topic:: ``/tool navwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Navigation wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``/tool navwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-deltree"></span>
+
+.. topic:: ``/tool deltree``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Floating tree remover tool"
+        **Permissions**,"``worldedit.tool.deltree``"
+        **Usage**,"``/tool deltree``"
+
+.. raw:: html
+
+    <span id="command-/tool-none"></span>
+
+.. topic:: ``/tool none`` (or ``/tool unbind``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Unbind a bound tool from your current item"
+        **Usage**,"``/tool none``"
+
+.. raw:: html
+
+    <span id="command-/tool-tree"></span>
+
+.. topic:: ``/tool tree``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Tree generator tool"
+        **Permissions**,"``worldedit.tool.tree``"
+        **Usage**,"``/tool tree [type]``"
+          ``[type]``,"Type of tree to generate"
+
+.. raw:: html
+
+    <span id="command-/tool-lrbuild"></span>
+
+.. topic:: ``/tool lrbuild``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Long-range building tool"
+        **Permissions**,"``worldedit.tool.lrbuild``"
+        **Usage**,"``/tool lrbuild <primary> <secondary>``"
+          ``<primary>``,"Pattern to set on left-click"
+          ``<secondary>``,"Pattern to set on right-click"
+
+.. raw:: html
+
+    <span id="command-/tool-repl"></span>
+
+.. topic:: ``/tool repl``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block replacer tool"
+        **Permissions**,"``worldedit.tool.replacer``"
+        **Usage**,"``/tool repl <pattern>``"
+          ``<pattern>``,"The pattern of blocks to place"
+
+.. raw:: html
+
+    <span id="command-/tool-floodfill"></span>
+
+.. topic:: ``/tool floodfill`` (or ``/tool flood``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Flood fill tool"
+        **Permissions**,"``worldedit.tool.flood-fill``"
+        **Usage**,"``/tool floodfill <pattern> <range>``"
+          ``<pattern>``,"The pattern to flood fill"
+          ``<range>``,"The range to perform the fill"
+
+.. raw:: html
+
+    <span id="command-/tool-selwand"></span>
+
+.. topic:: ``/tool selwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Selection wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``/tool selwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-info"></span>
+
+.. topic:: ``/tool info``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block information tool"
+        **Permissions**,"``worldedit.tool.info``"
+        **Usage**,"``/tool info``"
+
+.. raw:: html
+
+    <span id="command-/tool-farwand"></span>
+
+.. topic:: ``/tool farwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Wand at a distance tool"
+        **Permissions**,"``worldedit.tool.farwand``"
+        **Usage**,"``/tool farwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-cycler"></span>
+
+.. topic:: ``/tool cycler``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block data cycler tool"
+        **Permissions**,"``worldedit.tool.data-cycler``"
+        **Usage**,"``/tool cycler``"
+
+.. raw:: html
+
     <span id="command-/none"></span>
 
 .. topic:: ``/none``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool none`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1367,31 +1558,39 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-//selwand"></span>
+    <span id="command-/selwand"></span>
 
-.. topic:: ``//selwand`` (or ``/selwand``)
+.. topic:: ``/selwand`` (or ``//selwand``)
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool selwand`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
         **Description**,"Selection wand tool"
         **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``//selwand``"
+        **Usage**,"``/selwand``"
 
 .. raw:: html
 
-    <span id="command-//navwand"></span>
+    <span id="command-/navwand"></span>
 
-.. topic:: ``//navwand`` (or ``/navwand``)
+.. topic:: ``/navwand`` (or ``//navwand``)
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool navwand`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
         **Description**,"Navigation wand tool"
         **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``//navwand``"
+        **Usage**,"``/navwand``"
 
 .. raw:: html
 
@@ -1400,6 +1599,10 @@ Tool Commands
 .. topic:: ``/info``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool info`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1414,6 +1617,10 @@ Tool Commands
 .. topic:: ``/tree``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool tree`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1429,6 +1636,10 @@ Tool Commands
 .. topic:: ``/repl``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool repl`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1444,6 +1655,10 @@ Tool Commands
 .. topic:: ``/cycler``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool cycler`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1458,6 +1673,10 @@ Tool Commands
 .. topic:: ``/floodfill`` (or ``/flood``)
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool floodfill`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1474,6 +1693,10 @@ Tool Commands
 .. topic:: ``/deltree``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool deltree`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1488,6 +1711,10 @@ Tool Commands
 .. topic:: ``/farwand``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool farwand`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1502,6 +1729,10 @@ Tool Commands
 .. topic:: ``/lrbuild`` (or ``//lrbuild``)
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
+
+        *Use* ``/tool lrbuild`` *instead.*
     .. csv-table::
         :widths: 8, 15
 
@@ -1676,8 +1907,7 @@ Brush Commands
         :widths: 8, 15
 
         **Description**,"Brushing commands"
-        **Permissions**,"``worldedit.brush.ex``, ``worldedit.brush.paint``, ``worldedit.brush.clipboard``, ``worldedit.brush.butcher``, ``worldedit.brush.set``, ``worldedit.brush.gravity``, ``worldedit.brush.forest``, ``worldedit.brush.lower``, ``worldedit.brush.smooth``, ``worldedit.brush.cylinder``, ``worldedit.brush.apply``, ``worldedit.brush.deform``, ``worldedit.brush.sphere``, ``worldedit.brush.raise``"
-        **Usage**,"``/brush <forest|cylinder|set|apply|deform|lower|butcher|paint|clipboard|gravity|extinguish|sphere|raise|smooth>``"
+        **Usage**,"``/brush <forest|cylinder|set|apply|deform|lower|butcher|paint|none|clipboard|gravity|extinguish|sphere|raise|smooth>``"
 
 .. raw:: html
 
@@ -1822,6 +2052,19 @@ Brush Commands
           ``<shape>``,"The shape of the region"
           ``[radius]``,"The size of the brush"
           ``[density]``,"The density of the brush"
+
+.. raw:: html
+
+    <span id="command-/brush-none"></span>
+
+.. topic:: ``/brush none`` (or ``/brush unbind``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Unbind a bound brush from your current item"
+        **Usage**,"``/brush none``"
 
 .. raw:: html
 
@@ -2086,7 +2329,7 @@ Snapshot Commands
         **Description**,"Choose a snapshot to use"
         **Permissions**,"``worldedit.snapshots.restore``"
         **Usage**,"``/snapshot use <name>``"
-          ``<name>``,"Snapeshot to use"
+          ``<name>``,"Snapshot to use"
 
 .. raw:: html
 

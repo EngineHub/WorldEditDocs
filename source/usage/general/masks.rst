@@ -28,8 +28,8 @@ To get a mask which matches the *intersection* of multiple masks, use a space to
 
         /mask "air #sel"
 
-Available Patterns
-~~~~~~~~~~~~~~~~~~
+Available Masks
+~~~~~~~~~~~~~~~
 
 Block Mask
 ----------

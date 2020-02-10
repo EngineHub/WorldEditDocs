@@ -51,7 +51,9 @@ First, you'll have to install Fabric. They have instructions on `their website <
 
 Then, `download WorldEdit from the CurseForge site <https://www.curseforge.com/minecraft/mc-mods/worldedit>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform (Forge builds are also there - make sure you grab the right one).
 
-You'll also need the `Fabric API mod <https://www.curseforge.com/minecraft/mc-mods/fabric-api>`_ and add that and the WorldEdit .jar to the "loader mods" section of your MultiMC instance and check to enable them, or add the jars to your mods folder (see Forge instructions above) if you're installing in the official Mojang launcher.
+On Minecraft 1.14.x versions, you will also need to install the `Fabric API mod <https://www.curseforge.com/minecraft/mc-mods/fabric-api>`_. This is not required for 1.15+.
+
+Add the WorldEdit .jar to the "loader mods" section of your MultiMC instance and check to enable it, or add the jar to your mods folder (see Forge instructions above) if you're installing in the official Mojang launcher.
 
 Forge Server / Sponge
 ~~~~~~~~~~~~~~~~~~~~~

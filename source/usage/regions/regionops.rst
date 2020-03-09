@@ -42,7 +42,7 @@ Note that you can omit the mask argument in the command - it will default to the
 
     Replacing surface sand with metal blocks::
 
-        //replace sand,<air diamond_block,iron_block,gold_block
+        //replace "sand <air" diamond_block,iron_block,gold_block
 
 Building walls (and other outlines)
 -----------------------------------

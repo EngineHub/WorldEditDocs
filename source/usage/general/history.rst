@@ -8,12 +8,14 @@ Sessions
 
 When you select a region or change your preferences in-game, your information will be put into a temporary session that will be kept active as long as you stay logged in. Upon disconnecting, your session will be discarded in 10 minutes, allowing you to log back in and retain your session. Each person's session is separate when connected to a server.
 
-Sessions contain:
+Sessions contain various things such as the following:
 
     * Your current selection
     * Your history
     * Your block change limit
     * Your selected snapshot to restore from
+    * Your clipboard
+    * Any currently bound tools/brushes
 
 Undo and Redo
 ~~~~~~~~~~~~~

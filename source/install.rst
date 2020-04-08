@@ -9,21 +9,34 @@ Installation
 Requirements
 ============
 
-WorldEdit runs on a variety of Minecraft platforms which support plugins or mods. The officially supported platforms are Bukkit, Forge, Fabric, and Sponge. You will need one of these platforms to run WorldEdit.
+WorldEdit runs on the Java edition of Minecraft, either on your single player/local game or a dedicated server.
 
-For single-player use, you'll need to download and install either `Minecraft Forge <https://files.minecraftforge.net/>`_ or `Fabric <https://fabricmc.net/>`_, depending on what other mods you plan on using.
+**WorldEdit can't be used on Realms, Windows 10, Bedrock, or Pocket Edition versions.** These versions of Minecraft have limited or no mod support. :(
 
-If you plan on running WorldEdit on a "vanilla" server, we recommend using a Bukkit implementation such as `Paper <https://papermc.io/>`_ or optionally `Spigot <https://www.spigotmc.org/>`_. (Paper is a fork of the Spigot project which adds many improvements that WorldEdit can take advantage of.)
+Before you install WorldEdit, you will first have to install a "mod loader" like Forge, Fabric, Spigot, Bukkit, or Sponge. We'll advise you to choosing your mod loader below.
 
-If you plan on running WorldEdit on a modded server, you can once again use Forge, or use `Sponge <https://www.spongepowered.org/>`_, which is generally compatible with Forge mods, and also supports a wide variety of other plugins.
+Choosing a Mod Loader
+~~~~~~~~~~~~~~~~~~~~~
 
-Note that there are unofficial implementations of WorldEdit for other platforms.
+If you want to use WorldEdit on your single-player/local game, we recommend one of two choices:
+
+* `Minecraft Forge <https://files.minecraftforge.net/>`_ (the original choice)
+* Or alternatively, `Fabric <https://fabricmc.net/>`_
+
+On the other hand, if you are running a Minecraft server, you can use
+
+* `Paper <https://papermc.io/>`_ (recommended over Spigot because it has improvements WorldEdit can use)
+* `Spigot <https://www.spigotmc.org/>`_
+* Forge (recommended if you are using other Forge mods)
+* `Sponge <https://www.spongepowered.org/>`_ (also compatible with Forge mods)
+
+Note: Paper/Spigot use its own set of mods that are mostly incompatible with mods for Forge/Sponge. WorldEdit is extremely unique in that it works as a mod for both.
 
 Installation
 =============
 
-Bukkit
-~~~~~~
+Bukkit / Spigot / Paper
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you've set up your Bukkit server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/>`_. Make sure you get the right WorldEdit download for your Minecraft version.
 

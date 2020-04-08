@@ -30,7 +30,7 @@ On the other hand, if you are running a Minecraft server, you can use
 * Forge (recommended if you are using other Forge mods)
 * `Sponge <https://www.spongepowered.org/>`_ (also compatible with Forge mods)
 
-Note: Paper and Spigot use its own set of mods that are mostly incompatible with mods for Forge and Sponge. You *may* want to research what other mods that you may want (generally, Paper and Spigot have much more server administration/"server-ready gameplay mods" and Forge and Sponge have more major gameplay mods). Regardless, WorldEdit is extremely unique in that it works as a mod for both 😊, so you can just pick the one that seems the easiest and roll with it. 🤙
+Note: Paper and Spigot use its own set of mods (commonly called "plugins") that are mostly incompatible with mods for Forge, Fabric, and Sponge. You *may* want to research what other mods/plugins that you may want (generally, Paper and Spigot have much more server administration/"server-ready gameplay mods" - which run completely on the server - and Forge, Fabric, and Sponge have more major gameplay mods - which generally require client installation). Regardless, WorldEdit is extremely unique in that it works as a mod for both 😊, so you can just pick the one that seems the easiest and roll with it. 🤙
 
 Installation
 =============
@@ -38,7 +38,7 @@ Installation
 Bukkit / Spigot / Paper
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Once you've set up your Bukkit server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/>`_. Make sure you get the right WorldEdit download for your Minecraft version.
+Once you've set up your Bukkit-based server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/>`_. Make sure you get the right WorldEdit download for your Minecraft version.
 
 1. In your server folder, create a "plugins" folder if one does not yet exist. (It should be created when you first run the server).
 2. Copy the WorldEdit .jar file into the plugins folder.

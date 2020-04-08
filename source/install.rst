@@ -30,7 +30,7 @@ On the other hand, if you are running a Minecraft server, you can use
 * Forge (recommended if you are using other Forge mods)
 * `Sponge <https://www.spongepowered.org/>`_ (also compatible with Forge mods)
 
-Note: Paper and Spigot use its own set of mods that are mostly incompatible with mods for Forge and Sponge. You *may* want to research what other mods that you may want. Regardless, WorldEdit is extremely unique in that it works as a mod for both. 😊
+Note: Paper and Spigot use its own set of mods that are mostly incompatible with mods for Forge and Sponge. You *may* want to research what other mods that you may want (generally, Paper and Spigot have much more server administration/"server-ready gameplay mods" and Forge and Sponge have more major gameplay mods). Regardless, WorldEdit is extremely unique in that it works as a mod for both 😊, so you can just pick the one that seems the easiest and roll with it. 🤙
 
 Installation
 =============

@@ -65,7 +65,7 @@ Every time you call that method, you will get a new ``EditSession``, so be sure 
         importPackage(Packages.com.sk89q.worldedit.world.block);
 
         var sess = context.remember();
-        sess.setBlock(player.getBlockOn(), BlockTypes.WHITE_WOOL.getDefaultState());
+        sess.setBlock(player.getBlockOn().toVector().toBlockPoint(), BlockTypes.WHITE_WOOL.getDefaultState());
 
 Note that because ``BlockTypes`` is in the ``com.sk89q.worldedit.world.block`` namespace, it had to be imported first. The first argument for ``setBlock()`` is a ``BlockVector3`` indicating the position in the world.
 

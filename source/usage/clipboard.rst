@@ -116,7 +116,11 @@ Schematic Management
 Schematic Storage
 -----------------
 
-Schematics are saved to and loaded from WorldEdit's schematic folder. On Bukkit, this will be in the ``plugins/WorldEdit/`` folder, while on other platforms, it will be in ``config/WorldEdit/``. The default folder name is simply ``schematics``, though this can be changed in the :doc:`config <../config>`. The folder is not created until you save a schematic in-game. If you've downloaded a schematic somewhere and want to add it, you can make the folder manually.
+Schematics are saved to and loaded from WorldEdit's schematic folder, which is named ``schematics`` by default, but
+can be changed in the :doc:`config <../config>`. The folder is not created until you save a schematic in-game.
+If you've downloaded a schematic somewhere and want to add it, you can make the folder manually. The folder needs
+to be inside WorldEdit's config folder, which is ``plugins/WorldEdit`` on Bukkit/Spigot/Paper, and ``config/WorldEdit``
+on other platforms.
 
 .. note:: If you want to share schematic folders between servers/installations, or simply want to store them elsewhere, you will have to enable the "allow-symlinks" option in the config.
 

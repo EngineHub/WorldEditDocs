@@ -11,5 +11,5 @@ API types into WorldEdit's API types, and vice versa. For example, you can turn 
     org.bukkit.entity.Player player = /* get a player */;
     Player wePlayer = BukkitAdapter.adapt(player);
 
-Nearly every other WorldEdit type has a similar conversion from the platform type. These are best discovered by
-looking at the methods in the adapter classes in your IDE.
+Nearly every other WorldEdit type (such as ``World``, ``BlockVector3``, or ``BlockState``) has a similar conversion to
+and from the platform type. These are best discovered by looking at the methods in the adapter classes in your IDE.

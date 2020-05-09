@@ -32,6 +32,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
+    'sphinx.ext.autosectionlabel',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -102,6 +103,7 @@ highlight_language = 'text'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+autosectionlabel_prefix_document = True
 
 # -- Options for HTML output ----------------------------------------------
 

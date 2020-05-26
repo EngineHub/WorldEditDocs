@@ -44,6 +44,16 @@ Selecting at your own location
 
 These commands set the first and second corners to the block above the one that you are standing on. Generally the wand suffices for most tasks and you likely will not need to use this. This is useful if you are flying in mid-air and don't have blocks you can click with the wand.
 
+Selecting a specific location
+-----------------------------
+
+::
+
+    //pos1 x,y,z
+    //pos2 x,y,z
+
+These commands set the first and second corners to the block specified by the given coordinates. This is useful for when you have pre-calculated specific coordinates that you want to manipulate.
+
 Selecting with your crosshair
 -----------------------------
 

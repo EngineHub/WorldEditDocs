@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'WorldEdit'
-copyright = u'2015-2019, WorldEdit Team'
+copyright = u'2015-2020, WorldEdit Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -300,7 +300,7 @@ texinfo_documents = [
 epub_title = u'WorldEdit Documentation'
 epub_author = u'WorldEdit Team'
 epub_publisher = u'WorldEdit Team'
-epub_copyright = u'2019, WorldEdit Team'
+epub_copyright = u'2020, WorldEdit Team'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'WorldEdit Documentation'

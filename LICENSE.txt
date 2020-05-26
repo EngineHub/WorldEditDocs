@@ -1,8 +1,8 @@
 License for build scripts (see README.md) past this line:
 -------------------------------------------------------------------------------
 
-Copyright (c) 2019 Albert Pham <http://www.sk89q.com>
-Copyright (c) 2019 WorldEdit Team and contributors
+Copyright (c) 2020 Albert Pham <https://www.sk89q.com>
+Copyright (c) 2020 WorldEdit Team and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

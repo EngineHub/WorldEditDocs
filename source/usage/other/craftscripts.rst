@@ -3,7 +3,7 @@ CraftScripts
 
 .. highlight:: javascript
 
-CraftScripts allow you to write scripts with as little overhead as possible: no compiling WorldEdit, no setting up a plugins configuration folder, etc. CraftScripts are written in JavaScript.
+CraftScripts allow you to write scripts with as little overhead as possible: no compiling WorldEdit, no setting up a plugins configuration file, etc. CraftScripts are written in JavaScript.
 
 The advantages of writing CraftScripts with WorldEdit are:
 
@@ -12,7 +12,7 @@ The advantages of writing CraftScripts with WorldEdit are:
 * Accept WorldEdit's powerful block type syntax (``//set sign[facing=north]``)
 * Get the region selected by the user
 
-.. note:: It is recommended you have a basic understanding of both JavaScript and Java.
+.. note:: A basic understanding of both JavaScript and Java is recommended.
 
 Requirements
 ~~~~~~~~~~~~
@@ -63,12 +63,12 @@ In addition to these globals, if you wish to import any WorldEdit or Java packag
         // Equivalent to `import java.utils.ArrayList`
         importClass(java.util.ArrayList)
 
-Warning: unlike Java, Rhino JavaScript does not implicitly import ``java.lang.*``, and doing so may cause unpredictable behavior.
+Warning: unlike Java, Rhino JavaScript does not implicitly import ``java.lang.*``, and doing so explicitly is not permitted.
 
-Working with blocks
+Working with Blocks
 -------------------
 
-All block editing in WorldEdit is done through an EditSession. This object handles history and block placement order all automatically. To get an edit session for your own script, use:
+All block editing in WorldEdit is done through an EditSession. This object handles history and block placement order automatically. To get an edit session for your own script, use:
 
 ::
 
@@ -112,7 +112,7 @@ To get the player's selected region, use:
 
 This returns an instance of `Region <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/regions/Region.java>`_. Although the player cannot run a CraftScript without first selecting a region, the script can read and modify blocks outside the selected region. ``//undo`` will still undo blocks modified outside the selection region.
 
-Processing arguments
+Processing Arguments
 --------------------
 
 Arguments are passed in under the ``argv`` variable. ``argv`` is a JavaScript array, and the first element of the array is the filename of your script (which may or may not have the file extension). If you need to check whether the right number of arguments was provided by the player, you can use ``CraftScriptContext#checkArgs``.
@@ -141,13 +141,13 @@ If the player inputs an invalid block, then an exception will be raised. If the 
 Printing Output
 --------------------
 
-Sometimes, you may want to write output to chat. Perhaps you would like to notify that the script has completed running, or perhaps you are debugging. In any case, you can do so through ``CraftScriptContext#print``:
+Sometimes, you may want to write output to chat. Perhaps you would like to notify that the script has completed running, or perhaps you are debugging your script. In any case, you can do so through ``CraftScriptContext#print``:
 
 ::
 
     context.print("Hello!")
 
-Other printing functions, such as ``CraftScriptContext#error`` and ``CraftScriptContext#printRaw``. This code snippet will print the exception raised if the player inputs an invalid block:
+Other printing functions, such as ``CraftScriptContext#error`` and ``CraftScriptContext#printRaw``, also exist. This code snippet will print the exception raised if the player inputs an invalid block:
 
 .. topic:: Example: Printing an exception to error output
 

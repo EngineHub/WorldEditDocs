@@ -58,7 +58,7 @@ In addition to these globals, if you wish to import any WorldEdit or Java packag
         // Equivalent to `import java.util.*`
         importPackage(java.util)
 
-        // Equivalent to`import com.sk89q.worldedit.math.BlockVector3`
+        // Equivalent to `import com.sk89q.worldedit.math.BlockVector3`
         importClass(Packages.com.sk89q.worldedit.math.BlockVector3);
         // Equivalent to `import java.util.ArrayList`
         importClass(java.util.ArrayList)

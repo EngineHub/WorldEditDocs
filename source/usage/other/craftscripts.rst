@@ -17,7 +17,7 @@ The advantages of writing CraftScripts with WorldEdit are:
 Requirements
 ~~~~~~~~~~~~
 
-Before you start using CraftScripts, you'll have to install the `Rhino JavaScript engine <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino>`_. A direct link to the download is `here <http://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R2.zip>`_. Open the zip file, and extract ``js.jar``. Note that if you download a newer version than the recommended one, the ``.jar`` file may have a different name. Move ``js.jar`` to the ``plugins/`` or ``plugins/WorldEdit`` directory (on Bukkit) or the ``mods`` directory (other platforms).
+Before you start using CraftScripts, you'll have to install the `Rhino JavaScript engine <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino>`_. A direct link to the download is `here <https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip>`_. Open the zip file, and extract ``js.jar``. Note that if you download a newer version than the recommended one, the ``.jar`` file may have a different name. Move ``js.jar`` to the ``plugins/`` or ``plugins/WorldEdit`` directory (on Bukkit) or the ``mods`` directory (other platforms).
 
 Using CraftScripts
 ~~~~~~~~~~~~~~~~~~
@@ -89,7 +89,7 @@ This returns a new instance of `EditSession <https://github.com/EngineHub/WorldE
 
 
 
-To get blocks, use the function ``EditSession#getBlock``, which accepts a ``BlockVector3`` and returns an instance of ``BaseBlock``.
+To get blocks, use the function ``EditSession#getBlock``, which accepts a ``BlockVector3`` and returns an instance of ``BlockState``.
 
 .. topic:: Example: Replacing white wool at (431, 63, -41) with black wool
 
@@ -110,7 +110,7 @@ To get the player's selected region, use:
 
     var region = context.getSession().getRegionSelector(player.getWorld()).getRegion();
 
-This returns an instance of `Region <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/regions/Region.java>`_. Although the player cannot run a CraftScript without first selecting a region, the script can read and modify blocks outside the selected region. ``//undo`` will still undo blocks modified outside the selection region.
+This returns an instance of `Region <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/regions/Region.java>`_.
 
 Processing Arguments
 --------------------
@@ -160,7 +160,7 @@ Other printing functions, such as ``CraftScriptContext#error`` and ``CraftScript
           context.error(e);
         }
 
-Note that ``console.log`` will not work because there is no console, and ``System.out.println`` will not work because the ``System`` class is in the ``java.lang.*`` package and thus cannot be imported.
+Note that ``console.log`` will not work because there is no console. ``System.out.println`` will work if the ``System`` class is imported but is not recommended because it will not be reported to the player.
 
 
 Miscellaneous

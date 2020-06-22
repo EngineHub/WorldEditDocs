@@ -117,7 +117,7 @@ Processing Arguments
 
 Arguments are passed in under the ``argv`` variable. ``argv`` is a JavaScript array, and the first element of the array is the filename of your script (which may or may not have the file extension). If you need to check whether the right number of arguments was provided by the player, you can use ``CraftScriptContext#checkArgs``.
 
-The ``CraftScriptContext`` can to some basic argument parsing with ``CraftScriptContext#getBlock``. You can also hook directly into WorldEdit's parsers via ``WorldEdit.getInstance().getPatternFactory()`` and ``.getMaskFactory()``.
+The ``CraftScriptContext`` can do some basic argument parsing with ``CraftScriptContext#getBlock``. You can also hook directly into WorldEdit's parsers via ``WorldEdit.getInstance().getPatternFactory()`` and ``.getMaskFactory()``.
 
 .. topic:: Example: Checking arguments
 

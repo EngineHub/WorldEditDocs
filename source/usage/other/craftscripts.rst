@@ -63,7 +63,7 @@ In addition to these globals, if you wish to import any WorldEdit or Java packag
         // Equivalent to `import java.util.ArrayList`
         importClass(java.util.ArrayList)
 
-Warning: unlike Java, Rhino JavaScript does not implicitly import ``java.lang.*``, and doing so explicitly is not permitted.
+Warning: unlike Java, Rhino JavaScript does not implicitly import ``java.lang.*``, and doing so explicitly is `not recommended <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java>`_.
 
 Working with Blocks
 -------------------

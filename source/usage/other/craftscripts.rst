@@ -45,7 +45,7 @@ Scripts have the following three variables in their global namespace:
 * ``player`` is the player who invoked the script, an instance of `Player <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/entity/Player.java>`_.
 * ``argv`` is a Java array strings, which are the arguments used upon invoking the scripts
 
-In addition to these globals, if you wish to import any WorldEdit or Java packages or classes you must use the function `importPackage` or `importClass`, respectively:
+In addition to these globals, if you wish to import any WorldEdit or Java packages or classes you must use the function ``importPackage`` or ``importClass``, respectively:
 
 .. topic:: Example: Importing packages and classes
 

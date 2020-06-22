@@ -166,7 +166,7 @@ Note that ``console.log`` will not work because there is no console, and ``Syste
 Miscellaneous
 ---------------
 
-Rhino engine doesn't support the ``let`` keyword yet. This means that every variable you declare is global.
+Rhino does not support all ES2015+ features yet, see https://mozilla.github.io/rhino/compat/engines.html for details.
 
 Example Scripts
 ---------------

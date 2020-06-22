@@ -60,7 +60,7 @@ In addition to these globals, if you wish to import any WorldEdit or Java packag
 
         // Equivalent to`import com.sk89q.worldedit.math.BlockVector3`
         importClass(Packages.com.sk89q.worldedit.math.BlockVector3);
-        // Equivalent to `import java.utils.ArrayList`
+        // Equivalent to `import java.util.ArrayList`
         importClass(java.util.ArrayList)
 
 Warning: unlike Java, Rhino JavaScript does not implicitly import ``java.lang.*``, and doing so explicitly is not permitted.

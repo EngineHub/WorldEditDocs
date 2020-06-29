@@ -46,7 +46,7 @@ This pattern allows setting random blocks from any number of other patterns. The
 
         //set 50%red_wool,10%red_stained_glass
 
-.. note::  Despite the percentage sign, weights need not add up to 100. They are cumulative and will be divided by the total. That is, ``5%dirt`` actually means 100% of the blocks will be dirt, while ``5%dirt,15%stone`` means 25% of blocks will be dirt, and 75% will be stone. In other words, weights are relative to each other, not to 100.
+.. note::  Despite the percentage sign, weights need not add up to 100. They are cumulative and will be divided by the total. That is, ``5%dirt,15%stone`` means 25% of blocks will be dirt, and 75% will be stone. In other words, weights are relative to each other, not to 100. Because of that, the pattern ``5%dirt`` isn't valid. If you only want to set 5% of blocks to dirt, you should use the :ref:`random noise mask <usage/general/masks:Random noise mask>`.
 
 .. tip:: You can use any other pattern as one of the choices, not just the single block pattern. Keep reading to see more patterns...
 
@@ -68,7 +68,7 @@ The ``#clipboard`` pattern will take blocks from your :doc:`clipboard <../clipbo
 
 .. topic:: Example: Using the clipboard pattern
 
-    Replacing :doc:`all existing blocks <masks>` to your clipboard::
+    Replacing :ref:`all existing blocks <usage/general/masks:Existing block mask>` to your clipboard::
 
         //replace #existing #clipboard
 
@@ -109,7 +109,7 @@ This pattern, prefixed by ``^``, lets you set the type or states of a block with
 Block Category Pattern
 ----------------------
 
-This pattern allows setting random blocks within a block category, often referred to as a "`tag <https://minecraft.gamepedia.com/Tag>`_". Tags allow grouping blocks together under a single name. Minecraft comes with many tags inbuilt (see the link) and also allows creating and modifying tags via data packs. You may already have noticed these tags being used as a :doc:`mask <masks>` in the example above (``##slabs``).
+This pattern allows setting random blocks within a block category, often referred to as a "`tag <https://minecraft.gamepedia.com/Tag>`_". Tags allow grouping blocks together under a single name. Minecraft comes with many tags inbuilt (see the link) and also allows creating and modifying tags via data packs. You may already have noticed these tags being used as a :ref:`mask <usage/general/masks:Block category mask>` in the example above (``##slabs``).
 
 The syntax for this pattern is ``##<tag name>``, which will randomly choose between the default state of all blocks in the category. You can also mix this with the random state pattern (``##*<tag name>``) to use all states, not just the defaults.
 

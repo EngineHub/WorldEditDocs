@@ -24,7 +24,7 @@ Tree generation tool
 
     /tree [type]
 
-This tool will generate a tree of the chosen type when you right click a block. Note that it uses Minecraft's tree generator, and has the same limitations - it will not generate trees on unplantable blocks, or through solid blocks above (unless the tree would normally be able to gross there).
+This tool will generate a tree of the chosen type when you right click a block. Note that it uses Minecraft's tree generator, and has the same limitations - it will not generate trees on unplantable blocks, or through solid blocks above (unless the tree would normally be able to grow there).
 
 Floating tree remover
 ---------------------

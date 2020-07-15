@@ -7,8 +7,8 @@ WorldEdit provides a handful of utility commands. These are often conveniences f
     :local:
     :backlinks: none
 
-Editing nearby block
-~~~~~~~~~~~~~~~~~~~~
+Editing nearby blocks
+~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes you want to set or replace blocks in an area, but don't need a precise selection - you just want to use an area around you.
 

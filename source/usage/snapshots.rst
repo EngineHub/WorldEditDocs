@@ -46,7 +46,7 @@ Supported Archive Formats
 
 WorldEdit natively supports ZIP files, using Java's zip library. However, Java's zip support only supports basic zip files. If you receive cryptic errors while using zip files, you may want to install TrueZip. If you want to use another archive format, such as tarballs, TrueZip will also support these.
 
-TrueZip can be installed by downloading the `JAR file from the maven repository <http://repo1.maven.org/maven2/de/schlichtherle/truezip/6.8.1/truezip-6.8.1.jar>`_ and saving it as ``truezip.jar``. The jar should be placed in the ``plugins`` or ``plugins/WorldEdit`` folder on Bukkit, or in the ``mods`` folder on other platforms.
+TrueZip can be installed by downloading the `JAR file from the maven repository <https://repo.maven.apache.org/maven2/de/schlichtherle/truezip/6.8.1/truezip-6.8.1.jar>`_ and saving it as ``truezip.jar``. The jar should be placed in the ``plugins`` or ``plugins/WorldEdit`` folder on Bukkit, or in the ``mods`` folder on other platforms.
 
 .. tip:: Using backup archives (e.g. zip files) will save disk space at the cost of increasing CPU when actually restoring. The trade-off is up to you to decide.
 

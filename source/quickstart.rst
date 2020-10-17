@@ -79,7 +79,7 @@ Playing with brushes
     4. Make it so the brush only affects grass: ``/mask grass``
     5. Instead of placing stone, let's place wool: ``/mat red_wool,green_wool``
     6. Right click more areas.
-    7. Disable the brush: ``/none``
+    7. Disable the brush: ``/brush none``
 
 Continuing on...
 ================

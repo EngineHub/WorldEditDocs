@@ -1,7 +1,7 @@
 Brushes
 =======
 
-Brush tools are general more designed for building, sculpting, and painting than the general utility :doc:`tools <tools>`. Like the rest of the tools, they are bound to an item by using the command, and are activated by right-clicking (or left clicking, for those with two actions). They are unbound with the ``/none`` command.
+Brush tools are general more designed for building, sculpting, and painting than the general utility :doc:`tools <tools>`. Like the rest of the tools, they are bound to an item by using the command, and are activated by right-clicking (or left clicking, for those with two actions). They are unbound with the ``/brush none`` command.
 
 Brushes have a few unique settings available to them. Brushes allow you to choose a mask, size, pattern, and range. These allow fine-tuning how you build and paint.
 

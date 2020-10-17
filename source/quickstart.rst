@@ -77,7 +77,7 @@ Playing with brushes
     2. Turn on a stone brush of radius 5: ``/br sphere stone 5``
     3. Aim at ground not near you and right click to place large stone spheres.
     4. Make it so the brush only affects grass: ``/mask grass``
-    5. Instead of placing stone, let's place wool: ``/mat red_wool,green_wool``
+    5. Instead of placing stone, let's place wool: ``/material red_wool,green_wool``
     6. Right click more areas.
     7. Disable the brush: ``/brush none``
 

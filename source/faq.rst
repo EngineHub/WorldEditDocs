@@ -74,7 +74,7 @@ Single-player does not use a watchdog.
 How do I remove a tool/brush from the item I'm holding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use the ``/none`` command while holding the item.
+Use the ``/tool none`` or ``/brush none`` command while holding the item. These are both currently the same command, so it doesn't matter which one you pick.
 
 
 Why isn't sign text/chest contents/entities/etc working?

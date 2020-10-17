@@ -32,7 +32,7 @@ Selecting with the wand
 
 The most intuitive way to select a region is by using wand. To get the wand, use ``//wand`` (it is, by default, a wooden axe). **Left clicking** a block with the wand marks that block as the first corner of the cuboid you wish to select. A **right-click** chooses the second corner.
 
-You can bind the selection wand to a different item either by changing the :doc:`configuration <../../config>` or using the ``//selwand`` command. In this regard, it is a :doc:`tool <../tools/tools>`.
+You can bind the selection wand to a different item either by changing the :doc:`configuration <../../config>` or using the ``/tool selwand`` command. In this regard, it is a :doc:`tool <../tools/tools>`.
 
 Selecting at your own location
 ------------------------------

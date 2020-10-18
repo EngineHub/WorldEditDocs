@@ -26,7 +26,7 @@ General Commands
         :widths: 8, 15
 
         **Description**,"WorldEdit commands"
-        **Usage**,"``/worldedit <help|version|reload|cui|tz|report>``"
+        **Usage**,"``/worldedit <help|version|trace|reload|cui|tz|report>``"
 
 .. raw:: html
 
@@ -57,6 +57,20 @@ General Commands
 
         **Description**,"Get WorldEdit version"
         **Usage**,"``/worldedit version``"
+
+.. raw:: html
+
+    <span id="command-/worldedit-trace"></span>
+
+.. topic:: ``/worldedit trace``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Toggles trace hook"
+        **Usage**,"``/worldedit trace [hookMode]``"
+          ``[hookMode]``,"The mode to set the trace hook to"
 
 .. raw:: html
 
@@ -197,6 +211,10 @@ General Commands
 .. topic:: ``//fast``
     :class: command-topic
 
+    .. WARNING::
+        This command is deprecated. //fast duplicates //perf and will be removed in WorldEdit 8.
+
+        Please use ``//perf`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -204,6 +222,25 @@ General Commands
         **Permissions**,"``worldedit.fast``"
         **Usage**,"``//fast [fastMode]``"
           ``[fastMode]``,"The new fast mode state"
+
+.. raw:: html
+
+    <span id="command-//perf"></span>
+
+.. topic:: ``//perf``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Toggle side effects for performance
+
+        Note that this command is GOING to change in the future. Do not depend on the exact format of this command yet."
+        **Permissions**,"``worldedit.perf``"
+        **Usage**,"``//perf [-h] [sideEffect] [newState]``"
+          ``[sideEffect]``,"The side effect"
+          ``[newState]``,"The new side effect state"
+          ``[-h]``,"Show the info box"
 
 .. raw:: html
 
@@ -493,7 +530,11 @@ Selection Commands
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Set the selection to your current chunk."
+        **Description**,"Set the selection to your current chunk.
+
+        This command selects 256-block-tall areas,
+        which can be specified by the y-coordinate.
+        E.g. -c x,1,z will select from y=256 to y=511."
         **Permissions**,"``worldedit.selection.chunk``"
         **Usage**,"``//chunk [-cs] [coordinates]``"
           ``[coordinates]``,"The chunk to select"
@@ -525,7 +566,7 @@ Selection Commands
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Remind the user that the wand is now a tool and can be unbound with /none."
+        **Description**,"Remind the user that the wand is now a tool and can be unbound with /tool none."
         **Permissions**,"``worldedit.wand.toggle``"
         **Usage**,"``/toggleeditwand``"
 
@@ -686,7 +727,8 @@ Selection Commands
         :widths: 8, 15
 
         **Description**,"Vertically expand the selection to world limits."
-        **Usage**,"``//expand vert``"
+        **Usage**,"``//expand vert [height]``"
+          ``[height]``,"The height to expand both upwards and downwards"
 
 
 Region Commands
@@ -864,9 +906,9 @@ Region Commands
 
         **Description**,"Move the contents of the selection"
         **Permissions**,"``worldedit.region.move``"
-        **Usage**,"``//move [-abes] [count] [direction] [replace] [-m <mask>]``"
-          ``[count]``,"# of blocks to move"
-          ``[direction]``,"The direction to move"
+        **Usage**,"``//move [-abes] [multiplier] [offset] [replace] [-m <mask>]``"
+          ``[multiplier]``,"number of times to apply the offset"
+          ``[offset]``,"The offset to move"
           ``[replace]``,"The pattern of blocks to leave"
           ``[-s]``,"Shift the selection to the target location"
           ``[-a]``,"Ignore air blocks"
@@ -886,13 +928,14 @@ Region Commands
 
         **Description**,"Repeat the contents of the selection"
         **Permissions**,"``worldedit.region.stack``"
-        **Usage**,"``//stack [-abes] [count] [direction] [-m <mask>]``"
+        **Usage**,"``//stack [-abers] [count] [offset] [-m <mask>]``"
           ``[count]``,"# of copies to stack"
-          ``[direction]``,"The direction to stack"
+          ``[offset]``,"How far to move the contents each stack"
           ``[-s]``,"Shift the selection to the last stacked copy"
           ``[-a]``,"Ignore air blocks"
           ``[-e]``,"Also copy entities"
           ``[-b]``,"Also copy biomes"
+          ``[-r]``,"Use block units"
           ``[-m <mask>]``,"Set the include mask, non-matching blocks become air"
 
 .. raw:: html
@@ -907,7 +950,9 @@ Region Commands
 
         **Description**,"Regenerates the contents of the selection"
         **Permissions**,"``worldedit.regen``"
-        **Usage**,"``//regen``"
+        **Usage**,"``//regen [-b] [seed]``"
+          ``[seed]``,"The seed to regenerate with, otherwise uses world seed"
+          ``[-b]``,"Regenerate biomes as well"
 
 .. raw:: html
 
@@ -925,10 +970,11 @@ Region Commands
         to modify the variables x, y and z to point to a new block
         to fetch. See also https://tinyurl.com/weexpr"
         **Permissions**,"``worldedit.region.deform``"
-        **Usage**,"``//deform [-or] <expression...>``"
+        **Usage**,"``//deform [-cor] <expression...>``"
           ``<expression...>``,"The expression to use"
           ``[-r]``,"Use the game's coordinate origin"
-          ``[-o]``,"Use the selection's center as origin"
+          ``[-o]``,"Use the placement's coordinate origin"
+          ``[-c]``,"Use the selection's center as origin"
 
 .. raw:: html
 
@@ -1330,10 +1376,10 @@ Schematic and Clipboard Commands
         Non-destructively rotate the contents of the clipboard.
         Angles are provided in degrees and a positive angle will result in a clockwise rotation. Multiple rotations can be stacked. Interpolation is not performed so angles should be a multiple of 90 degrees."
         **Permissions**,"``worldedit.clipboard.rotate``"
-        **Usage**,"``//rotate <yRotate> [xRotate] [zRotate]``"
-          ``<yRotate>``,"Amount to rotate on the y-axis"
-          ``[xRotate]``,"Amount to rotate on the x-axis"
-          ``[zRotate]``,"Amount to rotate on the z-axis"
+        **Usage**,"``//rotate <rotateY> [rotateX] [rotateZ]``"
+          ``<rotateY>``,"Amount to rotate on the y-axis"
+          ``[rotateX]``,"Amount to rotate on the x-axis"
+          ``[rotateZ]``,"Amount to rotate on the z-axis"
 
 .. raw:: html
 
@@ -1378,35 +1424,81 @@ Tool Commands
         :widths: 8, 15
 
         **Description**,"Binds a tool to the item in your hand"
-        **Usage**,"``/tool <navwand|deltree|none|tree|lrbuild|repl|floodfill|selwand|info|farwand|cycler>``"
+        **Usage**,"``/tool <stacker|selwand|tree|repl|farwand|none|deltree|lrbuild|floodfill|cycler|navwand|info>``"
 
 .. raw:: html
 
-    <span id="command-/tool-navwand"></span>
+    <span id="command-/tool-stacker"></span>
 
-.. topic:: ``/tool navwand``
+.. topic:: ``/tool stacker``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Navigation wand tool"
+        **Description**,"Block stacker tool"
+        **Permissions**,"``worldedit.tool.stack``"
+        **Usage**,"``/tool stacker [range] [mask]``"
+          ``[range]``,"The max range of the stack"
+          ``[mask]``,"The mask to stack until"
+
+.. raw:: html
+
+    <span id="command-/tool-selwand"></span>
+
+.. topic:: ``/tool selwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Selection wand tool"
         **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``/tool navwand``"
+        **Usage**,"``/tool selwand``"
 
 .. raw:: html
 
-    <span id="command-/tool-deltree"></span>
+    <span id="command-/tool-tree"></span>
 
-.. topic:: ``/tool deltree``
+.. topic:: ``/tool tree``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Floating tree remover tool"
-        **Permissions**,"``worldedit.tool.deltree``"
-        **Usage**,"``/tool deltree``"
+        **Description**,"Tree generator tool"
+        **Permissions**,"``worldedit.tool.tree``"
+        **Usage**,"``/tool tree [type]``"
+          ``[type]``,"Type of tree to generate"
+
+.. raw:: html
+
+    <span id="command-/tool-repl"></span>
+
+.. topic:: ``/tool repl``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block replacer tool"
+        **Permissions**,"``worldedit.tool.replacer``"
+        **Usage**,"``/tool repl <pattern>``"
+          ``<pattern>``,"The pattern of blocks to place"
+
+.. raw:: html
+
+    <span id="command-/tool-farwand"></span>
+
+.. topic:: ``/tool farwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Wand at a distance tool"
+        **Permissions**,"``worldedit.tool.farwand``"
+        **Usage**,"``/tool farwand``"
 
 .. raw:: html
 
@@ -1423,18 +1515,17 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/tool-tree"></span>
+    <span id="command-/tool-deltree"></span>
 
-.. topic:: ``/tool tree``
+.. topic:: ``/tool deltree``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Tree generator tool"
-        **Permissions**,"``worldedit.tool.tree``"
-        **Usage**,"``/tool tree [type]``"
-          ``[type]``,"Type of tree to generate"
+        **Description**,"Floating tree remover tool"
+        **Permissions**,"``worldedit.tool.deltree``"
+        **Usage**,"``/tool deltree``"
 
 .. raw:: html
 
@@ -1454,21 +1545,6 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/tool-repl"></span>
-
-.. topic:: ``/tool repl``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block replacer tool"
-        **Permissions**,"``worldedit.tool.replacer``"
-        **Usage**,"``/tool repl <pattern>``"
-          ``<pattern>``,"The pattern of blocks to place"
-
-.. raw:: html
-
     <span id="command-/tool-floodfill"></span>
 
 .. topic:: ``/tool floodfill`` (or ``/tool flood``)
@@ -1482,48 +1558,6 @@ Tool Commands
         **Usage**,"``/tool floodfill <pattern> <range>``"
           ``<pattern>``,"The pattern to flood fill"
           ``<range>``,"The range to perform the fill"
-
-.. raw:: html
-
-    <span id="command-/tool-selwand"></span>
-
-.. topic:: ``/tool selwand``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Selection wand tool"
-        **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``/tool selwand``"
-
-.. raw:: html
-
-    <span id="command-/tool-info"></span>
-
-.. topic:: ``/tool info``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block information tool"
-        **Permissions**,"``worldedit.tool.info``"
-        **Usage**,"``/tool info``"
-
-.. raw:: html
-
-    <span id="command-/tool-farwand"></span>
-
-.. topic:: ``/tool farwand``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Wand at a distance tool"
-        **Permissions**,"``worldedit.tool.farwand``"
-        **Usage**,"``/tool farwand``"
 
 .. raw:: html
 
@@ -1541,6 +1575,34 @@ Tool Commands
 
 .. raw:: html
 
+    <span id="command-/tool-navwand"></span>
+
+.. topic:: ``/tool navwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Navigation wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``/tool navwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-info"></span>
+
+.. topic:: ``/tool info``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block information tool"
+        **Permissions**,"``worldedit.tool.info``"
+        **Usage**,"``/tool info``"
+
+.. raw:: html
+
     <span id="command-/none"></span>
 
 .. topic:: ``/none``
@@ -1549,7 +1611,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool none`` *instead.*
+        Please use ``/tool none`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1566,7 +1628,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool selwand`` *instead.*
+        Please use ``/tool selwand`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1584,7 +1646,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool navwand`` *instead.*
+        Please use ``/tool navwand`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1602,7 +1664,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool info`` *instead.*
+        Please use ``/tool info`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1620,7 +1682,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool tree`` *instead.*
+        Please use ``/tool tree`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1639,7 +1701,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool repl`` *instead.*
+        Please use ``/tool repl`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1658,7 +1720,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool cycler`` *instead.*
+        Please use ``/tool cycler`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1676,7 +1738,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool floodfill`` *instead.*
+        Please use ``/tool floodfill`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1696,7 +1758,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool deltree`` *instead.*
+        Please use ``/tool deltree`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1714,7 +1776,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool farwand`` *instead.*
+        Please use ``/tool farwand`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1732,7 +1794,7 @@ Tool Commands
     .. WARNING::
         This command is deprecated. Global tool names cause conflicts and will be removed in WorldEdit 8.
 
-        *Use* ``/tool lrbuild`` *instead.*
+        Please use ``/tool lrbuild`` instead.
     .. csv-table::
         :widths: 8, 15
 
@@ -1907,7 +1969,7 @@ Brush Commands
         :widths: 8, 15
 
         **Description**,"Brushing commands"
-        **Usage**,"``/brush <forest|cylinder|set|apply|deform|lower|butcher|paint|none|clipboard|gravity|extinguish|sphere|raise|smooth>``"
+        **Usage**,"``/brush <forest|butcher|paint|none|clipboard|gravity|heightmap|extinguish|sphere|raise|smooth|cylinder|set|apply|deform|lower|snow|biome>``"
 
 .. raw:: html
 
@@ -1926,6 +1988,182 @@ Brush Commands
           ``[radius]``,"The size of the brush"
           ``[density]``,"The density of the brush"
           ``<type>``,"The type of tree to use"
+
+.. raw:: html
+
+    <span id="command-/brush-butcher"></span>
+
+.. topic:: ``/brush butcher`` (or ``/brush kill``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Butcher brush, kills mobs within a radius"
+        **Permissions**,"``worldedit.brush.butcher``"
+        **Usage**,"``/brush butcher [-abfgnprtw] [radius]``"
+          ``[radius]``,"Radius to kill mobs in"
+          ``[-p]``,"Also kill pets"
+          ``[-n]``,"Also kill NPCs"
+          ``[-g]``,"Also kill golems"
+          ``[-a]``,"Also kill animals"
+          ``[-b]``,"Also kill ambient mobs"
+          ``[-t]``,"Also kill mobs with name tags"
+          ``[-f]``,"Also kill all friendly mobs (Applies the flags `-abgnpt`)"
+          ``[-r]``,"Also destroy armor stands"
+          ``[-w]``,"Also kill water mobs"
+
+.. raw:: html
+
+    <span id="command-/brush-paint"></span>
+
+.. topic:: ``/brush paint``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Paint brush, apply a function to a surface"
+        **Permissions**,"``worldedit.brush.paint``"
+        **Usage**,"``/brush paint <shape> [radius] [density] <forest|item|set>``"
+          ``<shape>``,"The shape of the region"
+          ``[radius]``,"The size of the brush"
+          ``[density]``,"The density of the brush"
+
+.. raw:: html
+
+    <span id="command-/brush-none"></span>
+
+.. topic:: ``/brush none`` (or ``/brush unbind``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Unbind a bound brush from your current item"
+        **Usage**,"``/brush none``"
+
+.. raw:: html
+
+    <span id="command-/brush-clipboard"></span>
+
+.. topic:: ``/brush clipboard`` (or ``/brush copy``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Choose the clipboard brush"
+        **Permissions**,"``worldedit.brush.clipboard``"
+        **Usage**,"``/brush clipboard [-abeo] [-m <sourceMask>]``"
+          ``[-a]``,"Don't paste air from the clipboard"
+          ``[-o]``,"Paste starting at the target location, instead of centering on it"
+          ``[-e]``,"Paste entities if available"
+          ``[-b]``,"Paste biomes if available"
+          ``[-m <sourceMask>]``,"Skip blocks matching this mask in the clipboard"
+
+.. raw:: html
+
+    <span id="command-/brush-gravity"></span>
+
+.. topic:: ``/brush gravity`` (or ``/brush grav``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Gravity brush, simulates the effect of gravity"
+        **Permissions**,"``worldedit.brush.gravity``"
+        **Usage**,"``/brush gravity [radius] [-h <height>]``"
+          ``[radius]``,"The radius to apply gravity in"
+          ``[-h <height>]``,"Affect blocks between the given height, upwards and downwards, rather than the target location Y + radius"
+
+.. raw:: html
+
+    <span id="command-/brush-heightmap"></span>
+
+.. topic:: ``/brush heightmap``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Heightmap brush, raises or lowers terrain using an image heightmap"
+        **Permissions**,"``worldedit.brush.heightmap``"
+        **Usage**,"``/brush heightmap [-efr] <imageName> [radius] [intensity]``"
+          ``<imageName>``,"The name of the image"
+          ``[radius]``,"The size of the brush"
+          ``[intensity]``,"The intensity of the brush"
+          ``[-e]``,"Erase blocks instead of filling them"
+          ``[-f]``,"Don't change blocks above the selected height"
+          ``[-r]``,"Randomizes the brush's height slightly."
+
+.. raw:: html
+
+    <span id="command-/brush-extinguish"></span>
+
+.. topic:: ``/brush extinguish`` (or ``/brush ex``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Shortcut fire extinguisher brush"
+        **Permissions**,"``worldedit.brush.ex``"
+        **Usage**,"``/brush extinguish [radius]``"
+          ``[radius]``,"The radius to extinguish"
+
+.. raw:: html
+
+    <span id="command-/brush-sphere"></span>
+
+.. topic:: ``/brush sphere`` (or ``/brush s``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Choose the sphere brush"
+        **Permissions**,"``worldedit.brush.sphere``"
+        **Usage**,"``/brush sphere [-h] <pattern> [radius]``"
+          ``<pattern>``,"The pattern of blocks to set"
+          ``[radius]``,"The radius of the sphere"
+          ``[-h]``,"Create hollow spheres instead"
+
+.. raw:: html
+
+    <span id="command-/brush-raise"></span>
+
+.. topic:: ``/brush raise``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Raise brush, raise all blocks by one"
+        **Permissions**,"``worldedit.brush.raise``"
+        **Usage**,"``/brush raise <shape> [radius]``"
+          ``<shape>``,"The shape of the region"
+          ``[radius]``,"The size of the brush"
+
+.. raw:: html
+
+    <span id="command-/brush-smooth"></span>
+
+.. topic:: ``/brush smooth``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Choose the terrain softener brush
+
+        Example: '/brush smooth 2 4 grass_block,dirt,stone'"
+        **Permissions**,"``worldedit.brush.smooth``"
+        **Usage**,"``/brush smooth [radius] [iterations] [mask]``"
+          ``[radius]``,"The radius to sample for softening"
+          ``[iterations]``,"The number of iterations to perform"
+          ``[mask]``,"The mask of blocks to use for the heightmap"
 
 .. raw:: html
 
@@ -2015,158 +2253,37 @@ Brush Commands
 
 .. raw:: html
 
-    <span id="command-/brush-butcher"></span>
+    <span id="command-/brush-snow"></span>
 
-.. topic:: ``/brush butcher`` (or ``/brush kill``)
+.. topic:: ``/brush snow``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Butcher brush, kills mobs within a radius"
-        **Permissions**,"``worldedit.brush.butcher``"
-        **Usage**,"``/brush butcher [-abfgnprt] [radius]``"
-          ``[radius]``,"Radius to kill mobs in"
-          ``[-p]``,"Also kill pets"
-          ``[-n]``,"Also kill NPCs"
-          ``[-g]``,"Also kill golems"
-          ``[-a]``,"Also kill animals"
-          ``[-b]``,"Also kill ambient mobs"
-          ``[-t]``,"Also kill mobs with name tags"
-          ``[-f]``,"Also kill all friendly mobs (Applies the flags `-abgnpt`)"
-          ``[-r]``,"Also destroy armor stands"
-
-.. raw:: html
-
-    <span id="command-/brush-paint"></span>
-
-.. topic:: ``/brush paint``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Paint brush, apply a function to a surface"
-        **Permissions**,"``worldedit.brush.paint``"
-        **Usage**,"``/brush paint <shape> [radius] [density] <forest|item|set>``"
+        **Description**,"Snow brush, sets snow in the area"
+        **Permissions**,"``worldedit.brush.snow``"
+        **Usage**,"``/brush snow [-s] <shape> [radius]``"
           ``<shape>``,"The shape of the region"
           ``[radius]``,"The size of the brush"
-          ``[density]``,"The density of the brush"
+          ``[-s]``,"Whether to stack snow"
 
 .. raw:: html
 
-    <span id="command-/brush-none"></span>
+    <span id="command-/brush-biome"></span>
 
-.. topic:: ``/brush none`` (or ``/brush unbind``)
+.. topic:: ``/brush biome``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Unbind a bound brush from your current item"
-        **Usage**,"``/brush none``"
-
-.. raw:: html
-
-    <span id="command-/brush-clipboard"></span>
-
-.. topic:: ``/brush clipboard`` (or ``/brush copy``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Choose the clipboard brush"
-        **Permissions**,"``worldedit.brush.clipboard``"
-        **Usage**,"``/brush clipboard [-abeo] [-m <sourceMask>]``"
-          ``[-a]``,"Don't paste air from the clipboard"
-          ``[-o]``,"Paste starting at the target location, instead of centering on it"
-          ``[-e]``,"Paste entities if available"
-          ``[-b]``,"Paste biomes if available"
-          ``[-m <sourceMask>]``,"Skip blocks matching this mask in the clipboard"
-
-.. raw:: html
-
-    <span id="command-/brush-gravity"></span>
-
-.. topic:: ``/brush gravity`` (or ``/brush grav``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Gravity brush, simulates the effect of gravity"
-        **Permissions**,"``worldedit.brush.gravity``"
-        **Usage**,"``/brush gravity [-h] [radius]``"
-          ``[radius]``,"The radius to apply gravity in"
-          ``[-h]``,"Affect blocks starting at max Y, rather than the target location Y + radius"
-
-.. raw:: html
-
-    <span id="command-/brush-extinguish"></span>
-
-.. topic:: ``/brush extinguish`` (or ``/brush ex``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Shortcut fire extinguisher brush"
-        **Permissions**,"``worldedit.brush.ex``"
-        **Usage**,"``/brush extinguish [radius]``"
-          ``[radius]``,"The radius to extinguish"
-
-.. raw:: html
-
-    <span id="command-/brush-sphere"></span>
-
-.. topic:: ``/brush sphere`` (or ``/brush s``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Choose the sphere brush"
-        **Permissions**,"``worldedit.brush.sphere``"
-        **Usage**,"``/brush sphere [-h] <pattern> [radius]``"
-          ``<pattern>``,"The pattern of blocks to set"
-          ``[radius]``,"The radius of the sphere"
-          ``[-h]``,"Create hollow spheres instead"
-
-.. raw:: html
-
-    <span id="command-/brush-raise"></span>
-
-.. topic:: ``/brush raise``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Raise brush, raise all blocks by one"
-        **Permissions**,"``worldedit.brush.raise``"
-        **Usage**,"``/brush raise <shape> [radius]``"
+        **Description**,"Biome brush, sets biomes in the area"
+        **Permissions**,"``worldedit.brush.biome``"
+        **Usage**,"``/brush biome <shape> [radius] <biomeType>``"
           ``<shape>``,"The shape of the region"
           ``[radius]``,"The size of the brush"
-
-.. raw:: html
-
-    <span id="command-/brush-smooth"></span>
-
-.. topic:: ``/brush smooth``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Choose the terrain softener brush
-
-        Example: '/brush smooth 2 4 grass_block,dirt,stone'"
-        **Permissions**,"``worldedit.brush.smooth``"
-        **Usage**,"``/brush smooth [radius] [iterations] [mask]``"
-          ``[radius]``,"The radius to sample for softening"
-          ``[iterations]``,"The number of iterations to perform"
-          ``[mask]``,"The mask of blocks to use for the heightmap"
+          ``<biomeType>``,"The biome type"
 
 
 Biome Commands
@@ -2570,8 +2687,10 @@ Utility Commands
 
         **Description**,"Simulates snow"
         **Permissions**,"``worldedit.snow``"
-        **Usage**,"``/snow [size]``"
-          ``[size]``,"The radius of the circle to snow in"
+        **Usage**,"``/snow [-s] [size] [height]``"
+          ``[size]``,"The radius of the cylinder to snow in"
+          ``[height]``,"The height of the cylinder to snow in"
+          ``[-s]``,"Stack snow layers"
 
 .. raw:: html
 
@@ -2585,8 +2704,9 @@ Utility Commands
 
         **Description**,"Thaws the area"
         **Permissions**,"``worldedit.thaw``"
-        **Usage**,"``/thaw [size]``"
-          ``[size]``,"The radius of the circle to thaw in"
+        **Usage**,"``/thaw [size] [height]``"
+          ``[size]``,"The radius of the cylinder to thaw in"
+          ``[height]``,"The height of the cylinder to thaw in"
 
 .. raw:: html
 
@@ -2600,8 +2720,9 @@ Utility Commands
 
         **Description**,"Converts dirt to grass blocks in the area"
         **Permissions**,"``worldedit.green``"
-        **Usage**,"``/green [-f] [size]``"
-          ``[size]``,"The radius of the circle to convert in"
+        **Usage**,"``/green [-f] [size] [height]``"
+          ``[size]``,"The radius of the cylinder to convert in"
+          ``[height]``,"The height of the cylinder to convert in"
           ``[-f]``,"Also convert coarse dirt"
 
 .. raw:: html
@@ -2631,7 +2752,7 @@ Utility Commands
 
         **Description**,"Kill all or nearby mobs"
         **Permissions**,"``worldedit.butcher``"
-        **Usage**,"``/butcher [-abfgnprt] [radius]``"
+        **Usage**,"``/butcher [-abfgnprtw] [radius]``"
           ``[radius]``,"Radius to kill mobs in"
           ``[-p]``,"Also kill pets"
           ``[-n]``,"Also kill NPCs"
@@ -2641,6 +2762,7 @@ Utility Commands
           ``[-t]``,"Also kill mobs with name tags"
           ``[-f]``,"Also kill all friendly mobs (Applies the flags `-abgnpt`)"
           ``[-r]``,"Also destroy armor stands"
+          ``[-w]``,"Also kill water mobs"
 
 .. raw:: html
 

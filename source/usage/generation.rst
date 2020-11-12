@@ -45,17 +45,17 @@ Sphere
 
 ::
 
-    //sphere <pattern> <radius> [raised]
-    //hsphere <pattern> <radius> [raised]
+    //sphere [-r] <pattern> <radius>
+    //hsphere [-r] <pattern> <radius>
 
-Both hollow and filled spheres can be created. By default, the center of the sphere will be the block above the one that you are standing on, but if you provide "yes" for the last parameter, the sphere will be raised by its radius so that its bottom is at your feet instead.
+Both hollow and filled spheres can be created. By default, the center of the sphere will be the block above the one that you are standing on. If you provide the `-r` (raised) option, the sphere will be raised by its radius so that its bottom is at your feet instead.
 
 Like cylinders, you can create ellipsoids by specifying multiple radii (which can again be decimals). The order of the radii is north-south axis, up-down axis, and then east-west axis.
 
 ::
 
-    //sphere <pattern> <radius>,<radius>,<radius> [raised]
-    //hsphere <pattern> <radius>,<radius>,<radius> [raised]
+    //sphere [-r] <pattern> <radius>,<radius>,<radius>
+    //hsphere [-r] <pattern> <radius>,<radius>,<radius>
 
 Pyramids
 ~~~~~~~~

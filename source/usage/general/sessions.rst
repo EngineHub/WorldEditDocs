@@ -19,7 +19,7 @@ Sessions contain various things such as the following:
 
 Persistent Data
 ~~~~~~~~~~~~~~~
-Some of the data in a session is _persistent_, or stored offline. This includes the following:
+Some of the data in a session is `persistent`, or stored offline. This includes the following:
 
     * Your selection wand binding
     * Your navigation wand binding

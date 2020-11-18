@@ -5,5 +5,6 @@ General
     :maxdepth: 2
 
     history
+    sessions
     patterns
     masks

@@ -50,7 +50,14 @@ In addition, there are some additional flags:
 Rotating
 ~~~~~~~~
 
-Sometimes you may want to rotate your copy. The ``//rotate <angle>`` command currently lets you rotate your copy around the Y (up-down) axis 90 degrees or at any multiple of 90 degrees. To be accurate, it actually allows you to revolve your copy around the relative offset that you were at when you originally made the copy. If you wanted to rotate a copy around its center, you would have had to stand in the middle of the copy when you had made it.
+Sometimes you may want to rotate your copy. The ``//rotate <y> [x] [z]`` command currently lets you rotate your copy
+around the Y (up-down) axis 90 degrees or at any multiple of 90 degrees. To be accurate, it actually allows you to
+revolve your copy around the relative offset that you were at when you originally made the copy. If you wanted to rotate
+a copy around its center, you would have had to stand in the middle of the copy when you had made it.
+
+Note that the rotate command can also take an angle to rotate around the X or Z axis, though you must specify 0 for the
+axes that you don't use, e.g. for X axis rotation ``//rotate 0 90``, and for Z axis ``//rotate 0 0 90``. These two axes
+can be used to make something vertical, horizontal, or vice versa.
 
 .. figure:: /images/clipboard/rotate.png
 

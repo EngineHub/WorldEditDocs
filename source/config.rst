@@ -37,7 +37,9 @@ Settings
     :header: Setting, Default, Description
     :widths: 12, 5, 30
 
+    defaultLocale,default,"The default locale to use for translations, defaults to the system locale."
     profile,false,"Whether to print out a blocks changed/time info after each operation."
+    traceUnflushedSessions,false,"Display a debug message when an edit isn't completed properly."
     disallowedBlocks,"<list of blocks>",A list of blocks that cannot be used in patterns (mostly physics blocks that will "pop off" and may severely lag or crash the server if thousands of items are spawned).
     defaultChangeLimit,-1,The default amount of blocks that can be set in one operation.
     maxChangeLimit,-1,The maximum amount of blocks for the change limit (set with ``//limit`` in-game)
@@ -46,6 +48,7 @@ Settings
     defaultMaxPolyhedronPoints,-1,
     maxPolyhedronPoints,20,
     snapshotRepo,,"If not left empty, the directory name to look for snapshots"
+    snapshotsExperimental,false,"If true, uses the new snapshot code. Try it out and report bugs!"
     maxRadius,-1,"Maximum radius of commands that take a radius"
     maxSuperPickaxeSize,5,"Maximum size of super pickaxe tools"
     maxBrushRadius,6,"Maximum size of brushes"
@@ -71,3 +74,5 @@ Settings
     butcherDefaultRadius,-1,The default radius of the ``/butcher`` command (-1 for infinite)
     butcherMaxRadius,-1,The maximum radius of the ``/butcher`` command
     serverSideCUI,true,Whether to allow the usage of ``//drawsel``
+    defaultVerticalHeight,256,"The height to use for commands that take an optional height."
+    extendedYLimit,false,"If true, use slower but unbounded positions. This should only be needed with a mod that extends the height limit."

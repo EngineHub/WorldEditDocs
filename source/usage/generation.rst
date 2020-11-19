@@ -171,6 +171,7 @@ Shape Examples
 Generating Biome Shapes
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Just like the generate command, you can use an expression to set a biome in a particular shape. This uses the same syntax as above, but takes a biome id instead of a pattern. It currently only uses ``x`` and ``z`` as inputs.
+Just like the generate command, you can use an expression to set a biome in a particular shape. This uses the same syntax as above, but takes a biome id instead of a pattern.
 
-.. note:: As of Minecraft 1.15, biomes are stored in 3 dimensions. However, neither Minecraft nor WorldEdit can fully use this format yet, so biomes are still just treated as full columns.
+.. note:: As of Minecraft 1.15, biomes are stored in 3 dimensions. Since 1.16, WorldEdit uses the full 3D biomes, but
+          there are some new limitations from Mojang. See :ref:`setting-biomes` for more details.

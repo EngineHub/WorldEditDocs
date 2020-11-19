@@ -184,6 +184,8 @@ By default, coordinates are normalized from -1 to 1 on each axis, from the min t
         //deform swap(x,y)
 
 
+.. _setting-biomes:
+
 Setting Biomes
 --------------
 

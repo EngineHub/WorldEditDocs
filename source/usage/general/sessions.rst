@@ -23,11 +23,11 @@ Some of the data in a session is `persistent`, or stored offline. This includes 
 
     * Your selection wand binding
     * Your navigation wand binding
-    * If CUI is currently on
+    * If server-side CUI is currently on
     * The last script you used
     * Your default selector
 
 The first two are particularly important. Because of how it is stored currently, changing the default wand bindings
 in the configuration **will not** affect existing sessions. This means you must either wipe the ``sessions`` folder
-(located inside WorldEdit's configuration folder), or change it for yourself in-game using ``/tool selwand`` or
+(located inside WorldEdit's :doc:`configuration <../../config>` folder), or change it for yourself in-game using ``/tool selwand`` or
 ``/tool navwand``. Note that the latter option **does not** affect other people.

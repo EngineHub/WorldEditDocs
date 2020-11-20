@@ -46,7 +46,7 @@ Settings
     defaultMaxPolygonalPoints,-1,"The default amount of polygonal points that can be used (``//sel poly``), -1 means use maximum"
     maxPolygonalPoints,20,"The maximum amount of polygonal points that can be used (``//sel poly``, used if you have ``worldedit.limit.unrestricted``)"
     defaultMaxPolyhedronPoints,-1,"The default amount of polyhedron points that can be used (``//sel convex``), -1 means use maximum"
-    maxPolyhedronPoints,20,"The maximum amount of polyhedron points that can be used (``//sel poly``, used if you have ``worldedit.limit.unrestricted``)"
+    maxPolyhedronPoints,20,"The maximum amount of polyhedron points that can be used (``//sel convex``, used if you have ``worldedit.limit.unrestricted``)"
     snapshotRepo,,"If not left empty, the directory name to look for snapshots"
     snapshotsExperimental,false,"If true, uses the new snapshot code. Try it out and report bugs!"
     maxRadius,-1,"Maximum radius of commands that take a radius"

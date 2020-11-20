@@ -43,10 +43,10 @@ Settings
     disallowedBlocks,"<list of blocks>",A list of blocks that cannot be used in patterns (mostly physics blocks that will "pop off" and may severely lag or crash the server if thousands of items are spawned).
     defaultChangeLimit,-1,The default amount of blocks that can be set in one operation.
     maxChangeLimit,-1,The maximum amount of blocks for the change limit (set with ``//limit`` in-game)
-    defaultMaxPolygonalPoints,-1,
-    maxPolygonalPoints,20,
-    defaultMaxPolyhedronPoints,-1,
-    maxPolyhedronPoints,20,
+    defaultMaxPolygonalPoints,-1,"The default amount of polygonal points that can be used (``//sel poly``), -1 means use maximum"
+    maxPolygonalPoints,20,"The maximum amount of polygonal points that can be used (``//sel poly``, used if you have ``worldedit.limit.unrestricted``)"
+    defaultMaxPolyhedronPoints,-1,"The default amount of polyhedron points that can be used (``//sel convex``), -1 means use maximum"
+    maxPolyhedronPoints,20,"The maximum amount of polyhedron points that can be used (``//sel poly``, used if you have ``worldedit.limit.unrestricted``)"
     snapshotRepo,,"If not left empty, the directory name to look for snapshots"
     snapshotsExperimental,false,"If true, uses the new snapshot code. Try it out and report bugs!"
     maxRadius,-1,"Maximum radius of commands that take a radius"
@@ -55,14 +55,14 @@ Settings
     logCommands,false,"Whether to log more informative information on command usage."
     logFile,"","If logCommands is true, the file to log to."
     logFormat,"[%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s]: %5$s%6$s%n",The format of command logging
-    wandItem,"minecraft:wooden_axe",The default item used for selection regions, overriden by existing sessions
+    wandItem,"minecraft:wooden_axe","The default item used for selection regions, overriden by existing sessions"
     superPickaxeDrop,true,Whether the single super pickaxe mode will drop items for blocks it breaks
     superPickaxeManyDrop,true,Whether multi super pickaxe modes will drop items for blocks they break
     useInventory,false,Require players to have items in their inventory to make edits (this option is not well supported and not recommended)
     useInventoryOverride,false,Allow a permission node to override the above setting
     useInventoryCreativeOverride,false,Allow creative mode to override the above setting
     navigationUseGlass,true,Whether the ``/up`` and ``/ceil`` commands should place a glass block for the player to stand on if in mid-air
-    navigationWand,"minecraft:compass",The default item used for the navigation wand which allows ``/jumpto`` and ``/thru`` as left-click/right-click, overriden by existing sessions
+    navigationWand,"minecraft:compass","The default item used for the navigation wand which allows ``/jumpto`` and ``/thru`` as left-click/right-click, overriden by existing sessions"
     navigationWandMaxDistance,50,The max distance the navigation wand should trace to find a block to jump to
     scriptTimeout,3000,The maximum time a craftscript can run before it is terminated
     calculationTimeout,100,The default time an expression can run before it is terminated

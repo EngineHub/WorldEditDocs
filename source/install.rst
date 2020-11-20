@@ -32,8 +32,8 @@ On the other hand, if you are running a Minecraft server, you can use
 
 Note: Paper and Spigot use its own set of mods (commonly called "plugins") that are mostly incompatible with mods for Forge, Fabric, and Sponge. You *may* want to research what other mods/plugins that you may want (generally, Paper and Spigot have much more server administration/"server-ready gameplay mods" - which run completely on the server - and Forge, Fabric, and Sponge have more major gameplay mods - which generally require client installation). Regardless, WorldEdit is extremely unique in that it works as a mod for both 😊, so you can just pick the one that seems the easiest and roll with it. 🤙
 
-Installation
-=============
+Installation Step-by-step
+=========================
 
 Bukkit / Spigot / Paper
 ~~~~~~~~~~~~~~~~~~~~~~~

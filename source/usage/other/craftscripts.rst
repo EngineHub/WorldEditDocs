@@ -3,17 +3,26 @@ CraftScripts
 
 .. highlight:: javascript
 
-Scripts allow you to program small tasks without having to learn Java, figure out how to compile WorldEdit, or bother with reinventing the wheel. CraftScripts are written in JavaScript.
+CraftScripts allow you to write scripts with as little overhead as possible: no compiling WorldEdit, no setting up a plugins configuration file, etc. CraftScripts are written in JavaScript.
+
+The advantages of writing CraftScripts with WorldEdit are:
+
+* Hook right into WorldEdit's undo/redo system
+* Use WorldEdit's block place prioritization
+* Accept WorldEdit's powerful block type syntax (``//set sign[facing=north]``)
+* Get the region selected by the user
+
+.. note:: A basic understanding of both JavaScript and Java is recommended.
 
 Requirements
 ~~~~~~~~~~~~
 
-Before you start using CraftScripts, you'll have to install the `Rhino JavaScript engine <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino>`_. A direct link to the download is `here <http://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R2.zip>`_. Open the zip file, and extract ``js.jar``. Note that if you download a newer version than the recommended one, the ``.jar`` file may have a different name. Move ``js.jar`` to the ``plugins/`` or ``plugins/WorldEdit`` folder (on Bukkit) or the ``mods`` folder (other platforms).
+Before you start using CraftScripts, you'll have to install the `Rhino JavaScript engine <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino>`_. A direct link to the download is `here <https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip>`_. Open the zip file, and extract ``js.jar``. Note that if you download a newer version than the recommended one, the ``.jar`` file may have a different name. Move ``js.jar`` to the ``plugins/`` or ``plugins/WorldEdit`` directory (on Bukkit) or the ``mods`` directory (other platforms).
 
 Using CraftScripts
 ~~~~~~~~~~~~~~~~~~
 
-Once you have the JS engine installed, drop your CraftScript ``.js`` files in the ``craftscripts`` folder (in the WorldEdit config folder - either ``plugins/WorldEdit`` or ``config/WorldEdit`` depending on platform).
+Once you have the JS engine installed, drop your CraftScript ``.js`` files in the ``craftscripts`` directory (in the WorldEdit config directory - either ``plugins/WorldEdit`` or ``config/WorldEdit`` depending on platform).
 
 To run a CraftScript
 
@@ -27,17 +36,6 @@ The ``/cs`` command will run the CraftScript with the given filename (``.js`` ca
 Writing CraftScripts
 ~~~~~~~~~~~~~~~~~~~~
 
-Scripting in WorldEdit allows you to write world manipulation code without having to learn Java or compile your code. Scripts, called CraftScripts in WorldEdit, and are written in JavaScript and go into your craftscripts/ directory. The advantages of writing scripts with WorldEdit are:
-
-* Hook right into WorldEdit's undo/redo system
-* Use WorldEdit's block place prioritization
-* Accept WorldEdit's powerful block type syntax (``//set sign[facing=north]``)
-* Get the region selected by the user
-
-.. note:: It is recommended you have a basic understanding of JavaScript or Java to begin writing CraftScripts.
-
-.. tip:: While we'll be going over using CraftScripts with the WorldEdit API, there are no real restrictions on what you can do. Advanced users may even hook into the API of the underlying platform (Bukkit, Forge, etc).
-
 Introduction
 ------------
 
@@ -47,54 +45,128 @@ Scripts have the following three variables in their global namespace:
 * ``player`` is the player who invoked the script, an instance of `Player <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/entity/Player.java>`_.
 * ``argv`` is a Java array strings, which are the arguments used upon invoking the scripts
 
-Working with blocks
--------------------
+In addition to these globals, if you wish to import any WorldEdit or Java packages or classes you must use the function ``importPackage`` or ``importClass``, respectively:
 
-All block editing in WorldEdit is done through an EditSession. This object handles history and block placement order all automatically. To get an edit session for your own script, use:
-
-::
-
-    var sess = context.remember();
-
-Every time you call that method, you will get a new ``EditSession``, so be sure to keep one around. To set blocks, you will either need to provide a ``BlockState`` which is a combination of a block type and one or more states, or a ``BaseBlock``, which is a ``BlockState`` that may additionally have NBT data.
-
-.. topic:: Example: Setting a block to white wool
+.. topic:: Example: Importing packages and classes
 
     ::
 
+        // Equivalent to `import com.sk89q.worldedit.world.*`
+        importPackage(Packages.com.sk89q.worldedit.world);
+        // Equivalent to `import com.sk89q.worldedit.world.block.*`
         importPackage(Packages.com.sk89q.worldedit.world.block);
+        // Equivalent to `import java.util.*`
+        importPackage(java.util)
 
-        var sess = context.remember();
-        sess.setBlock(player.getBlockOn().toVector().toBlockPoint(), BlockTypes.WHITE_WOOL.getDefaultState());
+        // Equivalent to `import com.sk89q.worldedit.math.BlockVector3`
+        importClass(Packages.com.sk89q.worldedit.math.BlockVector3);
+        // Equivalent to `import java.util.ArrayList`
+        importClass(java.util.ArrayList)
 
-Note that because ``BlockTypes`` is in the ``com.sk89q.worldedit.world.block`` namespace, it had to be imported first. The first argument for ``setBlock()`` is a ``BlockVector3`` indicating the position in the world.
+Warning: unlike Java, Rhino JavaScript does not implicitly import ``java.lang.*``, and doing so explicitly is `not recommended <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java>`_.
 
-To get blocks, use ``getBlock()`` on ``EditSession``. You'll get back a ``BaseBlock`` too.
+Working with Blocks
+-------------------
 
-Processing arguments
+All block editing in WorldEdit is done through an EditSession. This object handles history and block placement order automatically. To get an edit session for your own script, use:
+
+::
+
+    var editSession = context.remember();
+
+This returns a new instance of `EditSession <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/EditSession.java>`_. To set blocks, you will need to provide a `BlockVector3 <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/math/BlockVector3.java>`_ and then either a `BlockState <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/world/block/BlockState.java>`_ or a `BaseBlock <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/world/block/BaseBlock.java>`_ to the ``EditSession``.
+
+
+.. topic:: Example: Setting white wool at (431, 63, -41)
+
+    ::
+
+        importClass(Packages.com.sk89q.worldedit.world.block.BlockTypes);
+        importClass(Packages.com.sk89q.worldedit.math.BlockVector3);
+
+        var editSession = context.remember();
+        editSession.setBlock(BlockVector3.at(431, 63, -41), BlockTypes.WHITE_WOOL.getDefaultState());
+
+
+
+To get blocks, use the function ``EditSession#getBlock``, which accepts a ``BlockVector3`` and returns an instance of ``BlockState``.
+
+.. topic:: Example: Replacing white wool at (431, 63, -41) with black wool
+
+    ::
+
+        importClass(Packages.com.sk89q.worldedit.world.block.BlockTypes);
+        importClass(Packages.com.sk89q.worldedit.math.BlockVector3);
+
+        var editSession = context.remember();
+        var block = BlockVector3.at(431, 63, -41);
+        if (editSession.getBlock(block).getBlockType().equals(BlockTypes.WHITE_WOOL)) {
+          editSession.setBlock(block, BlockTypes.BLACK_WOOL.getDefaultState());
+        }
+
+To get the player's selected region, use:
+
+::
+
+    var region = context.getSession().getRegionSelector(player.getWorld()).getRegion();
+
+This returns an instance of `Region <https://github.com/EngineHub/WorldEdit/blob/master/worldedit-core/src/main/java/com/sk89q/worldedit/regions/Region.java>`_.
+
+Processing Arguments
 --------------------
 
-Arguments are passed in under the ``argv`` variable. If you need to check whether the right number of arguments was provided by the user, you can use ``CraftScriptContext#checkArgs()``.
+Arguments are passed in under the ``argv`` variable. ``argv`` is a JavaScript array, and the first element of the array is the filename of your script (which may or may not have the file extension). If you need to check whether the right number of arguments was provided by the player, you can use ``CraftScriptContext#checkArgs``.
 
-The ``CraftScriptContext`` can to some basic argument parsing with ``CraftScriptContext#getBlock()``. You can also hook directly into WorldEdit's parsers via ``WorldEdit.getInstance().getPatternFactory()`` and ``.getMaskFactory()``.
+The ``CraftScriptContext`` can do some basic argument parsing with ``CraftScriptContext#getBlock``. You can also hook directly into WorldEdit's parsers via ``WorldEdit.getInstance().getPatternFactory()`` and ``.getMaskFactory()``.
 
 .. topic:: Example: Checking arguments
 
     ::
 
+        // This script accepts at least 1 and at most 3 required arguments, separated by a space.
+        // Use -1 as the second argument for no maximum limit.
         context.checkArgs(1, 3, "<block> [width] [height]");
         var block = context.getBlock(argv[1]);
+        var width = 5;
+        var height = 5;
+        if (argv.length >= 3) {
+          width = parseInt(argv[2])
+        }
+        if (argv.length >= 4) {
+          height = parseInt(argv[3])
+        }
 
-What happens if the user inputs an invalid block? An exception will be raised and if you don't catch it, the user will be informed about their error and your script will be halted.
+If the player inputs an invalid block, then an exception will be raised. If the exception is not caught, then the player will be informed about the error, and your script will be halted.
 
-Working with Java packages
---------------------------
+Printing Output
+--------------------
 
-To import a java package, you can use the following syntax::
+Sometimes, you may want to write output to chat. Perhaps you would like to notify that the script has completed running, or perhaps you are debugging your script. In any case, you can do so through ``CraftScriptContext#print``:
 
-    importPackage(Packages.package.name.here);
+::
 
-You can import any package available in the Java classpath - not restricted to WorldEdit.
+    context.print("Hello!")
+
+Other printing functions, such as ``CraftScriptContext#error`` and ``CraftScriptContext#printRaw``, also exist. This code snippet will print the exception raised if the player inputs an invalid block:
+
+.. topic:: Example: Printing an exception to error output
+
+    ::
+
+        context.checkArgs(1, 1, "<block>");
+        try {
+          var block = context.getBlock(argv[1]);
+        } catch (e) {
+          context.error(e);
+        }
+
+Note that ``console.log`` will not work because there is no console. ``System.out.println`` will work if the ``System`` class is imported but is not recommended because it will not be reported to the player.
+
+
+Miscellaneous
+---------------
+
+Rhino does not support all ES2015+ features yet, see https://mozilla.github.io/rhino/compat/engines.html for details.
 
 Example Scripts
 ---------------

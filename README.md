@@ -15,3 +15,27 @@ Depictions of software products and other copyrighted materials is used within t
 The build script, make file, and make scripts are licensed under the MIT license, which is included in LICENSE.txt.
 
 The theme that is embedded in this repository is provided under a different license.
+
+## Install and Build
+
+Requires NodeJS@12 and npm@6. 
+
+Install Grunt globally if you have not done so already:
+
+```
+ $ npm install -g grunt-cli
+```
+
+Then install the remaining dependencies:
+
+```
+ $ npm install
+```
+
+Finally:
+
+```
+ $ grunt
+```
+
+The web server should now be connected to `0.0.0.0:8999`. You can connect locally by directing your web browser to `127.0.0.1:8999`. You may edit source files while the web server is running, and the changes will be reflected after refreshing the page.

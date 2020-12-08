@@ -19,7 +19,7 @@ Sessions contain various things such as the following:
 
 Persistent Data
 ~~~~~~~~~~~~~~~
-Some of the data in a session is `persistent`, or stored offline. This includes the following:
+Some of the data in a session is `persistent`, or stored offline in the server files. This includes the following:
 
     * Your selection wand binding
     * Your navigation wand binding
@@ -29,5 +29,6 @@ Some of the data in a session is `persistent`, or stored offline. This includes 
 
 The first two are particularly important. Because of how it is stored currently, changing the default wand bindings
 in the configuration **will not** affect existing sessions. This means you must either wipe the ``sessions`` folder
-(located inside WorldEdit's :doc:`configuration <../../config>` folder), or change it for yourself in-game using ``/tool selwand`` or
-``/tool navwand``. Note that the latter option **does not** affect other people.
+(located inside WorldEdit's :doc:`configuration <../../config>` folder) **WITH THE SERVER OFF**, or change it for
+yourself in-game using ``/tool selwand`` or ``/tool navwand``. Note that the latter option **does not** affect other
+people.

@@ -61,9 +61,9 @@ For example, if you're editing around 50 million blocks, divide ``50 / 10`` to g
 To allocate this amount to your server, specify ``-Xmx11G``. See `these example instructions <https://bukkit.gamepedia.com/Setting_the_Java_Virtual_Machine_Heap_Size>`_
 for Bukkit/Spigot/Paper. They also apply in a similar way to Forge/Fabric.
 
-To fix the watchdog crashing the server, try running the ``//watchdog`` command before you do your edit. If that still doesn't work,
-try increasing the watchdog timeout for your server. For Spigot/Paper, this is ``timeout-time`` in the ``spigot.yml`` file. For
-Forge/Fabric, it is ``max-tick-time`` in the ``server.properties`` file.
+To fix the watchdog crashing the server, try increasing the watchdog timeout for your server. For Spigot/Paper, this
+is ``timeout-time`` in the ``spigot.yml`` file. For Forge/Fabric, it is ``max-tick-time`` in the ``server.properties`` file.
+This should not be needed in most cases, however, as WorldEdit already ticks the watchdog automatically.
 
 My client crashes when I do large edits (1 million blocks or more) in single-player!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

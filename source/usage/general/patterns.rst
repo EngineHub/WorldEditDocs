@@ -30,6 +30,11 @@ The most basic pattern of just a single block. A block is identified by two part
 
         //set note_block[instrument=chime,note=18]
 
+    Setting a selection to an oak stair block facing east with the bigger part on top::
+
+        //set oak_stairs[facing=east,half=top]
+
+
 
 Random Pattern
 --------------

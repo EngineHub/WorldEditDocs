@@ -39,7 +39,8 @@ The version is dependent on the version of Minecraft you are building for. 6 is 
 1.12.2 and below, and 7 is for 1.13 and above. Support is only offered for the latest WorldEdit version, and the
 latest Minecraft version, but generally the API is similar enough across versions that examples are very similar.
 These documents also only cover the latest version of WorldEdit, although old versions may be reached using the
-navigator in the bottom right.
+navigator in the bottom right. The exact version matches the version on the downloads page, or you can browse
+the repository itself: https://maven.enginehub.org/repo/com/sk89q/worldedit/worldedit-core/
 
 To get started with the API, read :doc:`concepts/index`. Some common API usages are documented in
 :doc:`examples/index`.

@@ -45,6 +45,7 @@ In addition, there are some additional flags:
 
 * ``-a`` will not paste air from your clipboard. This is the same as ``-m #existing``. The ``-a`` and ``-m`` flag *can* be combined (or you can just add ``#existing`` to your mask).
 * ``-s`` will set your selection to the area you are pasting into.
+* ``-n`` will set your selection like ``-s`` does, but will *not* actually paste anything. This can be useful to check where your clipboard will end up before actually pasting.
 * ``-o`` will paste the clipboard back to its original origin, as explained above. This will disregard the entire "relative positions".
 
 Rotating

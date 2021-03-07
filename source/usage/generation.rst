@@ -5,7 +5,7 @@ Sometimes you may want to generate forests or create spheres automatically, as d
 
 As most commands in WorldEdit, these commands all accept :doc:`patterns <general/patterns>` as arguments.
 
-.. tip:: These commands actually use your "placement position", which defaults to your current location. You can use the ``//togglepos`` command to instead use your first selection point (the one selected via wand left-click, or ``//pos1``).
+.. tip:: These commands actually use your "placement position", which defaults to your current location. You can use the ``//toggleplace`` command to instead use your first selection point (the one selected via wand left-click, or ``//pos1``).
 
 .. contents::
     :local:

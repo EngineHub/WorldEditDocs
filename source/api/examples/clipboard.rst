@@ -17,10 +17,10 @@ Then, all you need to do is pass the parameters to the ``ForwardExtentCopy``, ap
 
 .. code-block:: java
 
-    CuboidRegion region = new CuboidRegion(world, min, max);
+    CuboidRegion region = new CuboidRegion(min, max);
     BlockArrayClipboard clipboard = new BlockArrayClipboard(region);
 
-    try (EditSession editSession = WorldEdit.getInstance().getEditSessionFactory().getEditSession(world, -1)) {
+    try (EditSession editSession = WorldEdit.getInstance().newEditSession(world)) {
         ForwardExtentCopy forwardExtentCopy = new ForwardExtentCopy(
             editSession, region, clipboard, region.getMinimumPoint()
         );
@@ -33,18 +33,19 @@ You may want to :ref:`save <Saving>` the clipboard after this.
 Pasting
 -------
 Pasting is the only way to move blocks from a ``Clipboard`` to another ``Extent``, typically a ``World``.
-To paste, you'll need a ``World``, an ``EditSession`` and a ``Clipboard``. Create a ``ClipboardHolder``
+To paste, you'll need a target ``Extent`` (generally an ``EditSession`` for a ``World``) and a ``Clipboard``. Create a ``ClipboardHolder``
 with your clipboard, then get a ``PasteBuilder`` by calling ``createPaste`` with the ``EditSession``.
 Call ``.to`` to set the position at which you want to paste (this will be offset by the clipboard offset,
 see the clipboard page above for more information). Add any other configuration you want (masks, paste entities,
 paste biomes, etc.), and then call ``build()`` to get an operation. Complete the operation, and all the blocks
-will be pasted.
+will be pasted. Note that if you want to rotate the clipboard, you'll need to ``setTransform`` on
+the ``ClipboardHolder`` *before* calling ``createPaste``.
 
 Full example:
 
 .. code-block:: java
 
-    try (EditSession editSession = WorldEdit.getInstance().getEditSessionFactory().getEditSession(world, -1)) {
+    try (EditSession editSession = WorldEdit.getInstance().newEditSession(world)) {
         Operation operation = new ClipboardHolder(clipboard)
                 .createPaste(editSession)
                 .to(BlockVector3.at(x, y, z))

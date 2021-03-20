@@ -19,7 +19,7 @@ available from ``newEditSessionBuilder()``. The builder has all of the options t
     WorldEdit.getInstance().newEditSessionBuilder().world(world).maxBlocks(1000).build()
 
 Edit sessions must be closed once all operations are complete, to ensure that block queues are flushed.
-They are not re-usable, and must be re-created for each individual operation.
+They are not re-usable for edits after being closed, and a new one must be created for subsequent operations.
 
 A clean way to close a ``EditSession`` is to use the ``try-with-resources`` statement:
 
@@ -30,6 +30,8 @@ A clean way to close a ``EditSession`` is to use the ``try-with-resources`` stat
    } // it is automatically closed/flushed when the code exits the block
 
 For more information, see `The try-with-resources Statement`_ page from the Java Tutorials.
+
+Once an edit session has been used for editing and is closed, it stores all the changes performed. If you want to undo these changes at a later time, you can hold a reference to the edit session. Then, to undo the changes, make a new EditSession as detailed above, and call ``editSession.undo(newEditSession)``.
 
 The Extent Stack
 ~~~~~~~~~~~~~~~~

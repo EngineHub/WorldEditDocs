@@ -136,4 +136,11 @@ This mask can evaluate a mathematical expression upon each block. The mask start
 Biome Mask
 ----------
 
-The biome mask matches blocks in columns with the given biome. Its syntax is ``$<biome id>``. The biome ID must be the `namespaced id <https://minecraft.gamepedia.com/Java_Edition_data_values#Biomes>`_, with `minecraft:` being optional for vanilla biomes, and mod ids being required for mod-added biomes.
+The biome mask matches blocks with the given biome. Its syntax is ``$<biome id>``. The biome ID must be the `namespaced id <https://minecraft.gamepedia.com/Java_Edition_data_values#Biomes>`_, with `minecraft:` being optional for vanilla biomes, and mod ids being required for mod-added biomes.
+
+Surface Mask
+------------
+
+The surface mask matches blocks that are exposed to air on at least one face. This means it'll match only the surface of an object, nothing fully occluded by other blocks.
+
+The mask is ``#surface`` (alias ``#exposed``).

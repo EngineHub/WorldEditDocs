@@ -3,10 +3,10 @@ LocalSession Examples
 
 .. note::
     This documentation covers the API for programmatically accessing session data.
-    See :doc:`/usage/general/sessions` for in-game explanations of what sessions are.
+    See :doc:`/usage/general/sessions` for the in-game explanations of what sessions are.
     See :doc:`../concepts/local-sessions` for the general overview of LocalSessions in API.
 
-Concepts used in these examples: :doc:`../concepts/regions`, :doc:`../concepts/local-sessions`, :doc:`../concepts/adapters`.
+Concepts used in these examples:  :doc:`../concepts/actors`, :doc:`../concepts/regions`, :doc:`../concepts/local-sessions`, :doc:`../concepts/adapters`.
 
 Getting a LocalSession
 ----------------------
@@ -29,7 +29,7 @@ Getting a player's selection
 
     // get a LocalSession as per the above example
     LocalSession localSession = ...;
-    Region region = null; // declare the region variable
+    Region region; // declare the region variable
     // note: not necessarily the player's current world, see the concepts page
     World selectionWorld = localSession.getSelectionWorld();
     try {
@@ -59,7 +59,7 @@ Example 2: Getting the player's clipboard
 .. code-block:: java
 
     LocalSession localSession = ...; // get a LocalSession as per the first example
-    ClipboardHolder clipboard = null; // declare variable
+    ClipboardHolder clipboard; // declare variable
     try {
         clipboard = localSession.getClipboard();
     } catch (EmptyClipboardException ex) {
@@ -67,12 +67,13 @@ Example 2: Getting the player's clipboard
         return;
     }
     /* you can now paste the clipboard somewhere, save it to a schematic, etc. */
+
     // bonus example: applying rotation to the player's clipboard
     AffineTransform transform = new AffineTransform();
     clipboard.setTransform(clipboard.getTransform().combine(transform.rotateY(90)));
 
-Storing an EditSession in history
----------------------------------    
+Storing an EditSession in a Player's History
+--------------------------------------------
 
 After programmatically creating and using an :doc:`EditSession <../concepts/edit-sessions>` to change some blocks, you may want to store that edit in the player's history so that they can later use ``//undo``.
 

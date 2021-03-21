@@ -33,6 +33,7 @@ Getting a player's selection
     // note: not necessarily the player's current world, see the concepts page
     World selectionWorld = localSession.getSelectionWorld();
     try {
+        if (selectionWorld == null) throw new IncompleteRegionException();
         region = localSession.getSelection(selectionWorld);
     } catch (IncompleteRegionException ex) {
         actor.printError(TextComponent.of("Please make a region selection first."));

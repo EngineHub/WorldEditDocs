@@ -7,3 +7,4 @@ These examples represent common use-cases of the WorldEdit API.
     :maxdepth: 2
 
     clipboard
+    local-sessions

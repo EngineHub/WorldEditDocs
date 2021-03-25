@@ -8,6 +8,7 @@ be read in the order provided, as later concepts sometimes reference earlier con
     :maxdepth: 2
 
     actors
+    local-sessions
     blocks
     patterns-and-masks
     extents

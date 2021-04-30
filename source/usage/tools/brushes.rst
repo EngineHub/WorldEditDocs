@@ -135,7 +135,7 @@ Biome brush
 
     /brush biome <shape> [radius] <biomeType>
 
-Sets the biome within the area given by the shape and radius. Keep in mind that since 1.15 the biomes are 3D and the smallest area you can change is a 4x4x4 cuboid. Changing the biome in a large area can be slow. Effects can't be seen until you rejoin the world.
+Sets the biome within the area given by the shape and radius. Keep in mind that since 1.15 the biomes are 3D and the smallest area you can change is a 4x4x4 cuboid. Effects can't be seen until you rejoin the world.
 
 Brush Settings
 ~~~~~~~~~~~~~~

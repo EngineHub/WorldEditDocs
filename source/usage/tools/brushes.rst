@@ -128,6 +128,15 @@ Lower Brush
 
 A special case of the deform brush which uses the expression ``y+=1``.
 
+Biome brush
+-------------
+
+::
+
+    /brush biome <shape> [radius] <biomeType>
+
+Sets the biome within the area given by the shape and radius. Keep in mind that since 1.15 the biomes are 3D and the smallest area you can change is a 4x4x4 cuboid. Effects can't be seen until you rejoin the world.
+
 Brush Settings
 ~~~~~~~~~~~~~~
 

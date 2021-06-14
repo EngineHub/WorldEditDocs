@@ -11,7 +11,7 @@ Requirements
 
 WorldEdit runs on the Java edition of Minecraft, either on your single player/local game or a dedicated server.
 
-**WorldEdit can't be used on Realms, Windows 10, Bedrock, or Pocket Edition versions.** These versions of Minecraft have limited or no mod support. :(
+**WorldEdit can't be used on Realms, Windows 10 Edition, Bedrock Edition, or Pocket Edition versions.** These versions of Minecraft have limited or no mod support. Note that "Windows 10 Edition" refers to a specific Edition of Minecraft, not the Java Edition running on a Windows 10 computer.
 
 Before you install WorldEdit, you will first have to install a "mod loader" like Forge, Fabric, Spigot, Bukkit, or Sponge. We'll advise you to choosing your mod loader below.
 

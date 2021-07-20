@@ -131,6 +131,6 @@ to be inside WorldEdit's config folder, which is ``plugins/WorldEdit`` on Bukkit
 on other platforms. This means that **by default** the schematics folder is located at ``plugins/WorldEdit/schematics`` or
 ``config/worldedit/schematics``.
 
-.. note:: If you want to share schematic folders between servers/installations, or simply want to store them elsewhere, you will have to enable the "allow-symlinks" option in the config.
+.. note:: If you want to share schematic folders between servers/installations, or simply want to store them elsewhere, you will have to enable the "allow-symbolic-links" option in the config.
 
 .. tip:: The save and load commands, although they ask for a file name, can take ``folder/file``, in which case a sub-folder will be created in your schematics folder. This can be useful to organize your schematics.

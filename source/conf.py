@@ -33,6 +33,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.autosectionlabel',
+    'sphinxcontrib.yt'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

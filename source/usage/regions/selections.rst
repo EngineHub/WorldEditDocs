@@ -218,3 +218,8 @@ Using the ``//sel <mode>`` command allows you to change between different shapes
 .. topic:: ``//sel convex``
 
     Left-click to select first point. All subsequent points are selected by right clicking. The selection is a convex hull encompassing all your selected points.
+
+Video Tutorial
+~~~~~~~~~~~~~~
+
+.. youtube:: lzB0l5ZJGH8

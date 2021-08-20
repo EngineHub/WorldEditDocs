@@ -18,7 +18,7 @@ Before getting a LocalSession, you'll need to have the :doc:`actor <../concepts/
     org.bukkit.entity.Player player = ...; // platform-specific player class, generally obtained from a command, event, etc.
     Player actor = BukkitAdapter.adapt(player); // WorldEdit's native Player class extends Actor
     SessionManager manager = WorldEdit.getInstance().getSessionManager();
-    LocalSession localSession = sessionManager.get(actor);
+    LocalSession localSession = manager.get(actor);
 
 Now that you have a session, there's various things you may want to do with it.
 

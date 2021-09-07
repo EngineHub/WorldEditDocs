@@ -67,7 +67,12 @@ can be used to make something vertical, horizontal, or vice versa.
 Flipping
 ~~~~~~~~
 
-The ``//flip [direction]`` command flips the current clipboard in a specified direction. The directions available are North, South, East, West, Up, and Down; you can also not specify in the command to use your current heading. The clipboard flips about a plane perpendicular to the direction specified, through the center of the clipboard. There are three planes, one horizontal (xz), and two vertical (xy, yz). The horizontal plane xz is defined through the up or down vectors, the xy plane defined by East/West, and the yz plane by North/South.
+The ``//flip [direction]`` command flips the current clipboard in a specified direction.
+The directions available are North, South, East, West, Up, and Down; you can also not specify in the command to use
+your current heading. The clipboard flips about a plane perpendicular to the direction specified,
+through the center of the clipboard. There are three planes, one horizontal (xz), and two vertical (xy, yz).
+The horizontal plane xz is defined through the up or down vectors, the xy plane defined by north/south,
+and the yz plane by east/west.
 
 .. figure:: /images/clipboard/flip.png
 

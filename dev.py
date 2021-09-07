@@ -21,23 +21,12 @@ class QueuingEventHandler(FileSystemEventHandler):
         self._queue.put_nowait(event)
 
 
-def drain_queue(my_queue):
-    modified = False
-    while True:
-        try:
-            my_queue.get_nowait()
-            modified = True
-        except queue.Empty:
-            break
-    return modified
-
-
 class CustomDirHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super(CustomDirHandler, self).__init__(*args, directory='build/dirhtml', **kwargs)
 
     def log_error(self, format: str, *args: Any) -> None:
-        super(CustomDirHandler, self).log_message(self, format, *args)
+        super(CustomDirHandler, self).log_message(format, *args)
 
     def log_message(self, format: str, *args: Any) -> None:
         pass
@@ -46,7 +35,7 @@ class CustomDirHandler(http.server.SimpleHTTPRequestHandler):
 class HttpServerThread(threading.Thread):
     def __init__(self):
         super(HttpServerThread, self).__init__(name="HttpServer")
-        self.server =  http.server.ThreadingHTTPServer(('', 8999), CustomDirHandler)
+        self.server = http.server.ThreadingHTTPServer(('', 8999), CustomDirHandler)
 
     def run(self):
         (addr, port) = self.server.server_address

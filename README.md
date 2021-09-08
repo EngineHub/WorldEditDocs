@@ -6,7 +6,7 @@ Contributions are welcome. Please read the licensing information below.
 
 # Dev Setup
 ```bash
-pip install -r requirements.txt -r source/requirements.txt
+pip install -r requirements.txt
 # Now you can run ./dev.py to auto-rebuild the docs into build/dirhtml, and browse it at the printed address.
 ```
 

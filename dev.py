@@ -5,7 +5,6 @@ import sys
 import threading
 from pathlib import Path
 from queue import SimpleQueue
-from typing import Any
 
 import sphinx.cmd.build
 from watchdog.events import FileSystemEventHandler
@@ -14,8 +13,8 @@ from watchdog.observers import Observer
 
 class QueuingEventHandler(FileSystemEventHandler):
     def __init__(self, q: SimpleQueue, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self._queue = q
-        super(*args, **kwargs)
 
     def on_any_event(self, event) -> None:
         self._queue.put_nowait(event)
@@ -23,18 +22,18 @@ class QueuingEventHandler(FileSystemEventHandler):
 
 class CustomDirHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
-        super(CustomDirHandler, self).__init__(*args, directory='build/dirhtml', **kwargs)
+        super().__init__(*args, directory='build/dirhtml', **kwargs)
 
-    def log_error(self, format: str, *args: Any) -> None:
-        super(CustomDirHandler, self).log_message(format, *args)
+    def log_error(self, format: str, *args) -> None:
+        super().log_message(format, *args)
 
-    def log_message(self, format: str, *args: Any) -> None:
+    def log_message(self, format: str, *args) -> None:
         pass
 
 
 class HttpServerThread(threading.Thread):
     def __init__(self):
-        super(HttpServerThread, self).__init__(name="HttpServer")
+        super().__init__(name="HttpServer")
         self.server = http.server.ThreadingHTTPServer(('', 8999), CustomDirHandler)
 
     def run(self):

@@ -1,1 +1,2 @@
 watchdog
+-r source/requirements.txt

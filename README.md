@@ -4,7 +4,13 @@ These are the files for WorldEdit's documentation.
 
 Contributions are welcome. Please read the licensing information below.
 
-## License
+# Dev Setup
+```bash
+pip install -r requirements.txt
+# Now you can run ./dev.py to auto-rebuild the docs into build/dirhtml, and browse it at the printed address.
+```
+
+# License
 
 The documentation located under the "source" directory is licensed with the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). Graphic assets and other materials, especially in regards to logos and other trademarks, are the property of their respective copyright owners and distribution may be restricted.
 

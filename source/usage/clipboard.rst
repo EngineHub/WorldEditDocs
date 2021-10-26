@@ -84,8 +84,6 @@ three planes you can flip across: XY, YZ, and XZ. The mapping used is included b
 
     Flipping the clipboard across a plane
 
-Using the flag ``-p`` flips the selection around the player, instead of across the selection's center.
-
 Loading and Saving
 ~~~~~~~~~~~~~~~~~~
 

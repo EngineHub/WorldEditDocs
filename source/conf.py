@@ -14,6 +14,7 @@
 
 import sys
 import os
+import datetime
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -50,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'WorldEdit'
-copyright = u'2015-2020, WorldEdit Team'
+copyright = u'2015-' + str(datetime.date.today().year) + u', WorldEdit Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -301,7 +302,7 @@ texinfo_documents = [
 epub_title = u'WorldEdit Documentation'
 epub_author = u'WorldEdit Team'
 epub_publisher = u'WorldEdit Team'
-epub_copyright = u'2020, WorldEdit Team'
+epub_copyright = str(datetime.date.today().year) + u', WorldEdit Team'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'WorldEdit Documentation'

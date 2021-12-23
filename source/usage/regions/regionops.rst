@@ -191,12 +191,12 @@ Setting Biomes
 
 While WorldEdit mostly focuses on manipulating blocks, the ``//setbiome <biome>`` command allows you to set the biome in your selection. The biome type should be specifed by `biome id <https://minecraft.gamepedia.com/Biome#Biome_IDs>`_. If you are using a biome added by a mod, the ``namespace:`` must prefix the id, e.g. ``minecraft:plains``.
 
-.. note:: WorldEdit supports Minecraft's 3D biomes since 7.2, on 1.15 and 1.16. This means that for the most part, the biome will be set
+.. note:: WorldEdit supports Minecraft's 3D biomes since 7.2, on 1.15 and above. This means that for the most part, the biome will be set
           inside your selection only, even in the Y direction. Unfortunately, Mojang made biomes 4x4x4 cubes instead of
           1x1x1 like blocks, and it also fuzzes on the edges. This means that biomes can't be as finely controlled as
           before, and that it can't be constrained to your selection entirely.
 
-          Additionally, Mojang has made the  overworld not entirely respect 3D biomes, so in some cases WorldEdit
+          Additionally, until 1.18, Mojang made the overworld not entirely respect 3D biomes, so in some cases WorldEdit
           will also set the biome at ``Y = 0`` to ensure that spawning and visuals work properly.
 
           To more closely emulate the old behavior of setting columns, use ``//expand vert`` before setting biomes.

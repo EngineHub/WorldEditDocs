@@ -8,7 +8,7 @@ Scripts allow you to program small tasks without having to learn Java, figure ou
 Requirements
 ~~~~~~~~~~~~
 
-Before you start using CraftScripts, you'll have to install the `Rhino JavaScript engine <https://github.com/mozilla/rhino/releases>`_. A direct link to the download is `here <https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-runtime-1.7.13.jar>`_. Rename the downloaded file to ``js.jar``. Move ``js.jar`` to the ``plugins/`` or ``plugins/WorldEdit`` folder (on Bukkit) or the ``mods`` folder (other platforms).
+Before you start using CraftScripts, you'll have to install the `Rhino JavaScript engine <https://github.com/mozilla/rhino/releases>`_. A direct link to the download is `here <https://github.com/mozilla/rhino/releases/download/Rhino1_7_14_Release/rhino-1.7.14.jar>`_. Rename the downloaded file to ``js.jar``. Move ``js.jar`` to the ``plugins/`` or ``plugins/WorldEdit`` folder (on Bukkit) or the ``mods`` folder (other platforms).
 
 Using CraftScripts
 ~~~~~~~~~~~~~~~~~~

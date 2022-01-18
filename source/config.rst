@@ -55,7 +55,7 @@ Settings
     logCommands,false,"Whether to log more informative information on command usage."
     logFile,"","If logCommands is true, the file to log to."
     logFormat,"[%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s]: %5$s%6$s%n",The format of command logging
-    wandItem,"minecraft:wooden_axe","The default item used for selection regions, overriden by existing sessions"
+    wandItem,"minecraft:wooden_axe","The default item used for selection regions, overriden by existing sessions. Set to -1 for no default."
     superPickaxeDrop,true,Whether the single super pickaxe mode will drop items for blocks it breaks
     superPickaxeManyDrop,true,Whether multi super pickaxe modes will drop items for blocks they break
     useInventory,false,Require players to have items in their inventory to make edits (this option is not well supported and not recommended)

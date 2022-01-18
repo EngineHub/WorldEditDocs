@@ -62,7 +62,7 @@ Settings
     useInventoryOverride,false,Allow a permission node to override the above setting
     useInventoryCreativeOverride,false,Allow creative mode to override the above setting
     navigationUseGlass,true,Whether the ``/up`` and ``/ceil`` commands should place a glass block for the player to stand on if in mid-air
-    navigationWand,"minecraft:compass","The default item used for the navigation wand which allows ``/jumpto`` and ``/thru`` as left-click/right-click, overriden by existing sessions"
+    navigationWand,"minecraft:compass","The default item used for the navigation wand which allows ``/jumpto`` and ``/thru`` as left-click/right-click, overriden by existing sessions. Set to -1 for no default."
     navigationWandMaxDistance,50,The max distance the navigation wand should trace to find a block to jump to
     scriptTimeout,3000,The maximum time a craftscript can run before it is terminated
     calculationTimeout,100,The default time an expression can run before it is terminated

@@ -27,8 +27,9 @@ Then, all you need to do is pass the parameters to the ``ForwardExtentCopy``, ap
     Operations.complete(forwardExtentCopy);
 
 You may want to :ref:`save <Saving>` the clipboard after this. Note that if you are only copying a clipboard to paste it
-immediately again, you should skip making the clipboard entirely. Instead, pass the target world directly to the
-``ForwardExtentCopy`` - it is capable of copying blocks between any two (or even within one) extent, not limited to clipboards.
+immediately again, you should skip making the clipboard entirely. Instead, build an EditSession for the target world and
+pass that to ``ForwardExtentCopy`` - it is capable of copying blocks between any two (or even within one) extent,
+not limited to clipboards.
 
 Pasting
 -------

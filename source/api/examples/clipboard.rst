@@ -10,8 +10,8 @@ Concepts used in these examples: :doc:`../concepts/regions`, :doc:`../concepts/e
 
 Copying
 -------
-Copying is the most common way to create a clipboard. To do it, you'll need a ``Region``, a target ``Clipboard``,
-and an ``EditSession``. In this example we use a ``CuboidRegion`` and the standard ``BlockArrayClipboard``.
+Copying is the most common way to create a clipboard. To do it, you'll need a ``Region``, and a source and target extent,
+such as a ``World`` and a ``Clipboard``. In this example we use a ``CuboidRegion`` and the standard ``BlockArrayClipboard``.
 Then, all you need to do is pass the parameters to the ``ForwardExtentCopy``, apply configuration (such as calling
 ``setCopyingEntities(true))`` to copy entities), and call ``Operations.complete``.
 
@@ -20,15 +20,15 @@ Then, all you need to do is pass the parameters to the ``ForwardExtentCopy``, ap
     CuboidRegion region = new CuboidRegion(min, max);
     BlockArrayClipboard clipboard = new BlockArrayClipboard(region);
 
-    try (EditSession editSession = WorldEdit.getInstance().newEditSession(world)) {
-        ForwardExtentCopy forwardExtentCopy = new ForwardExtentCopy(
-            editSession, region, clipboard, region.getMinimumPoint()
-        );
-        // configure here
-        Operations.complete(forwardExtentCopy);
-    }
+    ForwardExtentCopy forwardExtentCopy = new ForwardExtentCopy(
+        world, region, clipboard, region.getMinimumPoint()
+    );
+    // configure here
+    Operations.complete(forwardExtentCopy);
 
-You may want to :ref:`save <Saving>` the clipboard after this.
+You may want to :ref:`save <Saving>` the clipboard after this. Note that if you are only copying a clipboard to paste it
+immediately again, you should skip making the clipboard entirely. Instead, pass the target world directly to the
+``ForwardExtentCopy`` - it is capable of copying blocks between any two (or even within one) extent, not limited to clipboards.
 
 Pasting
 -------

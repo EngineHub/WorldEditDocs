@@ -129,7 +129,7 @@ This mask can evaluate a mathematical expression upon each block. The mask start
 
         //gmask =y<64
 
-    Only edit blocks two blocks below air::
+    Only edit blocks with air two blocks below::
 
         //gmask =queryRel(0,-2,0,0,0)
 

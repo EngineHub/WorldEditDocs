@@ -37,7 +37,7 @@ The Extent Stack
 ~~~~~~~~~~~~~~~~
 
 The "extent stack" is a term used to describe the many extents that are composed to create an ``EditSession``.
-At the very bottom of the stack is the ``World`` that the changes will be committed to. That extent is wrapped in
+At the very bottom of the stack (and executed last) is the ``World`` that the changes will be committed to. That extent is wrapped in
 other extents that all apply various fixes for oddities with Minecraft, and then the first event is posted with a stage
 of ``Stage.BEFORE_CHANGE``. The resulting extent is used for ``EditSession.rawSetBlock()``. Then, that extent
 is wrapped in some reordering / batching extents, and another event is posted with a stage of ``Stage.BEFORE_REORDER``.
@@ -51,8 +51,11 @@ Edit Session Event
 ~~~~~~~~~~~~~~~~~~
 
 The ``EditSessionEvent`` is the way to hook into WorldEdit's changes in an efficient manner. It is fired as a part of
-``EditSession`` creation, and allows hooking into the extent stack at various steps as described above. You can
-subscribe to this event by registering with WorldEdit's event bus:
+``EditSession`` creation, and allows hooking into the extent stack at various steps as described above. The ``EditSessionEvent``
+is fired with the stages in the order of ``BEFORE_HISTORY``, then ``BEFORE_REORDER``, and at last ``BEFORE_CHANGE`` right before
+blocks in the world are modified.
+
+You can subscribe to this event by registering with WorldEdit's event bus:
 
 .. code-block:: java
 

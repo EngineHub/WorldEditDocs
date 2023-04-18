@@ -38,7 +38,7 @@ Installation Step-by-step
 Bukkit / Spigot / Paper
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Once you've set up your Bukkit-based server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/files>`_. Make sure you get the right WorldEdit download for your Minecraft version.
+Once you've set up your Bukkit-based server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Curseforge site <https://www.curseforge.com/minecraft/bukkit-plugins/worldedit>`_. Make sure you get the right WorldEdit download for your Minecraft version.
 
 1. In your server folder, create a "plugins" folder if one does not yet exist. (It should be created when you first run the server).
 2. Move the WorldEdit .jar file into the plugins folder.

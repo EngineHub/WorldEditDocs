@@ -51,7 +51,7 @@ Settings
     snapshotsExperimental,false,"If true, uses the new snapshot code. Try it out and report bugs!"
     maxRadius,-1,"Maximum radius of commands that take a radius"
     maxSuperPickaxeSize,5,"Maximum size of super pickaxe tools"
-    maxBrushRadius,6,"Maximum size of brushes"
+    maxBrushRadius,30,"Maximum size of brushes"
     logCommands,false,"Whether to log more informative information on command usage."
     logFile,"","If logCommands is true, the file to log to."
     logFormat,"[%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s]: %5$s%6$s%n",The format of command logging

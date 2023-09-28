@@ -18,7 +18,7 @@ Available Patterns
 Single Block Pattern
 --------------------
 
-The most basic pattern of just a single block. A block is identified by two parts: the `block type <https://minecraft.gamepedia.com/Java_Edition_data_values#IDs>`_, and additional `block states <https://minecraft.gamepedia.com/Block_states>`_. These two links to the Minecraft Wiki, along with WorldEdit's in-built tab-completion for commands, should guide you in specifying the block you want. Additional states are always appended to the type using the syntax ``block_type[state1=value,state2=value,...]``. Note that when states are not specified, or if some are left out, the default values will be used for those states.
+The most basic pattern of just a single block. A block is identified by two parts: the `block type <https://minecraft.wiki/w/Java_Edition_data_values#IDs>`_, and additional `block states <https://minecraft.gamepedia.com/Block_states>`_. These two links to the Minecraft Wiki, along with WorldEdit's in-built tab-completion for commands, should guide you in specifying the block you want. Additional states are always appended to the type using the syntax ``block_type[state1=value,state2=value,...]``. Note that when states are not specified, or if some are left out, the default values will be used for those states.
 
 .. topic:: Example: Single block patterns
 
@@ -114,7 +114,7 @@ This pattern, prefixed by ``^``, lets you set the type or states of a block with
 Block Category Pattern
 ----------------------
 
-This pattern allows setting random blocks within a block category, often referred to as a "`tag <https://minecraft.gamepedia.com/Tag>`_". Tags allow grouping blocks together under a single name. Minecraft comes with many tags inbuilt (see the link) and also allows creating and modifying tags via data packs. You may already have noticed these tags being used as a :ref:`mask <usage/general/masks:Block category mask>` in the example above (``##slabs``).
+This pattern allows setting random blocks within a block category, often referred to as a "`tag <https://minecraft.wiki/w/Tag>`_". Tags allow grouping blocks together under a single name. Minecraft comes with many tags inbuilt (see the link) and also allows creating and modifying tags via data packs. You may already have noticed these tags being used as a :ref:`mask <usage/general/masks:Block category mask>` in the example above (``##slabs``).
 
 The syntax for this pattern is ``##<tag name>``, which will randomly choose between the default state of all blocks in the category. You can also mix this with the random state pattern (``##*<tag name>``) to use all states, not just the defaults.
 
@@ -162,7 +162,7 @@ You can set the skin of a player head by specifying a username after the pipe sy
 Mob Spawners
 ------------
 
-You can set the type of mob to be spawned (again via the pipe symbol). Note that the name of the mob must be an `entity ID <https://minecraft.gamepedia.com/Java_Edition_data_values#Entities>`_. Prefixing `minecraft:` is optional, modded mobs must have a namespace.
+You can set the type of mob to be spawned (again via the pipe symbol). Note that the name of the mob must be an `entity ID <https://minecraft.wiki/w/Java_Edition_data_values#Entities>`_. Prefixing `minecraft:` is optional, modded mobs must have a namespace.
 
 .. topic:: Example: Creating a squid spawner
 

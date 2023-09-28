@@ -23,4 +23,4 @@ Some blocks include NBT_, and these are represented by the ``BaseBlock`` type.
 
 You can get a ``BaseBlock`` from a ``BlockState`` using ``toBaseBlock(CompoundTag)``.
 
-.. _NBT: https://minecraft.gamepedia.com/NBT_format
+.. _NBT: https://minecraft.wiki/w/NBT_format

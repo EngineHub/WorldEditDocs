@@ -2,7 +2,7 @@ Registries
 ==========
 
 Almost everything in Minecraft uses the same format for identifying a particular type, such as ``minecraft:stone``.
-This is known as a `namespaced ID <https://minecraft.gamepedia.com/Namespaced_ID>`_ (see page for details).
+This is known as a `namespaced ID <https://minecraft.wiki/w/Resource_location>`_ (see page for details).
 WorldEdit keeps some `registries` that allow access to blocks, items, biomes, entities, fluids, and more from the
 current Minecraft platform using their ID in a platform-independent way.
 

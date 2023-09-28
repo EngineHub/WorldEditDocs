@@ -189,7 +189,7 @@ By default, coordinates are normalized from -1 to 1 on each axis, from the min t
 Setting Biomes
 --------------
 
-While WorldEdit mostly focuses on manipulating blocks, the ``//setbiome <biome>`` command allows you to set the biome in your selection. The biome type should be specifed by `biome id <https://minecraft.gamepedia.com/Biome#Biome_IDs>`_. If you are using a biome added by a mod, the ``namespace:`` must prefix the id, e.g. ``minecraft:plains``.
+While WorldEdit mostly focuses on manipulating blocks, the ``//setbiome <biome>`` command allows you to set the biome in your selection. The biome type should be specifed by `biome id <https://minecraft.wiki/w/Biome#Biome_IDs>`_. If you are using a biome added by a mod, the ``namespace:`` must prefix the id, e.g. ``minecraft:plains``.
 
 .. note:: WorldEdit supports Minecraft's 3D biomes since 7.2, on 1.15 and above. This means that for the most part, the biome will be set
           inside your selection only, even in the Y direction. Unfortunately, Mojang made biomes 4x4x4 cubes instead of

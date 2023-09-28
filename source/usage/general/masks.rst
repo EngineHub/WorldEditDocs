@@ -92,7 +92,7 @@ The second type of region mask is ``#dregion`` (d for dynamic, also ``#dsel``, `
 Block Category Mask
 -------------------
 
-Block categories, or `tags <https://minecraft.gamepedia.com/Tag>`_ can also be used as masks. A category mask will match any block that is in that category. Just like the pattern, the syntax is `##<tag>`.
+Block categories, or `tags <https://minecraft.wiki/w/Tag>`_ can also be used as masks. A category mask will match any block that is in that category. Just like the pattern, the syntax is `##<tag>`.
 
 .. topic:: Example: Block Category Masks
 
@@ -136,7 +136,7 @@ This mask can evaluate a mathematical expression upon each block. The mask start
 Biome Mask
 ----------
 
-The biome mask matches blocks with the given biome. Its syntax is ``$<biome id>``. The biome ID must be the `namespaced id <https://minecraft.gamepedia.com/Java_Edition_data_values#Biomes>`_, with `minecraft:` being optional for vanilla biomes, and mod ids being required for mod-added biomes.
+The biome mask matches blocks with the given biome. Its syntax is ``$<biome id>``. The biome ID must be the `namespaced id <https://minecraft.wiki/w/Java_Edition_data_values#Biomes>`_, with `minecraft:` being optional for vanilla biomes, and mod ids being required for mod-added biomes.
 
 Surface Mask
 ------------

@@ -551,7 +551,9 @@ Selection Commands
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Get the wand object"
+        **Description**,"Get the wand item
+
+        You must have also have permission to use at least one of the features of the requested wand."
         **Permissions**,"``worldedit.wand``"
         **Usage**,"``//wand [-n]``"
           ``[-n]``,"Get a navigation wand"
@@ -727,8 +729,7 @@ Selection Commands
         :widths: 8, 15
 
         **Description**,"Vertically expand the selection to world limits."
-        **Usage**,"``//expand vert [height]``"
-          ``[height]``,"The height to expand both upwards and downwards"
+        **Usage**,"``//expand vert``"
 
 
 Region Commands
@@ -968,7 +969,7 @@ Region Commands
 
         The expression is executed for each block and is expected
         to modify the variables x, y and z to point to a new block
-        to fetch. See also https://tinyurl.com/weexpr"
+        to fetch. For details, see https://ehub.to/we/expr"
         **Permissions**,"``worldedit.region.deform``"
         **Usage**,"``//deform [-cor] <expression...>``"
           ``<expression...>``,"The expression to use"
@@ -1175,7 +1176,7 @@ Generation Commands
 
         **Description**,"Generates a shape according to a formula.
 
-        See also https://tinyurl.com/weexpr."
+        For details, see https://ehub.to/we/expr"
         **Permissions**,"``worldedit.generation.shape``"
         **Usage**,"``//generate [-chor] <pattern> <expression...>``"
           ``<pattern>``,"The pattern of blocks to set"
@@ -1197,7 +1198,7 @@ Generation Commands
 
         **Description**,"Sets biome according to a formula.
 
-        See also https://tinyurl.com/weexpr."
+        For details, see https://ehub.to/we/expr"
         **Permissions**,"``worldedit.generation.shape.biome``"
         **Usage**,"``//generatebiome [-chor] <target> <expression...>``"
           ``<target>``,"The biome type to set"
@@ -1424,81 +1425,7 @@ Tool Commands
         :widths: 8, 15
 
         **Description**,"Binds a tool to the item in your hand"
-        **Usage**,"``/tool <stacker|selwand|tree|repl|farwand|none|deltree|lrbuild|floodfill|cycler|navwand|info>``"
-
-.. raw:: html
-
-    <span id="command-/tool-stacker"></span>
-
-.. topic:: ``/tool stacker``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block stacker tool"
-        **Permissions**,"``worldedit.tool.stack``"
-        **Usage**,"``/tool stacker [range] [mask]``"
-          ``[range]``,"The max range of the stack"
-          ``[mask]``,"The mask to stack until"
-
-.. raw:: html
-
-    <span id="command-/tool-selwand"></span>
-
-.. topic:: ``/tool selwand``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Selection wand tool"
-        **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``/tool selwand``"
-
-.. raw:: html
-
-    <span id="command-/tool-tree"></span>
-
-.. topic:: ``/tool tree``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Tree generator tool"
-        **Permissions**,"``worldedit.tool.tree``"
-        **Usage**,"``/tool tree [type]``"
-          ``[type]``,"Type of tree to generate"
-
-.. raw:: html
-
-    <span id="command-/tool-repl"></span>
-
-.. topic:: ``/tool repl``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block replacer tool"
-        **Permissions**,"``worldedit.tool.replacer``"
-        **Usage**,"``/tool repl <pattern>``"
-          ``<pattern>``,"The pattern of blocks to place"
-
-.. raw:: html
-
-    <span id="command-/tool-farwand"></span>
-
-.. topic:: ``/tool farwand``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Wand at a distance tool"
-        **Permissions**,"``worldedit.tool.farwand``"
-        **Usage**,"``/tool farwand``"
+        **Usage**,"``/tool <none|navwand|info|deltree|floodfill|lrbuild|cycler|farwand|repl|tree|selwand|stacker>``"
 
 .. raw:: html
 
@@ -1512,66 +1439,6 @@ Tool Commands
 
         **Description**,"Unbind a bound tool from your current item"
         **Usage**,"``/tool none``"
-
-.. raw:: html
-
-    <span id="command-/tool-deltree"></span>
-
-.. topic:: ``/tool deltree``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Floating tree remover tool"
-        **Permissions**,"``worldedit.tool.deltree``"
-        **Usage**,"``/tool deltree``"
-
-.. raw:: html
-
-    <span id="command-/tool-lrbuild"></span>
-
-.. topic:: ``/tool lrbuild``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Long-range building tool"
-        **Permissions**,"``worldedit.tool.lrbuild``"
-        **Usage**,"``/tool lrbuild <primary> <secondary>``"
-          ``<primary>``,"Pattern to set on left-click"
-          ``<secondary>``,"Pattern to set on right-click"
-
-.. raw:: html
-
-    <span id="command-/tool-floodfill"></span>
-
-.. topic:: ``/tool floodfill`` (or ``/tool flood``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Flood fill tool"
-        **Permissions**,"``worldedit.tool.flood-fill``"
-        **Usage**,"``/tool floodfill <pattern> <range>``"
-          ``<pattern>``,"The pattern to flood fill"
-          ``<range>``,"The range to perform the fill"
-
-.. raw:: html
-
-    <span id="command-/tool-cycler"></span>
-
-.. topic:: ``/tool cycler``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block data cycler tool"
-        **Permissions**,"``worldedit.tool.data-cycler``"
-        **Usage**,"``/tool cycler``"
 
 .. raw:: html
 
@@ -1600,6 +1467,140 @@ Tool Commands
         **Description**,"Block information tool"
         **Permissions**,"``worldedit.tool.info``"
         **Usage**,"``/tool info``"
+
+.. raw:: html
+
+    <span id="command-/tool-deltree"></span>
+
+.. topic:: ``/tool deltree``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Floating tree remover tool"
+        **Permissions**,"``worldedit.tool.deltree``"
+        **Usage**,"``/tool deltree``"
+
+.. raw:: html
+
+    <span id="command-/tool-floodfill"></span>
+
+.. topic:: ``/tool floodfill`` (or ``/tool flood``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Flood fill tool"
+        **Permissions**,"``worldedit.tool.flood-fill``"
+        **Usage**,"``/tool floodfill <pattern> <range>``"
+          ``<pattern>``,"The pattern to flood fill"
+          ``<range>``,"The range to perform the fill"
+
+.. raw:: html
+
+    <span id="command-/tool-lrbuild"></span>
+
+.. topic:: ``/tool lrbuild``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Long-range building tool"
+        **Permissions**,"``worldedit.tool.lrbuild``"
+        **Usage**,"``/tool lrbuild <primary> <secondary>``"
+          ``<primary>``,"Pattern to set on left-click"
+          ``<secondary>``,"Pattern to set on right-click"
+
+.. raw:: html
+
+    <span id="command-/tool-cycler"></span>
+
+.. topic:: ``/tool cycler``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block data cycler tool"
+        **Permissions**,"``worldedit.tool.data-cycler``"
+        **Usage**,"``/tool cycler``"
+
+.. raw:: html
+
+    <span id="command-/tool-farwand"></span>
+
+.. topic:: ``/tool farwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Wand at a distance tool"
+        **Permissions**,"``worldedit.tool.farwand``"
+        **Usage**,"``/tool farwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-repl"></span>
+
+.. topic:: ``/tool repl``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block replacer tool"
+        **Permissions**,"``worldedit.tool.replacer``"
+        **Usage**,"``/tool repl <pattern>``"
+          ``<pattern>``,"The pattern of blocks to place"
+
+.. raw:: html
+
+    <span id="command-/tool-tree"></span>
+
+.. topic:: ``/tool tree``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Tree generator tool"
+        **Permissions**,"``worldedit.tool.tree``"
+        **Usage**,"``/tool tree [type]``"
+          ``[type]``,"Type of tree to generate"
+
+.. raw:: html
+
+    <span id="command-/tool-selwand"></span>
+
+.. topic:: ``/tool selwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Selection wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``/tool selwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-stacker"></span>
+
+.. topic:: ``/tool stacker``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block stacker tool"
+        **Permissions**,"``worldedit.tool.stack``"
+        **Usage**,"``/tool stacker [range] [mask]``"
+          ``[range]``,"The max range of the stack"
+          ``[mask]``,"The mask to stack until"
 
 .. raw:: html
 

@@ -8,7 +8,7 @@ A fundamental part of WorldEdit is working with a selection or region. For examp
     :backlinks: none
     :depth: 1
 
-.. youtube:: lzB0l5ZJGH8
+.. youtube:: dfhgsFNXVnU
 
 .. include:: ../../cuitip.rst
 

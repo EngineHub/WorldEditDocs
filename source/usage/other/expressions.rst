@@ -37,7 +37,7 @@ These operators are put between their two operands.
         ``-``,Subtraction
         ``*``,Multiplication
         ``/``,Division
-        ``%``,Modulo
+        ``%``,Remainder
         ``^``,Power
 
 .. topic:: Bitwise
@@ -89,7 +89,7 @@ These operators are put between their two operands.
         ``-=``,subtraction+assignment
         ``*=``,multiplication+assignment
         ``/=``,division+assignment
-        ``%=``,modulo+assignment
+        ``%=``,remainder+assignment
         ``^=``,power+assignment
 
 Prefix

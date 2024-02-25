@@ -37,7 +37,7 @@ See the :doc:`commands` page for an explanation of some of these commands.
     ``//watchdog``,"``worldedit.watchdog``"
     ``/gmask``,"``worldedit.global-mask``"
     ``/toggleplace``,""
-    ``/placement``,""
+    ``/placement``,"``worldedit.placement``"
     ``/searchitem``,"``worldedit.searchitem``"
     ``/unstuck``,"``worldedit.navigation.unstuck``"
     ``/ascend``,"``worldedit.navigation.ascend``"

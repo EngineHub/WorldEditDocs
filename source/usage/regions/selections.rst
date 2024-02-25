@@ -132,6 +132,15 @@ Inset and Outset
 
     If you want to expand or contract in all directions at once (or just horizontal or vertical directions), you can use the ``//outset`` and ``//inset`` commands. For example, ``//outset -v 5`` will expand your selection vertically (both up and down) 5 blocks each, while ``//inset -h 5`` will contract your selection horizontally (north, west, south, and east) 5 blocks each. Leaving out the ``v`` or ``h`` will work in all 6 directions.
 
+Trimming the selection
+----------------------
+
+::
+
+    //trim [mask]
+
+This command minimises the selection to the smallest size necessary to still fit all blocks that match the given mask. When no mask is specified, it will trim the selection to fit non-air blocks as if it were using the ``#existing`` mask.
+
 Selection Information
 ~~~~~~~~~~~~~~~~~~~~~
 

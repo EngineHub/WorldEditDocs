@@ -105,19 +105,6 @@ To load a saved schematic, use ``//schem load <filename>``.
 
     Note that third party software which uses the format may not necessarily use relative positions as WorldEdit does, so they may not have that information.
 
-Sharing
-~~~~~~~
-
-WorldEdit has an inbuilt way to easily share schematic files online.
-
-To share your current clipboard online, use ``//schem share``. You can also supply a name for the schematic, as well as an alternate upload destination and format using the `//schem share [name] [destination] [format]`` syntax.
-
-.. topic:: Share destinations
-
-    By default, WorldEdit uploads schematics to the `EngineHub Paste Service <https://paste.enginehub.org/>`_. Other plugins and mods can use the WorldEdit API to register new share destinations that you can upload to via the destination argument of the command.
-
-    It's important to note, that schematics shared to the EngineHub Paste Service will be deleted after one month. This service should only be used for short-term share links, not as a long-term download location.
-
 Schematic Management
 --------------------
 
@@ -156,3 +143,16 @@ on other platforms. This means that **by default** the schematics folder is loca
 .. note:: If you want to share schematic folders between servers/installations, or simply want to store them elsewhere, you will have to enable the "allow-symbolic-links" option in the config.
 
 .. tip:: The save and load commands, although they ask for a file name, can take ``folder/file``, in which case a sub-folder will be created in your schematics folder. This can be useful to organize your schematics.
+
+Sharing
+~~~~~~~
+
+WorldEdit has an inbuilt way to easily share schematic files online.
+
+To share your current clipboard online, use ``//schem share``. You can also supply a name for the schematic, as well as an alternate upload destination and format using the ``//schem share [name] [destination] [format]`` syntax.
+
+.. topic:: Share destinations
+
+    By default, WorldEdit uploads schematics to the `EngineHub Paste Service <https://paste.enginehub.org/>`_. Other plugins and mods can use the WorldEdit API to register new share destinations that you can upload to via the destination argument of the command.
+
+    It's important to note, that schematics shared to the EngineHub Paste Service will be deleted after one month. This service should only be used for short-term share links, not as a long-term download location.

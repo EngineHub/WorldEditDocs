@@ -46,7 +46,7 @@ To get started with the API, read :doc:`concepts/index`. Some common API usages 
 :doc:`examples/index`.
 When developing, take note of :doc:`internal-apis` to ensure you're using supported APIs.
 If you need the Javadocs, they are hosted at
-`<https://docs.enginehub.org/javadoc/com.sk89q.worldedit/worldedit-core/7.2.0/>`_.
+`<https://docs.enginehub.org/javadoc/com.sk89q.worldedit/worldedit-core/7.3.0/>`_.
 
 .. _Maven repository: https://help.sonatype.com/repomanager3/repository-manager-concepts/an-example---maven-repository-format
 .. _Maven: https://maven.apache.org/

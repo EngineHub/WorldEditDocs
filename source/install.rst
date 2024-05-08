@@ -38,7 +38,7 @@ Installation Step-by-step
 Bukkit / Spigot / Paper
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Once you've set up your Bukkit-based server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from the Bukkit dev site <http://dev.bukkit.org/bukkit-plugins/worldedit/files>`_. Make sure you get the right WorldEdit download for your Minecraft version.
+Once you've set up your Bukkit-based server (instructions can be found on the respective Paper/Spigot sites), `download WorldEdit from Modrinth <https://modrinth.com/plugin/worldedit/versions?l=bukkit>`_. Make sure you get the right WorldEdit download for your Minecraft version.
 
 1. In your server folder, create a "plugins" folder if one does not yet exist. (It should be created when you first run the server).
 2. Move the WorldEdit .jar file into the plugins folder.
@@ -49,7 +49,7 @@ Check your server log for errors. If you encounter errors, see the :doc:`FAQ <fa
 NeoForge Single-Player
 ~~~~~~~~~~~~~~~~~~~
 
-First, you'll have to install NeoForge. There are many third-party launchers designed to easily install modpacks. If you're using one of those, you can add WorldEdit as a mod through the launcher interface. Otherwise, NeoForge will install a profile available through the official Minecraft Launcher. After installing NeoForge one way or the other, `download WorldEdit from the CurseForge site <https://www.curseforge.com/minecraft/mc-mods/worldedit/files>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform (Fabric builds are also there - make sure you grab the right one).
+First, you'll have to install NeoForge. There are many third-party launchers designed to easily install modpacks. If you're using one of those, you can add WorldEdit as a mod through the launcher interface. Otherwise, NeoForge will install a profile available through the official Minecraft Launcher. After installing NeoForge one way or the other, `download WorldEdit from Modrinth <https://modrinth.com/plugin/worldedit/versions?l=neoforge>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform.
 
 1. If you've installed NeoForge as a profile in the official Minecraft launcher, follow `Mojang's instructions <https://help.minecraft.net/hc/en-us/articles/360035131551-Where-are-Minecraft-files-stored->`_ for finding where your ".minecraft" folder is. If you're using a third-party launcher, this might be in a different location (consult the launcher's docs).
 2. Create a "mods" folder inside the ".minecraft" folder if it doesn't yet exist (it should be created if you've run NeoForge once already).
@@ -62,9 +62,9 @@ Fabric Single-Player or Server
 
 First, you'll have to install Fabric. They have instructions on `their website <https://fabricmc.net/wiki/install>`_ depending on how you'd like to install. The MultiMC instructions are recommended for single-player.
 
-Then, `download WorldEdit from the CurseForge site <https://www.curseforge.com/minecraft/mc-mods/worldedit/files>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform (Forge builds are also there - make sure you grab the right one).
+Then, `download WorldEdit from Modrinth <https://modrinth.com/plugin/worldedit/versions?l=fabric>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform (Forge builds are also there - make sure you grab the right one).
 
-On Minecraft 1.14.x versions, you will also need to install the `Fabric API mod <https://www.curseforge.com/minecraft/mc-mods/fabric-api>`_. This is not required for 1.15+.
+On Minecraft 1.14.x versions, you will also need to install the `Fabric API mod <https://modrinth.com/mod/fabric-api/versions>`_. This is not required for 1.15+.
 
 Add the WorldEdit .jar to the "loader mods" section of your MultiMC instance and check to enable it, or add the jar to your mods folder (see NeoForge instructions above) if you're installing in the official Mojang launcher.
 

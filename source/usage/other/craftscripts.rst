@@ -36,7 +36,7 @@ Scripting in WorldEdit allows you to write world manipulation code without havin
 
 .. note:: It is recommended you have a basic understanding of JavaScript or Java to begin writing CraftScripts.
 
-.. tip:: While we'll be going over using CraftScripts with the WorldEdit API, there are no real restrictions on what you can do. Advanced users may even hook into the API of the underlying platform (Bukkit, Forge, etc).
+.. tip:: While we'll be going over using CraftScripts with the WorldEdit API, there are no real restrictions on what you can do. Advanced users may even hook into the API of the underlying platform (Bukkit, NeoForge, etc).
 
 Introduction
 ------------

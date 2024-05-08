@@ -19,7 +19,7 @@ Note that the YAML format which Bukkit uses is very sensitive to errors. You mus
 Forge/Fabric
 ~~~~~~~~~~~~
 
-Configuration options in Forge/Fabric can be found in the ``config/worldedit/worldedit.properties`` file. On a server, this is relative to the server root (where the main server .jar is). On a single-player installation, this is in your ".minecraft" folder.
+Configuration options in NeoForge/Fabric can be found in the ``config/worldedit/worldedit.properties`` file. On a server, this is relative to the server root (where the main server .jar is). On a single-player installation, this is in your ".minecraft" folder.
 
 Sponge Server
 ~~~~~~~~~~~~~

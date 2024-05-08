@@ -6,10 +6,10 @@ First things first
 ==================
 
 * If you are using Bukkit, then you need to have permissions to use WorldEdit. You can give yourself op (``/op yourname``) to give yourself permissions. Sponge servers will also need to use permissions, though Sponge does not use op to grant all permissions.
-* If you are using Forge/Fabric and playing single player, then WorldEdit is only enabled if your world has cheats enabled.
-* If you are using Forge/Fabric server, then only ops can use WorldEdit.
+* If you are using NeoForge/Fabric and playing single player, then WorldEdit is only enabled if your world has cheats enabled.
+* If you are using NeoForge/Fabric server, then only ops can use WorldEdit.
 
-.. tip:: For Forge/Fabric, you can:
+.. tip:: For NeoForge/Fabric, you can:
 
     * Turn on "cheat-mode" in WorldEdit's settings (see :doc:`config`) file to let you use WorldEdit even in survival (and on a server, everyone is allowed)
     * Or instead, turn on "use-in-creative" to let yourself use WorldEdit when you have creative mode (and on a server, when someone has creative)

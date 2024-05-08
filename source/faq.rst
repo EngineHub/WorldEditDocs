@@ -59,10 +59,10 @@ The two most likely causes for this are either the watchdog crashing your server
 Ensure that you allocate approximately 1 gigabyte (for the general server) + 2 gigabytes for every ten million blocks you are editing.
 For example, if you're editing around 50 million blocks, divide ``50 / 10`` to get ``5``, then add ``1 + 2 * 5`` to get 11 gigabytes.
 To allocate this amount to your server, specify ``-Xmx11G``. See `these example instructions <https://bukkit.gamepedia.com/Setting_the_Java_Virtual_Machine_Heap_Size>`_
-for Bukkit/Spigot/Paper. They also apply in a similar way to Forge/Fabric.
+for Bukkit/Spigot/Paper. They also apply in a similar way to NeoForge/Fabric.
 
 To fix the watchdog crashing the server, try increasing the watchdog timeout for your server. For Spigot/Paper, this
-is ``timeout-time`` in the ``spigot.yml`` file. For Forge/Fabric, it is ``max-tick-time`` in the ``server.properties`` file.
+is ``timeout-time`` in the ``spigot.yml`` file. For NeoForge/Fabric, it is ``max-tick-time`` in the ``server.properties`` file.
 This should not be needed in most cases, however, as WorldEdit already ticks the watchdog automatically.
 
 My client crashes when I do large edits (1 million blocks or more) in single-player!

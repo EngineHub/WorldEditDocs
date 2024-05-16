@@ -51,7 +51,7 @@ NeoForge Single-Player
 
 First, you'll have to install NeoForge. There are many third-party launchers designed to easily install modpacks. If you're using one of those, you can add WorldEdit as a mod through the launcher interface. Otherwise, NeoForge will install a profile available through the official Minecraft Launcher. After installing NeoForge one way or the other, `download WorldEdit from Modrinth <https://modrinth.com/plugin/worldedit/versions?l=neoforge>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform.
 
-1. If you've installed NeoForge as a profile in the official Minecraft launcher, follow `Mojang's instructions <https://help.minecraft.net/hc/en-us/articles/360035131551-Where-are-Minecraft-files-stored->`_ for finding where your ".minecraft" folder is. If you're using a third-party launcher, this might be in a different location (consult the launcher's docs).
+1. If you've installed NeoForge as a profile in the official Minecraft launcher, follow `Mojang's instructions <https://help.minecraft.net/hc/en-us/articles/4409159214605>`_ for finding where your ".minecraft" folder is. If you're using a third-party launcher, this might be in a different location (consult the launcher's docs).
 2. Create a "mods" folder inside the ".minecraft" folder if it doesn't yet exist (it should be created if you've run NeoForge once already).
 3. Place the WorldEdit .jar file inside the mods folder. Start NeoForge from your launcher. WorldEdit should show up in the mods list.
 

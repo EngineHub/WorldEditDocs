@@ -1,2 +1,2 @@
-sphinx
+Sphinx==7.3.7
 enginehub.sphinx-youtube

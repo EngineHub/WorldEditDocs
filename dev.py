@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import http.server
 import queue
 import sys
@@ -79,7 +79,7 @@ def main():
 def rebuild():
     print("Performing docs build", file=sys.stderr)
     target = 'dirhtml'
-    exit_code = sphinx.cmd.build.main(argv=['-b', target, 'source', 'build/' + target])
+    exit_code = sphinx.cmd.build.main(['-b', target, 'source', 'build/' + target])
     if exit_code != 0:
         print("Sphinx exited with error code", exit_code, file=sys.stderr)
 

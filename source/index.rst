@@ -36,8 +36,7 @@ Links
 =====
 
 -  `WorldEdit Homepage <http://www.enginehub.org/worldedit>`_
--  `Downloads for Bukkit <https://dev.bukkit.org/projects/worldedit/files/>`_
--  `Downloads for NeoForge/Fabric <https://www.curseforge.com/minecraft/mc-mods/worldedit/files>`_
+-  `Downloads for Bukkit/NeoForge/Fabric <https://modrinth.com/plugin/worldedit/versions>`_
 -  `Downloads for Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_
 -  `Experimental Builds <http://builds.enginehub.org/job/worldedit?branch=master>`_
 -  `Discord Server <https://discord.gg/enginehub/>`_

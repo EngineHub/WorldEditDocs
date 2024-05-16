@@ -27,7 +27,7 @@ Depending on which parts of the API you need, choose one of the following names:
   and WorldEdit types using ``BukkitAdapter``.
 - ``worldedit-fabric-mcXYZ``: The Fabric implementation. Depends on Fabric API and provides conversion between Fabric
   types and WorldEdit types using ``FabricAdapter``. Replace XYZ with the appropriate Minecraft version.
-- ``worldedit-forge-mcXYZ``: The Forge implementation. Depends on Forge and provides conversion between Forge types
+- ``worldedit-neoforge-mcXYZ``: The NeoForge implementation. Depends on NeoForge and provides conversion between NeoForge types
   and WorldEdit types using ``ForgeAdapter``. Replace XYZ with the appropriate Minecraft version.
 - ``worldedit-sponge-mcXYZ``: The Sponge implementation. Depends on Sponge API and provides conversion between Sponge
   types and WorldEdit types using ``SpongeAdapter``. Replace XYZ with the appropriate Minecraft version.

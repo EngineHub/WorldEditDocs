@@ -20,7 +20,7 @@ Choosing a Mod Loader
 
 If you want to use WorldEdit on your single-player/local game, we recommend one of two choices:
 
-* `NeoForge <https://https://neoforged.net/>`_ 
+* `NeoForge <https://neoforged.net/>`_ 
 * Or alternatively, `Fabric <https://fabricmc.net/>`_
 
 On the other hand, if you are running a Minecraft server, you can use

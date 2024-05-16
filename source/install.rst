@@ -71,7 +71,7 @@ Add the WorldEdit .jar to the "loader mods" section of your MultiMC instance and
 NeoForge Server / Sponge
 ~~~~~~~~~~~~~~~~~~~~~
 
-First, you'll have to install your server software of choice. For NeoForge, you can download the installer and run ``java -jar neoforge-installer.jar --installServer`` from a terminal or command prompt (search online for more comprehensive instructions). Sponge has `documentation on setting up a server <https://docs.spongepowered.org/stable/en/server/quickstart.html>`_. After installing your server software, download WorldEdit from `Curseforge, if using NeoForge <https://www.curseforge.com/minecraft/mc-mods/worldedit/files>`_ or `Ore, if using Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_. 
+First, you'll have to install your server software of choice. For NeoForge, you can download the installer and run ``java -jar neoforge-installer.jar --installServer`` from a terminal or command prompt (search online for more comprehensive instructions). Sponge has `documentation on setting up a server <https://docs.spongepowered.org/stable/en/server/quickstart.html>`_. After installing your server software, download WorldEdit from `Modrinth, if using NeoForge <https://modrinth.com/plugin/worldedit/versions?l=neoforge>`_ or `Ore, if using Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_. 
 
 1. Create a "mods" folder if it doesn't exist (it will be created automatically after running the server once).
 2. Add the WorldEdit .jar file to the mods folder.

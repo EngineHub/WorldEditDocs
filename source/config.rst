@@ -14,7 +14,7 @@ Bukkit Server
 
 Configuration options for the Bukkit version of WorldEdit are found in ``plugins/WorldEdit/config.yml``, relative to the server root.
 
-Note that the YAML format which Bukkit uses is very sensitive to errors. You must use 4 spaces for indentation (tabs will break the file!), and adhere to YAML's syntax. If you are unfamiliar with editing YAML files, you can run your config through an online validator (like `this one <http://yaml-online-parser.appspot.com/>`_) and ensure that it does not return an error.
+Note that the YAML format which Bukkit uses is very sensitive to errors. You must use 4 spaces for indentation (tabs will break the file!), and adhere to YAML's syntax. If you are unfamiliar with editing YAML files, you can run your config through an online validator (like `this one <https://yaml-online-parser.appspot.com/>`_) and ensure that it does not return an error.
 
 Forge/Fabric
 ~~~~~~~~~~~~

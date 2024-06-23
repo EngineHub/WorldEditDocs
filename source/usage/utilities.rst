@@ -55,7 +55,7 @@ Recursive Fill
 
 Unlike the fill command, the recursive fill command *will* work outwards as it moves down, meaning it can fill caves and other holes that expand into the walls.
 
-Like the fill command, it will not travel upwards.
+Like the fill command, it will not travel upwards beyond the starting y level.
 
 Draining pools
 ~~~~~~~~~~~~~~

@@ -117,26 +117,47 @@ autosectionlabel_prefix_document = True
 
 # -- Options for HTML output ----------------------------------------------
 
-def detect_html_theme():
-    join = os.path.join
-    theme_dir = "_themes"
-    conf_dir = os.path.dirname(os.path.realpath(__file__))
-    themes_dir = join(conf_dir, theme_dir)
-    if os.path.exists(join(themes_dir, "ehsphinx", "ehsphinx", "theme.conf")):
-        return [theme_dir + "/ehsphinx"], "ehsphinx"
-    elif os.path.exists(join(themes_dir, "ehsphinx", "theme.conf")):
-        return [theme_dir], "ehsphinx"
-    else:
-        return [theme_dir], "default"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme_path, html_theme = detect_html_theme()
+html_theme = 'shibuya'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    "discord_url": "https://discord.gg/enginehub",
+    "github_url": "https://github.com/EngineHub/WorldEdit",
+    "globaltoc_expand_depth": 2,
+    "nav_links_align": "left",
+    "nav_links": [
+        {
+            "title": "Developed by EngineHub",
+            "url": "https://enginehub.org",
+            "summary": "The EngineHub.org website",
+            "external": True,
+        },
+        {
+            "title": "<iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!",
+            "url": "https://github.com/sponsors/EngineHub?o=esb",
+            "summary": "Our GitHub sponsors page",
+            "external": True,
+        },
+    ],
+}
+
+html_sidebars = {
+  "**": [
+    "sidebars/localtoc.html",
+    "sidebars/edit-this-page.html",
+  ]
+}
+
+templates_path = ["_templates"]
+html_static_path = ['_static']
+html_css_files = [
+  'custom.css',
+]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

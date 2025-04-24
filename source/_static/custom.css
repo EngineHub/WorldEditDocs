@@ -1,0 +1,18 @@
+html.light {
+    --sponsor-logo-color: black;
+  }
+  
+  html.dark {
+    --sponsor-logo-color: white;
+  }
+  
+  .sponsorbox .sponsor {
+      margin: 20px auto 0 auto;
+      text-align: center;
+    }
+  
+  .sponsorbox svg {
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+  }

@@ -19,7 +19,12 @@ WorldEdit allows you to select **cuboids** (think a 3D rectangle) by choosing tw
 
 .. tip:: You can also select other shapes such as 2D polygons, ellipsoids, spheres, cylinders, and more. Information on these other selection modes is described later in this page.
 
-.. image:: /images/cuboid.png
+.. figure:: /images/cuboid.png
+    :figclass: light-only
+    :align: center
+
+.. figure:: /images/cuboid-dark.png
+    :figclass: dark-only
     :align: center
 
 There are several different ways of choosing these two points and you can mix and match.
@@ -103,10 +108,15 @@ You can specify two numbers and the region will be expanded in two opposite dire
 
 .. topic:: Example: Expanding upwards
 
-    For example, if you used ``//expand 10 up``, the selection would grow larger at the top as shown. |expand_up|
+    .. figure:: /images/selections/expand_up.png
+        :figclass: light-only
+        :align: right
 
-.. |expand_up| image:: /images/selections/expand_up.png
-    :width: 15%
+    .. figure:: /images/selections/expand_up-dark.png
+        :figclass: dark-only
+        :align: right
+
+    For example, if you used ``//expand 10 up``, the selection would grow larger at the top as shown. 
 
 Contracting the selection
 -------------------------
@@ -120,10 +130,16 @@ This command works similarly to ``//expand``, but instead contract.
 
 .. topic:: Example: Contracting downwards
 
-    Which way would the selection contract? If you used ``//contract 10 down``, then the selection would shrink from the top. |contract_down|
+    .. figure:: /images/selections/contract_down.png
+        :figclass: light-only
+        :align: right
 
-.. |contract_down| image:: /images/selections/contract_down.png
-    :width: 15%
+    .. figure:: /images/selections/contract_down-dark.png
+        :figclass: dark-only
+        :align: right
+
+    Which way would the selection contract? If you used ``//contract 10 down``, then the selection would shrink from the top.
+
 
 Inset and Outset
 ----------------

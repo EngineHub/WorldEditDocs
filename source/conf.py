@@ -159,6 +159,14 @@ html_css_files = [
   'custom.css',
 ]
 
+html_context = {
+    "source_type": "github",
+    "source_user": "EngineHub", # Username
+    "source_repo": "WorldEditDocs", # Repo name
+    "source_version": "master", # Version
+    "source_docs_path": "/source/", # Path in the checkout to the docs roo
+}
+
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 #html_title = None

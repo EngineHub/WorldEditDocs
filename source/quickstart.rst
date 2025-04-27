@@ -35,8 +35,15 @@ Making Selections
 
 A cuboid is like 3D rectangle. In WorldEdit, you select the region that you want by setting two points of a cuboid.
 
-.. image:: /images/cuboid.png
+.. figure:: /images/cuboid.png
+    :figclass: light-only
     :align: center
+
+.. only:: html
+
+   .. figure:: /images/cuboid-dark.png
+        :figclass: dark-only
+        :align: center
 
 How do you choose the two points? You can either:
 

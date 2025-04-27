@@ -1,2 +1,3 @@
 Sphinx==7.3.7
+Shibuya==2025.3.24
 enginehub.sphinx-youtube

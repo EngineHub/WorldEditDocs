@@ -23,9 +23,11 @@ WorldEdit allows you to select **cuboids** (think a 3D rectangle) by choosing tw
     :figclass: light-only
     :align: center
 
-.. figure:: /images/cuboid-dark.png
-    :figclass: dark-only
-    :align: center
+.. only:: html
+
+    .. figure:: /images/cuboid-dark.png
+        :figclass: dark-only
+        :align: center
 
 There are several different ways of choosing these two points and you can mix and match.
 
@@ -112,9 +114,11 @@ You can specify two numbers and the region will be expanded in two opposite dire
         :figclass: light-only
         :align: right
 
-    .. figure:: /images/selections/expand_up-dark.png
-        :figclass: dark-only
-        :align: right
+    .. only:: html
+
+        .. figure:: /images/selections/expand_up-dark.png
+            :figclass: dark-only
+            :align: right
 
     For example, if you used ``//expand 10 up``, the selection would grow larger at the top as shown. 
 
@@ -134,9 +138,11 @@ This command works similarly to ``//expand``, but instead contract.
         :figclass: light-only
         :align: right
 
-    .. figure:: /images/selections/contract_down-dark.png
-        :figclass: dark-only
-        :align: right
+    .. only:: html
+
+        .. figure:: /images/selections/contract_down-dark.png
+            :figclass: dark-only
+            :align: right
 
     Which way would the selection contract? If you used ``//contract 10 down``, then the selection would shrink from the top.
 

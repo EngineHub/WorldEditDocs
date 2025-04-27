@@ -39,9 +39,11 @@ A cuboid is like 3D rectangle. In WorldEdit, you select the region that you want
     :figclass: light-only
     :align: center
 
-.. figure:: /images/cuboid-dark.png
-    :figclass: dark-only
-    :align: center
+.. only:: html
+
+   .. figure:: /images/cuboid-dark.png
+        :figclass: dark-only
+        :align: center
 
 How do you choose the two points? You can either:
 

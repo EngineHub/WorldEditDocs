@@ -105,6 +105,14 @@ Random Noise Mask
 
 The noise mask can create random noise. Specifying ``%<percent>`` will match the given percentage of blocks. Unlike the weighted patterns, ``%50`` is actually 50% of blocks.
 
+.. note:: Make note of the syntax difference here; Unlike patterns, the % sign preceeds the desired percentage for this mask
+
+.. topic:: Example: Using the random noise mask
+
+    Randomly replacing 50% of your selection with stone::
+
+        //replace %50 stone
+
 Block State Mask
 ----------------
 

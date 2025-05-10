@@ -48,7 +48,7 @@ When developing, take note of :doc:`internal-apis` to ensure you're using suppor
 If you need the Javadocs, they are hosted at
 `<https://docs.enginehub.org/javadoc/com.sk89q.worldedit/worldedit-core/7.3.0/>`_.
 
-.. _Maven repository: https://help.sonatype.com/en/repository-manager-concepts.html
+.. _Maven repository: https://maven.apache.org/repositories/layout.html
 .. _Maven: https://maven.apache.org/
 .. _Gradle: https://gradle.org/
 .. _sbt: https://www.scala-sbt.org/

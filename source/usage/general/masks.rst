@@ -69,6 +69,12 @@ Solid Block Mask
 
 The mask ``#solid`` will match any blocks that are considered "solid". That is - blocks that restrict entities (such as players) from moving through them.
 
+Full Cube Mask
+----------------
+
+The mask ``#fullcube`` will match any blocks that take up the entire block cube.
+
+
 Offset Mask
 -----------
 
@@ -80,6 +86,19 @@ Using ``>`` (overlay) or ``<`` (underlay) preceding another mask will match bloc
 
         //replace >##planks smooth_stone_slab
 
+Adjacency Mask
+--------------
+
+Using `~` preceding another mask will match blocks that are adjacent to the other mask.
+
+.. note:: Adjacency for the case of this mask is defined as being directly next to or above/below. Diagonal blocks do not match.
+
+.. topic:: Example: Adjacency masks
+
+    Surrounding all mob spawners with glowstone::
+
+        //replace ~spawner glowstone
+
 Region Masks
 ------------
 
@@ -88,6 +107,11 @@ While it doesn't make sense for commands like replace, setting a region mask can
 The first type of region mask is ``#region`` (aliases: ``#sel``, ``#selection``), which will make a copy of your region at the time you run the command and use that as the mask.
 
 The second type of region mask is ``#dregion`` (d for dynamic, also ``#dsel``, ``#dselection``) which will always stay updated with your current selection.
+
+Clipboard Mask
+--------------
+
+The mask ``#clipboard`` will match any blocks that match the current clipboard. This can be paired with commands such as `//regen -c`` to match all blocks that are the same as natural generation.
 
 Block Category Mask
 -------------------

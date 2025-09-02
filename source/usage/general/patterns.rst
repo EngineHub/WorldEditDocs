@@ -115,7 +115,11 @@ This pattern, prefixed by ``^``, lets you set the type or states of a block with
 
     Doubling up all slabs::
 
-         //replace ##slabs ^[type=double]
+        //replace ##slabs ^[type=double]
+
+    Replacing all stairs with a random selection of stairs, while maintaining orientation, etc::
+
+        //replace ##stairs ^##stairs
 
 Block Category Pattern
 ----------------------

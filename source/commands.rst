@@ -244,21 +244,6 @@ General Commands
 
 .. raw:: html
 
-    <span id="command-//update"></span>
-
-.. topic:: ``//update``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Apply side effects to your selection"
-        **Permissions**,"``worldedit.update``"
-        **Usage**,"``//update [sideEffectSet]``"
-          ``[sideEffectSet]``,"The side effects"
-
-.. raw:: html
-
     <span id="command-//reorder"></span>
 
 .. topic:: ``//reorder``
@@ -381,6 +366,23 @@ General Commands
           ``[-i]``,"Only search for items"
           ``[-p <page>]``,"Page of results to return"
           ``<query...>``,"Search query"
+
+.. raw:: html
+
+    <span id="command-//registry"></span>
+
+.. topic:: ``//registry``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Search through the given registry"
+        **Permissions**,"``worldedit.registry``"
+        **Usage**,"``//registry <registry> [-p <page>] [queryBits...]``"
+          ``<registry>``,"The registry to search through"
+          ``[-p <page>]``,"Page of results to return"
+          ``[queryBits...]``,"Search query"
 
 
 Navigation Commands
@@ -745,10 +747,11 @@ Selection Commands
 
         **Description**,"Get the distribution of blocks in the selection"
         **Permissions**,"``worldedit.analysis.distr``"
-        **Usage**,"``//distr [-cd] [-p <page>]``"
+        **Usage**,"``//distr [-cd] [-p <page>] [-m <sourceMask>]``"
           ``[-c]``,"Get the distribution of the clipboard instead"
           ``[-d]``,"Separate blocks by state"
           ``[-p <page>]``,"Gets page from a previous distribution."
+          ``[-m <sourceMask>]``,"Only include blocks matching the given mask"
 
 .. raw:: html
 
@@ -1034,9 +1037,10 @@ Region Commands
 
         **Description**,"Regenerates the contents of the selection"
         **Permissions**,"``worldedit.regen``"
-        **Usage**,"``//regen [-b] [seed]``"
+        **Usage**,"``//regen [-bc] [seed]``"
           ``[seed]``,"The seed to regenerate with, otherwise uses world seed"
           ``[-b]``,"Regenerate biomes as well"
+          ``[-c]``,"Regenerate to the clipboard"
 
 .. raw:: html
 
@@ -1054,11 +1058,12 @@ Region Commands
         to modify the variables x, y and z to point to a new block
         to fetch. For details, see https://ehub.to/we/expr"
         **Permissions**,"``worldedit.region.deform``"
-        **Usage**,"``//deform [-cor] <expression...>``"
+        **Usage**,"``//deform [-clor] <expression...>``"
           ``<expression...>``,"The expression to use"
           ``[-r]``,"Use the game's coordinate origin"
           ``[-o]``,"Use the placement's coordinate origin"
           ``[-c]``,"Use the selection's center as origin"
+          ``[-l]``,"Fetch from the clipboard instead of the world"
 
 .. raw:: html
 
@@ -1108,6 +1113,21 @@ Region Commands
         **Permissions**,"``worldedit.region.flora``"
         **Usage**,"``//flora [density]``"
           ``[density]``,"The density of the forest"
+
+.. raw:: html
+
+    <span id="command-//update"></span>
+
+.. topic:: ``//update``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Apply side effects to your selection"
+        **Permissions**,"``worldedit.update``"
+        **Usage**,"``//update [sideEffectSet]``"
+          ``[sideEffectSet]``,"The side effects"
 
 
 Generation Commands
@@ -1402,8 +1422,8 @@ Schematic and Clipboard Commands
 
         **Description**,"Load a schematic into your clipboard"
         **Permissions**,"``worldedit.clipboard.load``, ``worldedit.schematic.load``"
-        **Usage**,"``/schematic load <filename> [format]``"
-          ``<filename>``,"File name."
+        **Usage**,"``/schematic load <schematic> [format]``"
+          ``<schematic>``,"File name."
           ``[format]``,"Format name."
 
 .. raw:: html
@@ -1418,8 +1438,8 @@ Schematic and Clipboard Commands
 
         **Description**,"Delete a saved schematic"
         **Permissions**,"``worldedit.schematic.delete``"
-        **Usage**,"``/schematic delete <filename>``"
-          ``<filename>``,"File name."
+        **Usage**,"``/schematic delete <schematic>``"
+          ``<schematic>``,"File name."
 
 .. raw:: html
 
@@ -1536,7 +1556,7 @@ Schematic and Clipboard Commands
 
     <span id="command-//flip"></span>
 
-.. topic:: ``//flip``
+.. topic:: ``//flip`` (or ``//mirror``)
     :class: command-topic
 
     .. csv-table::
@@ -1575,78 +1595,36 @@ Tool Commands
         :widths: 8, 15
 
         **Description**,"Binds a tool to the item in your hand"
-        **Usage**,"``/tool <cycler|navwand|none|floodfill|deltree|farwand|selwand|stacker|repl|tree|lrbuild|info>``"
+        **Usage**,"``/tool <tree|info|farwand|deltree|selwand|cycler|stacker|repl|lrbuild|none|floodfill|navwand>``"
 
 .. raw:: html
 
-    <span id="command-/tool-cycler"></span>
+    <span id="command-/tool-tree"></span>
 
-.. topic:: ``/tool cycler``
+.. topic:: ``/tool tree``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Block data cycler tool"
-        **Permissions**,"``worldedit.tool.data-cycler``"
-        **Usage**,"``/tool cycler``"
+        **Description**,"Tree generator tool"
+        **Permissions**,"``worldedit.tool.tree``"
+        **Usage**,"``/tool tree [type]``"
+          ``[type]``,"Type of tree to generate"
 
 .. raw:: html
 
-    <span id="command-/tool-navwand"></span>
+    <span id="command-/tool-info"></span>
 
-.. topic:: ``/tool navwand``
+.. topic:: ``/tool info``
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Navigation wand tool"
-        **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``/tool navwand``"
-
-.. raw:: html
-
-    <span id="command-/tool-none"></span>
-
-.. topic:: ``/tool none`` (or ``/tool unbind``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Unbind a bound tool from your current item"
-        **Usage**,"``/tool none``"
-
-.. raw:: html
-
-    <span id="command-/tool-floodfill"></span>
-
-.. topic:: ``/tool floodfill`` (or ``/tool flood``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Flood fill tool"
-        **Permissions**,"``worldedit.tool.flood-fill``"
-        **Usage**,"``/tool floodfill <pattern> <range>``"
-          ``<pattern>``,"The pattern to flood fill"
-          ``<range>``,"The range to perform the fill"
-
-.. raw:: html
-
-    <span id="command-/tool-deltree"></span>
-
-.. topic:: ``/tool deltree``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Floating tree remover tool"
-        **Permissions**,"``worldedit.tool.deltree``"
-        **Usage**,"``/tool deltree``"
+        **Description**,"Block information tool"
+        **Permissions**,"``worldedit.tool.info``"
+        **Usage**,"``/tool info``"
 
 .. raw:: html
 
@@ -1664,6 +1642,20 @@ Tool Commands
 
 .. raw:: html
 
+    <span id="command-/tool-deltree"></span>
+
+.. topic:: ``/tool deltree``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Floating tree remover tool"
+        **Permissions**,"``worldedit.tool.deltree``"
+        **Usage**,"``/tool deltree``"
+
+.. raw:: html
+
     <span id="command-/tool-selwand"></span>
 
 .. topic:: ``/tool selwand``
@@ -1675,6 +1667,20 @@ Tool Commands
         **Description**,"Selection wand tool"
         **Permissions**,"``worldedit.setwand``"
         **Usage**,"``/tool selwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-cycler"></span>
+
+.. topic:: ``/tool cycler``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block data cycler tool"
+        **Permissions**,"``worldedit.tool.data-cycler``"
+        **Usage**,"``/tool cycler``"
 
 .. raw:: html
 
@@ -1709,21 +1715,6 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/tool-tree"></span>
-
-.. topic:: ``/tool tree``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Tree generator tool"
-        **Permissions**,"``worldedit.tool.tree``"
-        **Usage**,"``/tool tree [type]``"
-          ``[type]``,"Type of tree to generate"
-
-.. raw:: html
-
     <span id="command-/tool-lrbuild"></span>
 
 .. topic:: ``/tool lrbuild``
@@ -1740,17 +1731,46 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/tool-info"></span>
+    <span id="command-/tool-none"></span>
 
-.. topic:: ``/tool info``
+.. topic:: ``/tool none`` (or ``/tool unbind``)
     :class: command-topic
 
     .. csv-table::
         :widths: 8, 15
 
-        **Description**,"Block information tool"
-        **Permissions**,"``worldedit.tool.info``"
-        **Usage**,"``/tool info``"
+        **Description**,"Unbind a bound tool from your current item"
+        **Usage**,"``/tool none``"
+
+.. raw:: html
+
+    <span id="command-/tool-floodfill"></span>
+
+.. topic:: ``/tool floodfill`` (or ``/tool flood``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Flood fill tool"
+        **Permissions**,"``worldedit.tool.flood-fill``"
+        **Usage**,"``/tool floodfill <pattern> <range>``"
+          ``<pattern>``,"The pattern to flood fill"
+          ``<range>``,"The range to perform the fill"
+
+.. raw:: html
+
+    <span id="command-/tool-navwand"></span>
+
+.. topic:: ``/tool navwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Navigation wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``/tool navwand``"
 
 .. raw:: html
 

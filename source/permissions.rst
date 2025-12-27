@@ -110,6 +110,7 @@ See the :doc:`commands` page for an explanation of some of these commands.
     ``//rotate``,"``worldedit.clipboard.rotate``"
     ``//flip``,"``worldedit.clipboard.flip``"
     ``/clearclipboard``,"``worldedit.clipboard.clear``"
+    ``//revolve``,"``worldedit.revolve``"
     ``/tool``,""
     ``/tool cycler``,"``worldedit.tool.data-cycler``"
     ``/tool deltree``,"``worldedit.tool.deltree``"

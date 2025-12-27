@@ -30,6 +30,7 @@ Documentation
     api/index
     faq
     support
+    localisation
     source-code
 
 Links

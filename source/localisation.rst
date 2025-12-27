@@ -15,10 +15,9 @@ We use CrowdIn to facilitate translation submissions, with our CrowdIn page `ava
 
 Contributions to our CrowdIn are strongly appreciated, as everyone benefits from better translation coverage.
 
-Caveats
-~~~~~~~
+.. note::
 
-At the time of writing, some lines of text relating to command descriptions cannot be translated due to limitations within the command library. Once this is resolved, we'll be sure to add that text into our translation system.
+    At the time of writing, some lines of text relating to command descriptions cannot be translated due to limitations within the command library. Once this is resolved, we'll be sure to add that text into our translation system.
 
 Custom translations
 -------------------

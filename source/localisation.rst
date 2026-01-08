@@ -2,7 +2,7 @@
 Localisation
 ============
 
-WorldEdit has inbuilt support for localisation, sourced from community-contributed translations on CrowdIn. These translations are included within WorldEdit releases, so all languages are supported out of the box. WorldEdit uses the language set on each player's Minecraft client to handle translations, so every player will see text in the language that they've defined.
+WorldEdit has inbuilt support for localisation, sourced from community-contributed translations on Crowdin. These translations are included within WorldEdit releases, so all languages are supported out of the box. WorldEdit uses the language set on each player's Minecraft client to handle translations, so every player will see text in the language that they've defined.
 
 This means that on multilingual servers, every player can use their preferred language, rather than having to use a single server-defined language.
 
@@ -11,9 +11,9 @@ How to Contribute
 
 If some parts of WorldEdit aren't fully translated in your language, this usually means that no one has yet submitted a translation.
 
-We use CrowdIn to facilitate translation submissions, with our CrowdIn page `available here <https://crowdin.com/project/worldedit-core>`_. Each time we cut a new WorldEdit release, we pull in the new translations from the website.
+We use Crowdin to facilitate translation submissions, with our Crowdin page `available here <https://crowdin.com/project/worldedit-core>`_. Each time we cut a new WorldEdit release, we pull in the new translations from the website.
 
-Contributions to our CrowdIn are strongly appreciated, as everyone benefits from better translation coverage.
+Contributions to our Crowdin are strongly appreciated, as everyone benefits from better translation coverage.
 
 .. note::
 
@@ -51,4 +51,4 @@ Placing a zip file at ``WorldEdit/lang/i18n.zip`` within your game directory wil
 File method
 ~~~~~~~~~~~
 
-Rather than using a zip file, you can instead directly store the locale files within folders. This would mean that Australian English would be in the ``lang/en-AU`` folder, or Greek would be in the ``lang/el`` folder. The "base" translations (``en``) would live in a ``lang/strings.json`` file, rather than having their own directory. This is because they don't come from CrowdIn, and instead are written by us when writing the plugin.
+Rather than using a zip file, you can instead directly store the locale files within folders. This would mean that Australian English would be in the ``lang/en-AU`` folder, or Greek would be in the ``lang/el`` folder. The "base" translations (``en``) would live in a ``lang/strings.json`` file, rather than having their own directory. This is because they don't come from Crowdin, and instead are written by us when writing the plugin.

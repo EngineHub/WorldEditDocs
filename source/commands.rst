@@ -1614,7 +1614,36 @@ Tool Commands
         :widths: 8, 15
 
         **Description**,"Binds a tool to the item in your hand"
-        **Usage**,"``/tool <farwand|none|floodfill|lrbuild|repl|tree|deltree|info|selwand|stacker|navwand|cycler>``"
+        **Usage**,"``/tool <cycler|repl|farwand|floodfill|deltree|stacker|selwand|tree|none|info|lrbuild|navwand>``"
+
+.. raw:: html
+
+    <span id="command-/tool-cycler"></span>
+
+.. topic:: ``/tool cycler``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block data cycler tool"
+        **Permissions**,"``worldedit.tool.data-cycler``"
+        **Usage**,"``/tool cycler``"
+
+.. raw:: html
+
+    <span id="command-/tool-repl"></span>
+
+.. topic:: ``/tool repl``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block replacer tool"
+        **Permissions**,"``worldedit.tool.replacer``"
+        **Usage**,"``/tool repl <pattern>``"
+          ``<pattern>``,"The pattern of blocks to place"
 
 .. raw:: html
 
@@ -1629,19 +1658,6 @@ Tool Commands
         **Description**,"Wand at a distance tool"
         **Permissions**,"``worldedit.tool.farwand``"
         **Usage**,"``/tool farwand``"
-
-.. raw:: html
-
-    <span id="command-/tool-none"></span>
-
-.. topic:: ``/tool none`` (or ``/tool unbind``)
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Unbind a bound tool from your current item"
-        **Usage**,"``/tool none``"
 
 .. raw:: html
 
@@ -1661,52 +1677,6 @@ Tool Commands
 
 .. raw:: html
 
-    <span id="command-/tool-lrbuild"></span>
-
-.. topic:: ``/tool lrbuild``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Long-range building tool"
-        **Permissions**,"``worldedit.tool.lrbuild``"
-        **Usage**,"``/tool lrbuild <primary> <secondary>``"
-          ``<primary>``,"Pattern to set on left-click"
-          ``<secondary>``,"Pattern to set on right-click"
-
-.. raw:: html
-
-    <span id="command-/tool-repl"></span>
-
-.. topic:: ``/tool repl``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block replacer tool"
-        **Permissions**,"``worldedit.tool.replacer``"
-        **Usage**,"``/tool repl <pattern>``"
-          ``<pattern>``,"The pattern of blocks to place"
-
-.. raw:: html
-
-    <span id="command-/tool-tree"></span>
-
-.. topic:: ``/tool tree``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Tree generator tool"
-        **Permissions**,"``worldedit.tool.tree``"
-        **Usage**,"``/tool tree [type]``"
-          ``[type]``,"Type of tree to generate"
-
-.. raw:: html
-
     <span id="command-/tool-deltree"></span>
 
 .. topic:: ``/tool deltree``
@@ -1718,34 +1688,6 @@ Tool Commands
         **Description**,"Floating tree remover tool"
         **Permissions**,"``worldedit.tool.deltree``"
         **Usage**,"``/tool deltree``"
-
-.. raw:: html
-
-    <span id="command-/tool-info"></span>
-
-.. topic:: ``/tool info``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block information tool"
-        **Permissions**,"``worldedit.tool.info``"
-        **Usage**,"``/tool info``"
-
-.. raw:: html
-
-    <span id="command-/tool-selwand"></span>
-
-.. topic:: ``/tool selwand``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Selection wand tool"
-        **Permissions**,"``worldedit.setwand``"
-        **Usage**,"``/tool selwand``"
 
 .. raw:: html
 
@@ -1765,6 +1707,78 @@ Tool Commands
 
 .. raw:: html
 
+    <span id="command-/tool-selwand"></span>
+
+.. topic:: ``/tool selwand``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Selection wand tool"
+        **Permissions**,"``worldedit.setwand``"
+        **Usage**,"``/tool selwand``"
+
+.. raw:: html
+
+    <span id="command-/tool-tree"></span>
+
+.. topic:: ``/tool tree``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Tree generator tool"
+        **Permissions**,"``worldedit.tool.tree``"
+        **Usage**,"``/tool tree [type]``"
+          ``[type]``,"Type of tree to generate"
+
+.. raw:: html
+
+    <span id="command-/tool-none"></span>
+
+.. topic:: ``/tool none`` (or ``/tool unbind``)
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Unbind a bound tool from your current item"
+        **Usage**,"``/tool none``"
+
+.. raw:: html
+
+    <span id="command-/tool-info"></span>
+
+.. topic:: ``/tool info``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Block information tool"
+        **Permissions**,"``worldedit.tool.info``"
+        **Usage**,"``/tool info``"
+
+.. raw:: html
+
+    <span id="command-/tool-lrbuild"></span>
+
+.. topic:: ``/tool lrbuild``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Long-range building tool"
+        **Permissions**,"``worldedit.tool.lrbuild``"
+        **Usage**,"``/tool lrbuild <primary> <secondary>``"
+          ``<primary>``,"Pattern to set on left-click"
+          ``<secondary>``,"Pattern to set on right-click"
+
+.. raw:: html
+
     <span id="command-/tool-navwand"></span>
 
 .. topic:: ``/tool navwand``
@@ -1776,20 +1790,6 @@ Tool Commands
         **Description**,"Navigation wand tool"
         **Permissions**,"``worldedit.setwand``"
         **Usage**,"``/tool navwand``"
-
-.. raw:: html
-
-    <span id="command-/tool-cycler"></span>
-
-.. topic:: ``/tool cycler``
-    :class: command-topic
-
-    .. csv-table::
-        :widths: 8, 15
-
-        **Description**,"Block data cycler tool"
-        **Permissions**,"``worldedit.tool.data-cycler``"
-        **Usage**,"``/tool cycler``"
 
 .. raw:: html
 
@@ -2633,6 +2633,25 @@ Biome Commands
         **Permissions**,"``worldedit.biome.set``"
         **Usage**,"``//setbiome [-p] <target>``"
           ``<target>``,"Biome type."
+          ``[-p]``,"Use your current position"
+
+.. raw:: html
+
+    <span id="command-//replacebiome"></span>
+
+.. topic:: ``//replacebiome``
+    :class: command-topic
+
+    .. csv-table::
+        :widths: 8, 15
+
+        **Description**,"Replaces the biome of your current block or region.
+
+        By default, uses all the blocks in your selection"
+        **Permissions**,"``worldedit.biome.set``"
+        **Usage**,"``//replacebiome [-p] <from> <target>``"
+          ``<from>``,"The mask representing where to replace biomes"
+          ``<target>``,"Biome type to set"
           ``[-p]``,"Use your current position"
 
 

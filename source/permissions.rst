@@ -179,6 +179,7 @@ See the :doc:`commands` page for an explanation of some of these commands.
     ``/biomelist``,"``worldedit.biome.list``"
     ``/biomeinfo``,"``worldedit.biome.info``"
     ``//setbiome``,"``worldedit.biome.set``"
+    ``//replacebiome``,"``worldedit.biome.set``"
     ``/chunkinfo``,"``worldedit.chunkinfo``"
     ``/listchunks``,"``worldedit.listchunks``"
     ``/delchunks``,"``worldedit.delchunks``"

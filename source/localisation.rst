@@ -28,12 +28,12 @@ When loading languages, a priority system is used to ensure that all available l
 
 The search order for strings works as follows:
 
-#. ``lang/[language-code]`` within the WorldEdit folder within the game directory.
-#. ``lang/i18n.zip`` within the WorldEdit folder within the game directory.
-#. ``lang/i18n.zip`` within the WorldEdit jar file.
-#. ``lang/strings.json`` within the WorldEdit jar file.
+#. ``lang/[language-code]/strings.json`` within the WorldEdit folder within the game directory.
+#. ``[language-code]/strings.json`` in ``lang/i18n.zip`` within the WorldEdit folder within the game directory.
+#. ``[language-code]/strings.json`` in ``lang/i18n.zip`` within the WorldEdit jar file.
+#. ``lang/strings.json`` within the WorldEdit jar file (only for the default language).
 
-If for whatever reason a string in that language cannot be found, it'll repeat the process with a less specific language (eg, ``fr`` instead of ``fr-CA``), and finally fall back to the default language (``en-US``).
+If for whatever reason a string in that language cannot be found, it'll repeat the process with a less specific language (eg, ``fr`` instead of ``fr-CA``), and finally fall back to the default language (``en``).
 
 Due to the way this priority system works, it's recommended to *only* include strings that you are actually intending to modify within your user directories, as that will allow you to automatically benefit from future improvements in later WorldEdit updates.
 
@@ -46,9 +46,9 @@ As a reference for the structure of the files, you can find the ``lang/i18n.zip`
 Zip method
 ~~~~~~~~~~
 
-Placing a zip file at ``WorldEdit/lang/i18n.zip`` within your game directory will cause WorldEdit to additionally load from this file. Strings from this zip file will take priority over those within the WorldEdit jar file.
+Placing a zip file at ``WorldEdit/lang/i18n.zip`` within your game directory will cause WorldEdit to load from this file. Strings from this zip file will take priority over those within the WorldEdit jar file.
 
 File method
 ~~~~~~~~~~~
 
-Rather than using a zip file, you can instead directly store the locale files within folders. This would mean that Australian English would be in the ``lang/en-AU`` folder, or Greek would be in the ``lang/el`` folder. The "base" translations (``en-US``) would live in a ``lang/strings.json`` file, rather than having their own directory. This is because they don't come from CrowdIn, and instead are written by us when writing the plugin.
+Rather than using a zip file, you can instead directly store the locale files within folders. This would mean that Australian English would be in the ``lang/en-AU`` folder, or Greek would be in the ``lang/el`` folder. The "base" translations (``en``) would live in a ``lang/strings.json`` file, rather than having their own directory. This is because they don't come from CrowdIn, and instead are written by us when writing the plugin.

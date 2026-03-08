@@ -5,10 +5,12 @@ These are the files for WorldEdit's documentation.
 Contributions are welcome. Please read the licensing information below.
 
 # Dev Setup
-```bash
-pip install -r requirements.txt
-# Now you can run ./dev.py to auto-rebuild the docs into build/dirhtml, and browse it at the printed address.
-```
+[Install `uv`](https://docs.astral.sh/uv/getting-started/installation/).
+
+Most IDEs should support `uv` out of the box, but you can run `uv sync` if you need a virtual environment with the 
+dependencies installed.
+
+Use `uv run dev.py` to auto-rebuild docs into `build/dirhtml`, then browse it at the printed address.
 
 # License
 

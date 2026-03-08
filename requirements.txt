@@ -1,2 +1,0 @@
-watchdog==4.0.0
--r source/requirements.txt

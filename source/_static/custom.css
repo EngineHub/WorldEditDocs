@@ -16,3 +16,8 @@ html.dark {
     margin-right: auto;
     margin-left: auto;
 }
+
+::selection {
+    /* See https://github.com/lepture/shibuya/issues/111 */
+    background-color: var(--accent-7);
+}

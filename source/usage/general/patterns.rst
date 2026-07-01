@@ -138,6 +138,36 @@ The syntax for this pattern is ``##<tag name>``, which will randomly choose betw
 
         //set ##*slabs
 
+Hand and Offhand Patterns
+-------------------------
+
+The ``hand`` and ``offhand`` patterns use the block held in your main hand or offhand respectively. This is useful when you already have the block you want to use in your hotbar. The block type and states are taken from the item you are holding, where applicable.
+
+.. topic:: Example: Hand and offhand patterns
+
+    Setting a selection to the block in your main hand::
+
+        //set hand
+
+    Setting a selection to the block in your offhand::
+
+        //set offhand
+
+Pos1 Pattern
+------------
+
+The ``pos1`` pattern uses the block at your primary selection point (set with ``//pos1`` or the selection wand). This lets you use a block already in the world as your pattern without having to look up its name or states.
+
+.. topic:: Example: Pos1 pattern
+
+    Setting a selection to the block at pos1::
+
+        //set pos1
+
+    Replacing stone with the block at pos1::
+
+        //replace stone pos1
+
 Special Block Data Syntax
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

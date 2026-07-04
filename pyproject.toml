@@ -1,0 +1,22 @@
+[project]
+name = "WorldEditDocs"
+version = "0.0.1"
+description = "WorldEdit documentation"
+readme = "README.md"
+requires-python = ">=3.14"
+classifiers = [
+    "Private :: Do Not Upload",
+]
+
+[dependency-groups]
+# Dependencies for `dev.py`.
+dev = [
+    { include-group = "docs" },
+    "watchdog>=6.0.0",
+]
+# Dependencies for building the documentation.
+docs = [
+    "enginehub-sphinx-youtube>=0.3.0",
+    "shibuya>=2026.1.9",
+    "sphinx>=9.1.0",
+]

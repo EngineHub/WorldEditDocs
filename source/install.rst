@@ -47,7 +47,7 @@ Once you've set up your Bukkit-based server (instructions can be found on the re
 Check your server log for errors. If you encounter errors, see the :doc:`FAQ <faq>` page.
 
 NeoForge Single-Player
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 First, you'll have to install NeoForge. There are many third-party launchers designed to easily install modpacks. If you're using one of those, you can add WorldEdit as a mod through the launcher interface. Otherwise, NeoForge will install a profile available through the official Minecraft Launcher. After installing NeoForge one way or the other, `download WorldEdit from Modrinth <https://modrinth.com/plugin/worldedit/versions?l=neoforge>`_. Make sure you get the right WorldEdit download for your Minecraft version and platform.
 
@@ -69,7 +69,7 @@ On Minecraft 1.14.x versions, you will also need to install the `Fabric API mod 
 Add the WorldEdit .jar to the "loader mods" section of your MultiMC instance and check to enable it, or add the jar to your mods folder (see NeoForge instructions above) if you're installing in the official Mojang launcher.
 
 NeoForge Server / Sponge
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 First, you'll have to install your server software of choice. For NeoForge, you can download the installer and run ``java -jar neoforge-installer.jar --installServer`` from a terminal or command prompt (search online for more comprehensive instructions). Sponge has `documentation on setting up a server <https://docs.spongepowered.org/stable/en/server/quickstart.html>`_. After installing your server software, download WorldEdit from `Modrinth, if using NeoForge <https://modrinth.com/plugin/worldedit/versions?l=neoforge>`_ or `Ore, if using Sponge <https://ore.spongepowered.org/EngineHub/WorldEdit>`_. 
 

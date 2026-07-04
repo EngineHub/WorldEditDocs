@@ -8,10 +8,6 @@ classifiers = [
     "Private :: Do Not Upload",
 ]
 
-[tool.uv.extra-build-dependencies]
-# Can be removed with https://github.com/EngineHub/sphinxcontrib.youtube/pull/1
-enginehub-sphinx-youtube = ["setuptools==80.10.2"]
-
 [dependency-groups]
 # Dependencies for `dev.py`.
 dev = [
@@ -20,7 +16,7 @@ dev = [
 ]
 # Dependencies for building the documentation.
 docs = [
-    "enginehub-sphinx-youtube>=0.2.3",
+    "enginehub-sphinx-youtube>=0.3.0",
     "shibuya>=2026.1.9",
     "sphinx>=9.1.0",
 ]

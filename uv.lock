@@ -74,12 +74,15 @@ wheels = [
 
 [[package]]
 name = "enginehub-sphinx-youtube"
-version = "0.2.3"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "sphinx" },
+    { name = "docutils" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d0/85/0da9ec4cd08c8ad443a26da3c11c4cb69f0826b120613a4c1d8160d86ce6/enginehub.sphinx_youtube-0.2.3.tar.gz", hash = "sha256:33c5307343c02895fcb292b4703d048c577c15f85e7732e6d2ea4c3ff62c8e13", size = 2329, upload-time = "2021-08-10T04:22:29.993Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/02/ae/677c8698a10f7eb44090ddd20ed4e5a2cec5946f37eca08199c3e31d4e82/enginehub_sphinx_youtube-0.3.0.tar.gz", hash = "sha256:75513baaa1102b47ab49889e1db18006245cc13dfd17f6f95fe10d130c122b17", size = 1973, upload-time = "2026-07-04T06:10:40.202Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fb/2c/01e4983c5e814f3b3483fd917231d1a63c7d45751f648702bbf4b5df2240/enginehub_sphinx_youtube-0.3.0-py3-none-any.whl", hash = "sha256:dd09e2172657538bc1e38025347b0d6a7382d988004384f4af476082662bea0a", size = 3099, upload-time = "2026-07-04T06:10:39.401Z" },
+]
 
 [[package]]
 name = "idna"
@@ -348,13 +351,13 @@ docs = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "enginehub-sphinx-youtube", specifier = ">=0.2.3" },
+    { name = "enginehub-sphinx-youtube", specifier = ">=0.3.0" },
     { name = "shibuya", specifier = ">=2026.1.9" },
     { name = "sphinx", specifier = ">=9.1.0" },
     { name = "watchdog", specifier = ">=6.0.0" },
 ]
 docs = [
-    { name = "enginehub-sphinx-youtube", specifier = ">=0.2.3" },
+    { name = "enginehub-sphinx-youtube", specifier = ">=0.3.0" },
     { name = "shibuya", specifier = ">=2026.1.9" },
     { name = "sphinx", specifier = ">=9.1.0" },
 ]

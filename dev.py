@@ -7,8 +7,21 @@ from pathlib import Path
 from queue import SimpleQueue
 
 import sphinx.cmd.build
-from watchdog.events import FileSystemEventHandler
+from watchdog.events import (
+    EVENT_TYPE_CREATED,
+    EVENT_TYPE_DELETED,
+    EVENT_TYPE_MODIFIED,
+    EVENT_TYPE_MOVED,
+    FileSystemEventHandler,
+)
 from watchdog.observers import Observer
+
+MODIFICATION_EVENTS = frozenset({
+    EVENT_TYPE_CREATED,
+    EVENT_TYPE_DELETED,
+    EVENT_TYPE_MODIFIED,
+    EVENT_TYPE_MOVED,
+})
 
 
 class QueuingEventHandler(FileSystemEventHandler):
@@ -17,7 +30,8 @@ class QueuingEventHandler(FileSystemEventHandler):
         self._queue = q
 
     def on_any_event(self, event) -> None:
-        self._queue.put_nowait(event)
+        if event.event_type in MODIFICATION_EVENTS:
+            self._queue.put_nowait(event)
 
 
 class CustomDirHandler(http.server.SimpleHTTPRequestHandler):

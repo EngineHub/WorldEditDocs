@@ -16,3 +16,7 @@ html.dark {
     margin-right: auto;
     margin-left: auto;
 }
+
+.admonition.admonition-tool {
+    --icon-url: var(--icon-wrench-url);
+}

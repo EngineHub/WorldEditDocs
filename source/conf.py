@@ -12,9 +12,13 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import re
 import sys
 import os
 import datetime
+import urllib.parse
+
+from sphinx.errors import ExtensionError
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -405,3 +409,74 @@ epub_exclude_files = ['search.html']
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {}
+
+
+SVG_SAFE_CHARACTERS = " /'=:,.-"
+
+# Non-greedy so adjacent comments don't merge, and DOTALL as they may span lines.
+SVG_COMMENT = re.compile(r'<!--(.*?)-->', flags=re.DOTALL)
+
+
+def render_icon_css(icon_directory, icons):
+    notices = []
+    declarations = []
+    for name in icons:
+        with open(os.path.join(icon_directory, name), encoding='utf-8') as icon:
+            source = icon.read()
+        # Add licenses to common comment
+        notices.extend(
+            comment.strip() for comment in SVG_COMMENT.findall(source) if '@license' in comment
+        )
+        # Remove comments and newlines
+        svg = ' '.join(SVG_COMMENT.sub('', source).split())
+        declarations.append(
+            '    --icon-%s-url: url("data:image/svg+xml;utf8,%s");'
+            % (name[:-4], urllib.parse.quote(svg, safe=SVG_SAFE_CHARACTERS))
+        )
+    # Icons from the same library repeat a notice, so emit only the first of each
+    header = ''.join('/*\n * %s\n */\n' % notice for notice in dict.fromkeys(notices))
+    return '%s:root {\n%s\n}\n' % (header, '\n'.join(declarations))
+
+
+def build_icon_css(app):
+    """Builds the icon SVGs into CSS variables in a generated static directory"""
+    icon_directory = os.path.join(app.srcdir, '_icons')
+    icons = sorted(name for name in os.listdir(icon_directory) if name.endswith('.svg'))
+    output_directory = os.path.join(app.doctreedir, 'generated-static')
+
+    os.makedirs(output_directory, exist_ok=True)
+    with open(os.path.join(output_directory, 'icons.css'), 'w', encoding='utf-8') as output:
+        output.write(render_icon_css(icon_directory, icons))
+    app.add_static_dir(output_directory)
+
+
+def check_page_asset(app, pagename, filename):
+    if '://' in filename:
+        raise ExtensionError(
+            '%s requested the remote page asset %r, which is not allowed'
+            % (pagename, filename)
+        )
+    if not any(
+        os.path.exists(os.path.join(app.confdir, static_path, filename))
+        for static_path in app.config.html_static_path
+    ):
+        raise ExtensionError(
+            '%s requested the page asset %r, which is not in html_static_path'
+            % (pagename, filename)
+        )
+
+
+def add_page_assets(app, pagename, templatename, context, doctree):
+    metadata = app.env.metadata.get(pagename, {})
+    for js_file in metadata.get('page-js', '').split():
+        check_page_asset(app, pagename, js_file)
+        app.add_js_file(js_file, loading_method='defer')
+    for css_file in metadata.get('page-css', '').split():
+        check_page_asset(app, pagename, css_file)
+        app.add_css_file(css_file)
+
+
+def setup(app):
+    app.add_css_file('icons.css')
+    app.connect('builder-inited', build_icon_css)
+    app.connect('html-page-context', add_page_assets)

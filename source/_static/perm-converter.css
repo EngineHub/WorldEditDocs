@@ -1,0 +1,34 @@
+.perm-converter label {
+    display: block;
+}
+
+.perm-converter input {
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--sy-f-mono);
+    padding: 4px 8px;
+    border: 1px solid var(--sy-c-border);
+    border-radius: 6px;
+    background-color: var(--sy-c-surface);
+}
+
+.perm-converter input:user-invalid {
+    border-color: var(--danger-3);
+}
+
+.perm-converter-hint {
+    font-size: 0.875em;
+    color: var(--sy-c-light);
+}
+
+.perm-converter output {
+    display: block;
+    font-family: var(--sy-f-mono);
+    padding: 4px 8px;
+    border: 1px solid var(--sy-c-border);
+    border-radius: 6px;
+    background-color: var(--sy-c-surface);
+    overflow-wrap: anywhere;
+    min-height: 1lh;
+}

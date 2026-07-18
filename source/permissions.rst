@@ -1,3 +1,6 @@
+:page-js: fabric-permissions.js
+:page-css: perm-converter.css
+
 ===========
 Permissions
 ===========
@@ -228,3 +231,122 @@ Other Permissions
     ``worldedit.setnbt``,"Allows setting `extra data <https://minecraft.wiki/w/Block_entity>`_ on blocks (such as signs, chests, etc)."
     ``worldedit.report.pastebin``,"Allows uploading report files to pastebin automatically for the ``/worldedit report`` :doc:`command <commands>`."
     ``worldedit.scripting.execute.<filename>``,"Allows using the CraftScript with the given filename."
+
+Fabric Permissions Integration
+==============================
+
+.. versionadded:: 7.4.5
+
+WorldEdit integrates into the Fabric Permissions API v1.
+The API identifies permissions with a namespaced Minecraft ``Identifier`` rather than a dotted string,
+so the nodes listed above are converted before they are checked. Depending on which permissions mod you use, you may need to write them differently.
+
+.. warning::
+
+    If a node cannot be converted, WorldEdit falls back to the Fabric Permissions API v0, and then to vanilla operator levels.
+    This should not happen in practice as we generally don't have ``worldedit`` as its own permission node,
+    but if other mods use our checks this may be an issue.
+
+Which form do I use?
+---------------------
+
+Due to how permissions have historically worked, you might need to use different forms of the converted permission node.
+There are two forms of every node, and both come from the same conversion:
+
+``worldedit:region.set``
+    The **identifier form**, for mods that expose the permission API's identifiers directly.
+
+``worldedit.region.set``
+    The **traditional form**. Some mods, like LuckPerms, rejoin the identifier's namespace and path with a ``.`` instead of a ``:``
+    to match how permission nodes were traditionally formatted.
+
+.. warning::
+
+    The traditional form is *not* always the same as the original node listed above.
+    It is the converted node rejoined with a dot, so any lowercasing or escaping still applies.
+    For example, ``worldedit.scripting.execute.my script_v1!`` becomes ``worldedit.scripting.execute.my_20script_5fv1_21``.
+
+    This only matters in practice for dynamic nodes, such as ``worldedit.scripting.execute.<filename>``.
+    Every static node WorldEdit uses is already lowercase and made of safe characters, so the result is identical.
+
+Converter
+----------
+
+To assist with setting permissions, we've provided a small tool that converts from a permission node to the forms described above:
+
+..
+    This <noscript> should be moved to a globally applied <head> if we ever need this elsewhere.
+.. only:: html and not epub and not singlehtml
+
+    .. raw:: html
+
+        <noscript>
+            <style>
+                .js-only {
+                    display: none;
+                }
+            </style>
+        </noscript>
+
+    .. admonition:: Converter Tool
+        :class: admonition-tool
+
+        .. raw:: html
+
+            <form class="js-only perm-converter" onsubmit="return false" oninput="
+                showPermissionConversion(
+                    'perm-converter-input',
+                    'perm-converter-identifier',
+                    'perm-converter-traditional'
+                )">
+              <div class="perm-converter-field">
+                <label for="perm-converter-input">WorldEdit permission node</label>
+                <input id="perm-converter-input" type="text" placeholder="Enter a permission node here..."
+                       spellcheck="false" autocapitalize="off" autocorrect="off"
+                       pattern="\s*[^.\s][^.]*\..*\S\s*"
+                       aria-describedby="perm-converter-hint" />
+                <p class="perm-converter-hint" id="perm-converter-hint">Needs a namespace and a path
+                  separated by a dot, such as <code>worldedit.region.set</code>. A node without a dot
+                  is only matched by the fallback.</p>
+              </div>
+              <div class="perm-converter-field">
+                <label for="perm-converter-identifier">Identifier form</label>
+                <output id="perm-converter-identifier" for="perm-converter-input"></output>
+              </div>
+              <div class="perm-converter-field">
+                <label for="perm-converter-traditional">Traditional form</label>
+                <output id="perm-converter-traditional" for="perm-converter-input"></output>
+              </div>
+            </form>
+            <noscript>
+              <p>The interactive converter needs JavaScript. You can apply the rules below by hand instead.</p>
+            </noscript>
+
+.. only:: epub or singlehtml or not html
+
+    .. note::
+
+        The interactive converter is only available in the online documentation.
+        You can apply the rules below by hand instead.
+
+How the conversion works
+-------------------------
+
+#. Split the node at the **first** ``.``, into a *namespace* and *path*. If there is no ``.``, or it is the first or last character, the node is not usable with the API and only the fallback works.
+#. Convert both parts to lowercase using Java's ``toLowerCase(Locale.ROOT)``, then encode it as UTF-8.
+#. Keep each byte that is ``a`` to ``z``, ``0`` to ``9``, ``.`` or ``-``. The *path* must also keep ``/``. Replace every other byte with ``_`` followed by its two hex digits. Notably, this includes ``_`` itself, which is output as ``_5f``.
+#. Join the two parts with ``:`` for the identifier form, or with ``.`` for the traditional form.
+
+Examples
+---------
+
+.. csv-table::
+    :header: Node, Identifier form, Traditional form
+    :widths: 20, 20, 20
+
+    ``worldedit.region.set``,"``worldedit:region.set``","``worldedit.region.set``"
+    ``WorldEdit.scripting.execute.Build.js``,"``worldedit:scripting.execute.build.js``","``worldedit.scripting.execute.build.js``"
+    ``worldedit.scripting.execute.my script_v1!``,"``worldedit:scripting.execute.my_20script_5fv1_21``","``worldedit.scripting.execute.my_20script_5fv1_21``"
+    ``worldedit.scripting.execute.café``,"``worldedit:scripting.execute.caf_c3_a9``","``worldedit.scripting.execute.caf_c3_a9``"
+    ``worldedit.scripting.execute/tools/build.js``,"``worldedit:scripting.execute/tools/build.js``","``worldedit.scripting.execute/tools/build.js``"
+    ``worldedit``,"Not converted, only uses fallback","Not converted, only uses fallback"

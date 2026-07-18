@@ -228,3 +228,10 @@ Other Permissions
     ``worldedit.setnbt``,"Allows setting `extra data <https://minecraft.wiki/w/Block_entity>`_ on blocks (such as signs, chests, etc)."
     ``worldedit.report.pastebin``,"Allows uploading report files to pastebin automatically for the ``/worldedit report`` :doc:`command <commands>`."
     ``worldedit.scripting.execute.<filename>``,"Allows using the CraftScript with the given filename."
+
+.. note::
+    Due to a limitation of the Fabric Permissions API, some filename permissions for ``worldedit.scripting.execute.<filename>`` need to be converted before use.
+
+    If your filename contains any uppercase letters, the permission must be done lowercase. For any non-alphanumerical characters other than ``-``, ``/``, and ``.``,
+    you must replace the character with ``_00`` where 00 is replaced by the "HEX" entry for that character on `this table <https://www.ascii-code.com/>`_. We hope this
+    limitation in Fabric can be resolved in the future to remove the need for this workaround.

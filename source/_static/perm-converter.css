@@ -24,6 +24,7 @@
 
 .perm-converter output {
     display: block;
+    box-sizing: content-box;
     font-family: var(--sy-f-mono);
     padding: 4px 8px;
     border: 1px solid var(--sy-c-border);

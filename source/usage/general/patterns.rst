@@ -20,6 +20,10 @@ Single Block Pattern
 
 The most basic pattern of just a single block. A block is identified by three parts: the `block type <https://minecraft.wiki/w/Java_Edition_data_values#IDs>`_, additional `block states <https://minecraft.wiki/w/Block_states>`_, and `nbt data <https://minecraft.wiki/w/NBT_format>`_. These three links to the Minecraft Wiki, along with WorldEdit's in-built tab-completion for commands, should guide you in specifying the block you want. Additional states are always appended to the type using the syntax ``block_type[state1=value,state2=value,...]``. Note that when states are not specified, or if some are left out, the default values will be used for those states. NBT is written using Minecraft's SNBT syntax, ``block_type{'nbt_key':'value'}``. NBT data always comes after the block states if supplied, ``block_type[property=value]{'nbt_key':'value'}``.
 
+Instead of specifying a block type directly, you can use ``hand`` or ``offhand`` to use the block held in your main hand or offhand respectively. This is useful when you already have the block you want to use in your hotbar. You can also use ``pos1`` to use the block at your primary selection point. See :ref:`Selection Modes <usage/regions/selections:Selection Modes>` for what that means for the various selection types. Only ``pos1`` will currently retain any state or NBT (e.g. using ``hand`` with a shulker box will place an empty one).
+
+The states and NBT can still be set when using these, as if it were a normal block type. A top-level merge occurs for both state and NBT, with the keys specified in the command taking precedence.
+
 .. topic:: Example: Single block patterns
 
     Setting a selection to stone::
@@ -41,6 +45,22 @@ The most basic pattern of just a single block. A block is identified by three pa
     Setting a selection to an oak sign that is waxed and rotated::
 
         //set oak_sign[rotation=12]{'is_waxed':1}
+
+    Setting a selection to the block in your main hand::
+
+        //set hand
+
+    Setting a selection to the block in your main hand, applying a ``facing`` state override::
+
+        //set hand[facing=east]
+
+    Setting a selection to the block in your offhand::
+
+        //set offhand
+
+    Setting a selection to the block at pos1::
+
+        //set pos1
 
 Random Pattern
 --------------

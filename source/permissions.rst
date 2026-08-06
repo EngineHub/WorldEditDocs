@@ -269,6 +269,12 @@ There are two forms of every node, and both come from the same conversion:
     This only matters in practice for dynamic nodes, such as ``worldedit.scripting.execute.<filename>``.
     Every static node WorldEdit uses is already lowercase and made of safe characters, so the result is identical.
 
+.. note::
+
+    The lowercasing and escaping are only needed because a Minecraft ``Identifier`` allows a very limited set of
+    characters, which is a limitation of the Fabric Permissions API that we hope will be fixed in the future.
+    See `this issue <https://github.com/FabricMC/fabric-api/issues/5505>`_.
+
 Converter
 ----------
 

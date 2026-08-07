@@ -18,6 +18,9 @@ import os
 import datetime
 import urllib.parse
 
+from docutils import nodes
+from docutils.parsers.rst.directives.admonitions import BaseAdmonition
+
 from sphinx.errors import ExtensionError
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -476,7 +479,22 @@ def add_page_assets(app, pagename, templatename, context, doctree):
         app.add_css_file(css_file)
 
 
+class ExampleAdmonition(BaseAdmonition):
+    """.. example:: [title]"""
+
+    node_class = nodes.admonition
+    required_arguments = 0
+    optional_arguments = 1
+    final_argument_whitespace = True
+
+    def run(self):
+        self.arguments = ['Example: ' + self.arguments[0] if self.arguments else 'Example']
+        self.options['class'] = ['admonition-example', *self.options.get('class', [])]
+        return super().run()
+
+
 def setup(app):
     app.add_css_file('icons.css')
+    app.add_directive('example', ExampleAdmonition)
     app.connect('builder-inited', build_icon_css)
     app.connect('html-page-context', add_page_assets)

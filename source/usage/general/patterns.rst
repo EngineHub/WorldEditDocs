@@ -24,7 +24,7 @@ Instead of specifying a block type directly, you can use ``hand`` or ``offhand``
 
 The states and NBT can still be set when using these, as if it were a normal block type. A top-level merge occurs for both state and NBT, with the keys specified in the command taking precedence.
 
-.. topic:: Example: Single block patterns
+.. example:: Single block patterns
 
     Setting a selection to stone::
 
@@ -67,7 +67,7 @@ Random Pattern
 
 This pattern allows setting random blocks from any number of other patterns. The basic form is as simple as a comma-separated list of patterns, which will be chosen from evenly. You can also specify weights for each pattern with ``<x>%<pattern>``.
 
-.. topic:: Example:: Random Patterns
+.. example:: Random Patterns
 
     Setting a selection to different types of stone, equally distributed::
 
@@ -86,7 +86,7 @@ Random State Pattern
 
 Prefixing any block type with an asterisk (``*``) will randomly choose between all states for that block for each position.
 
-.. topic:: Example: Random State Pattern
+.. example:: Random State Pattern
 
     Setting oak logs facing in random directions::
 
@@ -97,7 +97,7 @@ Clipboard Pattern
 
 The ``#clipboard`` pattern will take blocks from your :doc:`clipboard <../clipboard>` in the same arrangement. This makes it easy to build one part of a repeating complicated pattern by hand, and then repeat it over and over. You can also offset the pattern by adding ``@[x,y,z]``.
 
-.. topic:: Example: Using the clipboard pattern
+.. example:: Using the clipboard pattern
 
     Replacing :ref:`all existing blocks <usage/general/masks:Existing block mask>` to your clipboard::
 
@@ -123,7 +123,7 @@ Type or State Applying Pattern
 
 This pattern, prefixed by ``^``, lets you set the type or states of a block without modifying everything else. This pattern will, for example, allow you to change a spiral staircase from oak to acacia without having to worry about the stairs facing in different directions and so on. You can either specify a block type (to change block type but not states, where applicable), or any number of states (to only change those states, where applicable).
 
-.. topic:: Example: Type/State Applying Patterns
+.. example:: Type/State Applying Patterns
 
     Replacing all oak stairs to acacia stairs, while maintaining orientation, etc::
 
@@ -148,7 +148,7 @@ This pattern allows setting random blocks within a block category, often referre
 
 The syntax for this pattern is ``##<tag name>``, which will randomly choose between the default state of all blocks in the category. You can also mix this with the random state pattern (``##*<tag name>``) to use all states, not just the defaults.
 
-.. topic:: Example: Block Category Pattern Usage
+.. example:: Block Category Pattern Usage
 
     Replacing all existing blocks with rainbow wool::
 
@@ -168,7 +168,7 @@ Sign Text
 
 You can set text on signs by separating it with a pipe symbol (``|``). Note that if the text has spaces, you must wrap the entire pattern in quotes ``""``.
 
-.. topic:: Example: Setting sign text
+.. example:: Setting sign text
 
     Simple Example::
 
@@ -183,7 +183,7 @@ Player Heads
 
 You can set the skin of a player head by specifying a username after the pipe symbol.
 
-.. topic:: Example: Setting a skin on a head
+.. example:: Setting a skin on a head
 
     .. code::
 
@@ -194,7 +194,7 @@ Mob Spawners
 
 You can set the type of mob to be spawned (again via the pipe symbol). Note that the name of the mob must be an `entity ID <https://minecraft.wiki/w/Java_Edition_data_values#Entities>`_. Prefixing `minecraft:` is optional, modded mobs must have a namespace.
 
-.. topic:: Example: Creating a squid spawner
+.. example:: Creating a squid spawner
 
     .. code::
 

@@ -18,7 +18,7 @@ Combining Masks
 
 To get a mask which matches the *intersection* of multiple masks, use a space to separate them. The intersection will match when *all* of the given masks match.
 
-.. topic:: Example: Combining Masks
+.. example:: Combining Masks
 
     Replacing surface stone with dirt using a mask intersection::
 
@@ -38,7 +38,7 @@ The simplest of masks, the block mask matches one or more blocks or block states
 
 To match more than one block, separate each with a comma.
 
-.. topic:: Example: Using the block mask
+.. example:: Using the block mask
 
     Removing all oak fences from your selection::
 
@@ -53,7 +53,7 @@ Mask Negation
 
 The ``!`` symbol can be used to negate everything that comes after it. That is, it matches anything *not* matched by a different mask. Any other mask can follow this.
 
-.. topic:: Example: Negating a mask
+.. example:: Negating a mask
 
     Replace any block that isn't dirt, stone, or grass with stone::
 
@@ -80,7 +80,7 @@ Offset Mask
 
 Using ``>`` (overlay) or ``<`` (underlay) preceding another mask will match blocks that are above or below the other mask, respectively.
 
-.. topic:: Example: Offset masks
+.. example:: Offset masks
 
     Creating a layer of slabs above planks in your selection::
 
@@ -93,7 +93,7 @@ Using `~` preceding another mask will match blocks that are adjacent to the othe
 
 .. note:: Adjacency for the case of this mask is defined as being directly next to or above/below. Diagonal blocks do not match.
 
-.. topic:: Example: Adjacency masks
+.. example:: Adjacency masks
 
     Surrounding all mob spawners with glowstone::
 
@@ -118,7 +118,7 @@ Block Category Mask
 
 Block categories, or `tags <https://minecraft.wiki/w/Tag>`_ can also be used as masks. A category mask will match any block that is in that category. Just like the pattern, the syntax is `##<tag>`.
 
-.. topic:: Example: Block Category Masks
+.. example:: Block Category Masks
 
    Replacing all carpets with a layer of snow::
 
@@ -131,7 +131,7 @@ The noise mask can create random noise. Specifying ``%<percent>`` will match the
 
 .. note:: Make note of the syntax difference here; Unlike patterns, the % sign preceeds the desired percentage for this mask
 
-.. topic:: Example: Using the random noise mask
+.. example:: Using the random noise mask
 
     Randomly replacing 50% of your selection with stone::
 
@@ -144,7 +144,7 @@ Like the block mask, this mask matches block states. Unlike the block mask, you 
 
 The state mask has two modes, lenient and strict. In lenient mode (``^[state=value,...]``, it will match any block that has the given block states equal the given value, *or* any block that does not even have those properties. In strict mode (``^=[state=value,...]``), it will *only* match blocks that have the block states equal to that value.
 
-.. topic:: Example: Using the block state mask
+.. example:: Using the block state mask
 
     Removing all closed door, gates, and trapdoors::
 
@@ -155,7 +155,7 @@ Expression Mask
 
 This mask can evaluate a mathematical expression upon each block. The mask starts with ``=`` and then must have an :doc:`expression <../other/expressions>` which can use the variables ``x``, ``y``, and ``z``. The mask will match if the expression returns a positive value.
 
-.. topic:: Example: Expression masks
+.. example:: Expression masks
 
     Only edit blocks below a certain y-level::
 

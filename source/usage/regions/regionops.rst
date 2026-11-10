@@ -13,7 +13,7 @@ Setting Blocks
 
 The most basic operation, the ``//set <pattern>`` command allows you to set all blocks in your selection to a given pattern.
 
-.. topic:: Example: Setting your selection
+.. example:: Setting your selection
 
     A simple pattern::
 
@@ -30,7 +30,7 @@ If you don't want to set *all* the blocks in your selection, you can decide whic
 
 Note that you can omit the mask argument in the command - it will default to the :doc:`existing block mask <../general/masks>`.
 
-.. topic:: Example: Replacing blocks in your selection
+.. example:: Replacing blocks in your selection
 
     Replacing all non-air blocks with grass::
 
@@ -77,7 +77,7 @@ There are several flags available:
 * ``-e`` will also copy entities into each stacked area
 * ``-b`` will also copy biomes into each stacked area (you may need to re-join the world to see changes)
 
-.. topic:: Some uses of the stack command
+.. example:: Some uses of the stack command
 
     .. figure:: /images/selections/stack_bridge.jpg
 
@@ -104,7 +104,7 @@ You can also use the ``-s`` flag to move your selection along with the blocks, s
 
 The move command also takes the same three flags as ``//stack``, ``-e`` to move entities, ``-b`` to copy biomes (source biomes unaffected), and ``-m <mask>`` to move only matching blocks.
 
-.. topic:: Example: Using the move command
+.. example:: Using the move command
 
     Moving the selection 2 blocks forward, leaving stone::
 
@@ -173,7 +173,7 @@ The expression should take the variables ``x``, ``y``, and ``z`` and change them
 
 By default, coordinates are normalized from -1 to 1 on each axis, from the min to max points of your selection. Using the ``-r`` flag will use raw world coordinates, while ``-o`` will use Minecraft coordinates scale offset to your placement position.
 
-.. topic:: Example: Deforming regions
+.. example:: Deforming regions
 
     Making bumpy terrain::
 

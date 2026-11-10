@@ -58,7 +58,7 @@ All block editing in WorldEdit is done through an EditSession. This object handl
 
 Every time you call that method, you will get a new ``EditSession``, so be sure to keep one around. To set blocks, you will either need to provide a ``BlockState`` which is a combination of a block type and one or more states, or a ``BaseBlock``, which is a ``BlockState`` that may additionally have NBT data.
 
-.. topic:: Example: Setting a block to white wool
+.. example:: Setting a block to white wool
 
     ::
 
@@ -78,7 +78,7 @@ Arguments are passed in under the ``argv`` variable. If you need to check whethe
 
 The ``CraftScriptContext`` can to some basic argument parsing with ``CraftScriptContext#getBlock()``. You can also hook directly into WorldEdit's parsers via ``WorldEdit.getInstance().getPatternFactory()`` and ``.getMaskFactory()``.
 
-.. topic:: Example: Checking arguments
+.. example:: Checking arguments
 
     ::
 

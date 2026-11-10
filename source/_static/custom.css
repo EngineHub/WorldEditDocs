@@ -20,3 +20,7 @@ html.dark {
 .admonition.admonition-tool {
     --icon-url: var(--icon-wrench-url);
 }
+
+.admonition.admonition-example {
+    --icon-url: var(--icon-lightbulb-url);
+}

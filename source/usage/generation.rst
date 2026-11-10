@@ -30,7 +30,7 @@ For elliptical cylinders, you can instead specify two radii: one for the east-we
     //cyl <pattern> <radiusEW>,<radiusNS> [height]
     //hcyl <pattern> <radiusEW>,<radiusNS> [height]
 
-.. topic:: Example: Creating cylinders and circles
+.. example:: Creating cylinders and circles
 
     Creating a filled glass cylinder of radius 5 and height 10::
 
@@ -130,7 +130,7 @@ The expression should return true (``> 0``) for blocks that are part of the shap
 Shape Examples
 --------------
 
-.. topic:: Example: Generating various shapes
+.. example:: Generating various shapes
 
     Torus of major radius 0.75 and minor radius 0.25::
 

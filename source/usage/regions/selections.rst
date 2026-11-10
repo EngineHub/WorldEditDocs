@@ -108,7 +108,7 @@ You can also specify multiple directions separated by commas to expand in multip
 
 You can specify two numbers and the region will be expanded in two opposite directions simultaneously.
 
-.. topic:: Example: Expanding upwards
+.. example:: Expanding upwards
 
     .. figure:: /images/selections/expand_up.png
         :figclass: light-only
@@ -132,7 +132,7 @@ Contracting the selection
 
 This command works similarly to ``//expand``, but instead contract.
 
-.. topic:: Example: Contracting downwards
+.. example:: Contracting downwards
 
     .. figure:: /images/selections/contract_down.png
         :figclass: light-only
@@ -201,7 +201,7 @@ The ``-c`` flag operates on your clipboard instead of your selection.
 
 The ``-d`` flag separates by block states instead of just types.
 
-.. topic:: Example: Block distribution output
+.. example:: Block distribution output
 
     Only by block type::
 

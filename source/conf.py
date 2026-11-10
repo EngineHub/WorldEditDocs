@@ -18,7 +18,11 @@ import os
 import datetime
 import urllib.parse
 
+from docutils import nodes
+from docutils.parsers.rst.directives.admonitions import BaseAdmonition
+
 from sphinx.errors import ExtensionError
+from sphinx.writers.html5 import HTML5Translator
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -476,7 +480,37 @@ def add_page_assets(app, pagename, templatename, context, doctree):
         app.add_css_file(css_file)
 
 
+class ExampleAdmonition(BaseAdmonition):
+    """.. example:: [title]"""
+
+    node_class = nodes.admonition
+    required_arguments = 0
+    optional_arguments = 1
+    final_argument_whitespace = True
+
+    def run(self):
+        self.arguments = ['Example: ' + self.arguments[0] if self.arguments else 'Example']
+        self.options['class'] = ['admonition-example', *self.options.get('class', [])]
+        return super().run()
+
+
+class TopicHeadingTranslator(HTML5Translator):
+    """Renders topic titles as h4 instead of p"""
+
+    def visit_title(self, node):
+        if isinstance(node.parent, nodes.topic) and 'contents' not in node.parent['classes']:
+            self.body.append(self.starttag(node, 'h4', '', CLASS='topic-title'))
+            self.context.append('</h4>\n')
+            self.add_secnumber(node)
+            self.add_fignumber(node.parent)
+        else:
+            super().visit_title(node)
+
+
 def setup(app):
     app.add_css_file('icons.css')
+    app.add_directive('example', ExampleAdmonition)
     app.connect('builder-inited', build_icon_css)
     app.connect('html-page-context', add_page_assets)
+    app.set_translator('html', TopicHeadingTranslator)
+    app.set_translator('dirhtml', TopicHeadingTranslator)

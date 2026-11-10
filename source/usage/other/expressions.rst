@@ -97,30 +97,26 @@ Prefix
 
 These operators precede the expression they apply to.
 
-.. topic:: Prefix Operators
+.. csv-table::
+    :widths: 3, 15
 
-    .. csv-table::
-        :widths: 3, 15
-
-        ``-x``,(negation)
-        ``~x``,Bitwise complement (see bitwise binary operators)
-        ``!x``,Logical complement (see logical binary operators)
-        ``++x``,Pre-increment
-        ``--x``,Pre-decrement
+    ``-x``,(negation)
+    ``~x``,Bitwise complement (see bitwise binary operators)
+    ``!x``,Logical complement (see logical binary operators)
+    ``++x``,Pre-increment
+    ``--x``,Pre-decrement
 
 Postfix
 -------
 
 These operators succeed the expression they apply to.
 
-.. topic:: Postfix Operators
+.. csv-table::
+    :widths: 3, 15
 
-    .. csv-table::
-        :widths: 3, 15
-
-        ``x!``,Factorial
-        ``x++``,Post-increment
-        ``x--``,Post-decrement
+    ``x!``,Factorial
+    ``x++``,Post-increment
+    ``x--``,Post-decrement
 
 Ternary infix
 -------------
@@ -206,17 +202,15 @@ Functions
 Constants
 ~~~~~~~~~
 
-.. topic:: Constants
+The following constants are always available, and cannot be assigned.
 
-    The following constants are always available, and cannot be assigned.
+.. csv-table::
+    :widths: 3, 6, 10
 
-    .. csv-table::
-        :widths: 3, 6, 10
-
-        ``e``,2.7182818284590452354,The base of the natural logarithm
-        ``pi``,3.14159265358979323846,The ratio between circumference and diameter of a circle
-        ``true``,1,for boolean operations
-        ``false``,0,for boolean operations
+    ``e``,2.7182818284590452354,The base of the natural logarithm
+    ``pi``,3.14159265358979323846,The ratio between circumference and diameter of a circle
+    ``true``,1,for boolean operations
+    ``false``,0,for boolean operations
 
 Block Statements
 ~~~~~~~~~~~~~~~~

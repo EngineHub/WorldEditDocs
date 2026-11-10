@@ -14,7 +14,7 @@ In order for WorldEdit to be able to read your backups, you will have to choose 
 
 Once set, just toss either copies of your world folder or zipped copies of your world folder into your backup folder. An example of how you could lay out your backups folder is below.
 
-.. topic:: Example: Possible structures of backup storage
+.. example:: Possible structures of backup storage
 
    |f| ``backups/`` (this is the folder name in the config)
     |f| ``world/`` (this is the name of a world)
